@@ -1,0 +1,865 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc1/Getting_Started_with_Python.html">
+      
+      
+        <link rel="prev" href="../../resumedineshnair.html">
+      
+      
+        <link rel="next" href="../doc2/techdoc2.html">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>Getting Started with Python - Dinesh's Writings and Resume</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#getting-started-with-python" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Dinesh&#39;s Writings and Resume" class="md-header__button md-logo" aria-label="Dinesh's Writings and Resume" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dinesh's Writings and Resume
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started with Python
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Dinesh&#39;s Writings and Resume" class="md-nav__button md-logo" aria-label="Dinesh's Writings and Resume" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Dinesh's Writings and Resume
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resumedineshnair.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resume
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    My Writings
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            My Writings
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Getting Started with Python
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Getting_Started_with_Python.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started with Python
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-set-up-the-windows-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Set Up the Windows Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-and-run-your-first-python-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create and Run Your First Python File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      If Else
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#else-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      Else If
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Loop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      While Loop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Flask
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Flask
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc2/techdoc2.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Flask
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-set-up-the-windows-environment" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to Set Up the Windows Environment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-and-run-your-first-python-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create and Run Your First Python File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comments" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comments
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Variables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      If Else
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#else-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      Else If
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#for-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      For Loop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#while-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      While Loop
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Functions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="getting-started-with-python">Getting Started with Python</h1>
+<p>We'll cover:</p>
+<ul>
+<li>How to Set Up the Windows Environment</li>
+<li>Create and Run Your First Python File</li>
+<li>Comments</li>
+<li>Variables</li>
+<li>If Else</li>
+<li>Else If</li>
+<li>For Loop</li>
+<li>While Loop</li>
+<li>Functions</li>
+</ul>
+<hr />
+<h2 id="how-to-set-up-the-windows-environment">How to Set Up the Windows Environment</h2>
+<p>Install:</p>
+<ol>
+<li>
+<p>Python: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
+</li>
+<li>
+<p>Visual Studio Code (VS Code): <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+</li>
+<li>
+<p>VS Code Extension for Python: <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">https://marketplace.visualstudio.com/items?itemName=ms-python.python</a></p>
+</li>
+</ol>
+<h2 id="create-and-run-your-first-python-file">Create and Run Your First Python File</h2>
+<p>Step 1: Open VS Code. Create a new Python file:</p>
+<p><img alt="Create Python file" src="create_file.png" /></p>
+<p>Step 2: Copy and paste this code into the file:</p>
+<pre><code class="language-python">print (&quot;Hello world&quot;)
+Item = &quot;Rain&quot;
+item = &quot;Thunder&quot;
+print (item + ' ' + Item)
+</code></pre>
+<p>This code is using:</p>
+<ul>
+<li><code>print</code> function to display text. A function is a block of code that runs when it’s called.</li>
+<li>Variables <code>Item</code> and <code>item</code> to store strings <em>Rain</em> and <em>Thunder</em>.</li>
+</ul>
+<blockquote>
+<p>💡 <strong>Tip:</strong> Variables are case sensitive. <code>Item</code> and <code>item</code> are two different variables.</p>
+</blockquote>
+<p>Step 3: Click <strong>Run</strong>:</p>
+<p><img alt="Run Python file" src="run_button.png" /></p>
+<p>Here’s what you’ll see when you run the file:</p>
+<p><img alt="Run result" src="result_first_step.png" /></p>
+<h2 id="comments">Comments</h2>
+<p>Add comments to clarify your code. Python will not execute the comments. You can add a comment by adding <em>#</em> at the start of the line.</p>
+<p>Step 1: Copy and paste this code into the file:</p>
+<pre><code class="language-python"># Greet the user
+print(&quot;Hi there!&quot;)
+</code></pre>
+<p>Step 2: Click <strong>Run</strong>.</p>
+<p>Here’s what you’ll see:</p>
+<p><img alt="Comment is not displayed" src="result_comment.png" /></p>
+<h2 id="variables">Variables</h2>
+<p>Earlier, we used two variables <code>Item</code> and <code>item</code> to store string values. Let’s now use variables to store numbers and numeric calculations.</p>
+<p>Step 1: Copy and paste this code into the file:</p>
+<pre><code class="language-python">a = 20
+b = 5
+addition = a + b
+subtraction = a - b
+multiply = a * b
+division = a / b
+print (addition)
+print (subtraction)
+print (multiply)
+print (division)
+</code></pre>
+<p>The code is using variables <code>a</code> and <code>b</code> to store numbers and then variables <code>addition</code>, <code>subtraction</code>, <code>multiply</code>, and <code>division</code> to store the calculations.</p>
+<p>Step 2: Click <strong>Run</strong>.</p>
+<p>Here’s what you’ll see.</p>
+<p><img alt="Variable values displayed" src="result_variable.png" /></p>
+<h2 id="if-else">If Else</h2>
+<p>Use <em>If Else</em> for defining conditions and then executing the code based on the conditions.</p>
+<p>Step 1: Copy and paste this code into the file.</p>
+<pre><code class="language-python">item_available = True
+if item_available is False:
+    print (&quot;The item isn't available&quot;)
+else:
+    print (&quot;The item is available&quot;)
+isCollegeOpen = True
+if isCollegeOpen:
+    print (&quot;The college is open&quot;)
+else:
+    print (&quot;The college is closed&quot;)
+</code></pre>
+<p>The code is using Boolean variables. A Boolean variable can contain a value of <code>True</code> or <code>False</code>.</p>
+<p>Step 2: Click <strong>Run</strong>.</p>
+<p>Here’s what you’ll see:</p>
+<p><img alt="If else values displayed" src="result_ifelse.png" /></p>
+<h2 id="else-if">Else If</h2>
+<p><code>elif</code> lets you handle multiple conditions. <code>elif</code> stands for else if.</p>
+<p>Step 1: Copy and paste this code into the file:</p>
+<pre><code class="language-python">selected_color = &quot;yellow&quot;
+if selected_color == &quot;blue&quot;:
+    print(&quot;Blue means calmness.&quot;)
+elif selected_color == &quot;yellow&quot;:
+    print(&quot;Yellow means joy and happiness.&quot;)
+elif selected_color == &quot;green&quot;:
+    print(&quot;Green means freshness.&quot;)
+else:
+    print(&quot;That's a nice color!&quot;)
+</code></pre>
+<p><code>else</code> catches any condition that’s not caught by <code>if</code> and <code>elif</code>.</p>
+<p>Step 2: Click <strong>Run</strong>.</p>
+<p>Here’s what you’ll see:</p>
+<p><img alt="Else if values displayed" src="result_elseif.png" /></p>
+<h2 id="for-loop">For Loop</h2>
+<p><em>For</em> loop repeats actions for each item in a sequence.</p>
+<p>Step 1: Copy and paste this code into the file:</p>
+<pre><code class="language-python">sport_list = [&quot;hockey&quot;, &quot;soccer&quot;, &quot;basketball&quot;]
+for sport in sport_list:
+    print (sport)
+</code></pre>
+<p>The code is looping through the list items using a <em>for</em> loop.</p>
+<p>Step 2: Click <strong>Run</strong>.</p>
+<p>Here’s what you’ll see:</p>
+<p><img alt="For loop values displayed" src="result_forloop.png" /></p>
+<h2 id="while-loop">While Loop</h2>
+<p><em>While</em> loop repeats actions as long as the condition is true. Once the condition is false, it stops.</p>
+<p>Step 1: Copy and paste this code into the file:</p>
+<pre><code class="language-python">b = 10
+while b &lt; 15:
+    b = b + 1
+    print (b)
+</code></pre>
+<p>The code initializes <code>b</code> to 10 and enters a <em>while</em> loop that continues as long as <code>b</code> is less than 15. During each loop iteration, <code>b</code> is incremented by 1, and the new value of <code>b</code> is printed.</p>
+<p>Step 2: Click <strong>Run</strong>.</p>
+<p>Here’s what you’ll see:</p>
+<p><img alt="While loop values displayed" src="result_whileloop.png" /></p>
+<h2 id="functions">Functions</h2>
+<p>Function is the block of code that runs when it’s called. Define it by using the <code>def</code> keyword. A function can have one or more parameters or none.</p>
+<p>Step 1: Copy and paste this code into the file:</p>
+<pre><code class="language-python">def guess_fruit():
+    while True:
+        user_value = input(&quot;Enter the fruit I like most: &quot;)
+        if user_value == &quot;apple&quot;:
+            print(&quot;That's correct!&quot;)
+            break
+        else:
+            print(&quot;Nope, that's not the fruit I like. Try again.&quot;)
+guess_fruit()
+</code></pre>
+<p>The last line calls the function. The function keeps prompting the user to enter the correct value until the guess is correct.</p>
+<p>The code uses the <code>break</code> keyword to break out of the <em>while</em> loop.</p>
+<p>Step 2: Click <strong>Run</strong>.</p>
+<p>Here’s what you’ll see:</p>
+<p><img alt="Function asking user input" src="result_function1.png" /></p>
+<p>Step 3: Enter <em>orange</em>. The program will prompt you to try again until the correct answer is entered:</p>
+<p><img alt="Function asking user input again" src="result_function2.png" /></p>
+<p>Step 4: This time enter <em>apple</em>. The program will respond with <em>That’s correct!</em>:</p>
+<p><img alt="Function responding to correct user input" src="result_function3.png" /></p>
+<p>Now that you know the basics like variables, loops, and functions, you’re ready to dive deeper into the world of Python. Happy coding!</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

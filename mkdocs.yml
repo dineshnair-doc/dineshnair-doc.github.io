@@ -11,3 +11,5 @@ nav:
           - Getting Started with Python: mytechdocs/doc1/Getting_Started_with_Python.md
       - Flask:
           - Introduction to Flask: mytechdocs/doc2/techdoc2.md
+site_dir: docs
+docs_dir: src
