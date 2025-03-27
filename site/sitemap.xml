@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://dineshnair-doc.github.io/</loc>
+         <loc>https://dineshnair-doc.github.io/index.html</loc>
          <lastmod>2025-03-27</lastmod>
     </url>
     <url>
-         <loc>https://dineshnair-doc.github.io/resumedineshnair/</loc>
+         <loc>https://dineshnair-doc.github.io/resumedineshnair.html</loc>
          <lastmod>2025-03-27</lastmod>
     </url>
     <url>
-         <loc>https://dineshnair-doc.github.io/mytechdocs/</loc>
+         <loc>https://dineshnair-doc.github.io/mytechdocs/index.html</loc>
          <lastmod>2025-03-27</lastmod>
     </url>
     <url>
-         <loc>https://dineshnair-doc.github.io/mytechdocs/doc1/Getting_Started_with_Python/</loc>
+         <loc>https://dineshnair-doc.github.io/mytechdocs/doc1/Getting_Started_with_Python.html</loc>
          <lastmod>2025-03-27</lastmod>
     </url>
     <url>
-         <loc>https://dineshnair-doc.github.io/mytechdocs/doc2/techdoc2/</loc>
+         <loc>https://dineshnair-doc.github.io/mytechdocs/doc2/techdoc2.html</loc>
          <lastmod>2025-03-27</lastmod>
     </url>
 </urlset>

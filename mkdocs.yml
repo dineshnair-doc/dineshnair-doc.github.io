@@ -1,4 +1,6 @@
 site_name: Dinesh's Writings and Resume
+site_url: https://dineshnair-doc.github.io/
+use_directory_urls: false
 theme:
   name: material
 nav:
