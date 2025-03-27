@@ -5,6 +5,7 @@ theme:
   name: material
   features:
     - content.code.copy
+copyright: Copyright &copy; 2024-2025 Dinesh Nair
 nav:
   - Home: index.md
   - Resume: resumedineshnair.md
