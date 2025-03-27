@@ -19,7 +19,7 @@ Technical Documentation | DITA | Markdown | Git and GitHub | UX Writing | Oxygen
 
 ## Experience
 
-### **Self-Directed Technical Writing Projects**
+### **Technical Content Development and Knowledge Sharing**
 *Oct 2024 - Present*
 
 Authored a diverse range of technical content on [Hashnode](https://techdineshwrites.hashnode.dev), covering topics such as:

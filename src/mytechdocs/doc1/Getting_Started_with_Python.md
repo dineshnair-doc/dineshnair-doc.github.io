@@ -15,7 +15,7 @@ We'll cover:
 
 ## How to Set Up the Windows Environment
 
-Install:
+To being developing with Python on Windows, you'll need to install:
 
 1. Python: [https://www.python.org/downloads/](https://www.python.org/downloads/)
     
@@ -41,7 +41,7 @@ print (item + ' ' + Item)
 
 This code is using:
 
-- `print` function to display text. A function is a block of code that runs when it’s called.
+- `print` function to display text. A function is a block of code that runs when it's called.
 - Variables `Item` and `item` to store strings *Rain* and *Thunder*.
     
 
@@ -51,7 +51,7 @@ Step 3: Click **Run**:
 
 ![Run Python file](run_button.png)
 
-Here’s what you’ll see when you run the file:
+Here's what you'll see when you run the file:
 
 ![Run result](result_first_step.png)
 
@@ -59,7 +59,7 @@ Here’s what you’ll see when you run the file:
 
 Add comments to clarify your code. Python will not execute the comments. You can add a comment by adding *#* at the start of the line.
 
-Step 1: Copy and paste this code into the file:
+Step 1: Replace the previous content of your file with this code:
 
 ```python
 # Greet the user
@@ -68,15 +68,15 @@ print("Hi there!")
 
 Step 2: Click **Run**.
 
-Here’s what you’ll see:
+Here's what you'll see:
 
 ![Comment is not displayed](result_comment.png)
 
 ## Variables
 
-Earlier, we used two variables `Item` and `item` to store string values. Let’s now use variables to store numbers and numeric calculations.
+Earlier, we used two variables `Item` and `item` to store string values. Let's now use variables to store numbers and numeric calculations.
 
-Step 1: Copy and paste this code into the file:
+Step 1: Replace the previous content of your file with this code:
 
 ```python
 a = 20
@@ -95,7 +95,7 @@ The code is using variables `a` and `b` to store numbers and then variables `add
 
 Step 2: Click **Run**.
 
-Here’s what you’ll see.
+Here's what you'll see:
 
 ![Variable values displayed](result_variable.png)
 
@@ -103,7 +103,7 @@ Here’s what you’ll see.
 
 Use *If Else* for defining conditions and then executing the code based on the conditions.
 
-Step 1: Copy and paste this code into the file.
+Step 1: Replace the previous content of your file with this code:
 
 ```python
 item_available = True
@@ -122,7 +122,7 @@ The code is using Boolean variables. A Boolean variable can contain a value of `
 
 Step 2: Click **Run**.
 
-Here’s what you’ll see:
+Here's what you'll see:
 
 ![If else values displayed](result_ifelse.png)
 
@@ -130,7 +130,7 @@ Here’s what you’ll see:
 
 `elif` lets you handle multiple conditions. `elif` stands for else if.
 
-Step 1: Copy and paste this code into the file:
+Step 1: Replace the previous content of your file with this code:
 
 ```python
 selected_color = "yellow"
@@ -144,11 +144,11 @@ else:
     print("That's a nice color!")
 ```
 
-`else` catches any condition that’s not caught by `if` and `elif`.
+`else` catches any condition that's not caught by `if` and `elif`.
 
 Step 2: Click **Run**.
 
-Here’s what you’ll see:
+Here's what you'll see:
 
 ![Else if values displayed](result_elseif.png)
 
@@ -156,7 +156,7 @@ Here’s what you’ll see:
 
 *For* loop repeats actions for each item in a sequence.
 
-Step 1: Copy and paste this code into the file:
+Step 1: Replace the previous content of your file with this code:
 
 ```python
 sport_list = ["hockey", "soccer", "basketball"]
@@ -168,7 +168,7 @@ The code is looping through the list items using a *for* loop.
 
 Step 2: Click **Run**.
 
-Here’s what you’ll see:
+Here's what you'll see:
 
 ![For loop values displayed](result_forloop.png)
 
@@ -176,7 +176,7 @@ Here’s what you’ll see:
 
 *While* loop repeats actions as long as the condition is true. Once the condition is false, it stops.
 
-Step 1: Copy and paste this code into the file:
+Step 1: Replace the previous content of your file with this code:
 
 ```python
 b = 10
@@ -189,7 +189,7 @@ The code initializes `b` to 10 and enters a *while* loop that continues as long 
 
 Step 2: Click **Run**.
 
-Here’s what you’ll see:
+Here's what you'll see:
 
 ![While loop values displayed](result_whileloop.png)
 
@@ -197,7 +197,7 @@ Here’s what you’ll see:
 
 Function is the block of code that runs when it’s called. Define it by using the `def` keyword. A function can have one or more parameters or none.
 
-Step 1: Copy and paste this code into the file:
+Step 1: Replace the previous content of your file with this code:
 
 ```python
 def guess_fruit():
@@ -217,7 +217,7 @@ The code uses the `break` keyword to break out of the *while* loop.
 
 Step 2: Click **Run**.
 
-Here’s what you’ll see:
+Here's what you'll see:
 
 ![Function asking user input](result_function1.png)
 
@@ -229,6 +229,6 @@ Step 4: This time enter *apple*. The program will respond with *That’s correct
 
 ![Function responding to correct user input](result_function3.png)
 
-Now that you know the basics like variables, loops, and functions, you’re ready to dive deeper into the world of Python. Happy coding!
+Now that you know the basics like variables, loops, and functions, you're ready to dive deeper into the world of Python. Happy coding!
 
 ---
