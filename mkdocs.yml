@@ -1,0 +1,14 @@
+site_name: Dinesh's Writings and Resume
+site_url: https://dineshnair-doc.github.io/
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Resume: resumedineshnair.md
+  - My Writings:
+      - Python:
+          - Getting Started with Python: mytechdocs/doc1/Getting_Started_with_Python.md
+      - Flask:
+          - Introduction to Flask: mytechdocs/doc2/techdoc2.md
+extra:
+  copyright: "© 2024 Dinesh Nair"
