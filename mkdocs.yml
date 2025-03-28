@@ -12,7 +12,8 @@ nav:
   - My Writings:
       - Python:
           - Getting Started with Python: mytechdocs/doc1/Getting_Started_with_Python.md
+          - Casting in Python: mytechdocs/doc2/Casting_in_Python.md
       - Flask:
-          - Introduction to Flask: mytechdocs/doc2/techdoc2.md
+          - Introduction to Flask: mytechdocs/doc22/techdoc2.md
 site_dir: docs
 docs_dir: src
