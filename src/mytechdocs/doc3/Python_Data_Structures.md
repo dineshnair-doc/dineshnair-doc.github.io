@@ -1,6 +1,8 @@
 # Lists, Dictionaries, Tuples, and Sets in Python
 In this document, we'll explore fundamental data structures in Python: lists, dictionaries, tuples, and sets. 
 
+---
+
 ## Lists
 
 A list can store multiples values. It's written with square brackets \[ \].
