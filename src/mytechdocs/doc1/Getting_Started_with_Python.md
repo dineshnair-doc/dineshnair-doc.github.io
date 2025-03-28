@@ -1,15 +1,5 @@
 # Getting Started with Python
-We'll cover:
-
-- How to Set Up the Windows Environment
-- Create and Run Your First Python File
-- Comments
-- Variables
-- If Else
-- Else If
-- For Loop
-- While Loop
-- Functions
+In this guide, we'll go over the basics of Python. We'll cover how to set up your Windows environment, run your first Python file, and learn important concepts like comments, variables, conditional statements (if else and else if), loops (for and while), and functions. Let's get started!
 
 ---
 
