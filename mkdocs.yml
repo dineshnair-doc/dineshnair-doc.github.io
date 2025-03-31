@@ -20,6 +20,6 @@ nav:
           - Obtaining Authorization: mytechdocs/doc6/Postman_Obtain_Auth.md
           - Sending Requests: mytechdocs/doc7/Sending_Requests.md
       - Flask:
-          - Introduction to Flask: mytechdocs/doc22/techdoc2.md
+          - Getting Started with Flask: mytechdocs/doc8/Flask_Intro.md
 site_dir: docs
 docs_dir: src

@@ -17,10 +17,6 @@
          <lastmod>2025-03-31</lastmod>
     </url>
     <url>
-         <loc>https://dineshnair-doc.github.io/mytechdocs/doc22/techdoc2.html</loc>
-         <lastmod>2025-03-31</lastmod>
-    </url>
-    <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc3/Python_Data_Structures.html</loc>
          <lastmod>2025-03-31</lastmod>
     </url>
@@ -38,6 +34,10 @@
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc7/Sending_Requests.html</loc>
+         <lastmod>2025-03-31</lastmod>
+    </url>
+    <url>
+         <loc>https://dineshnair-doc.github.io/mytechdocs/doc8/Flask_Intro.html</loc>
          <lastmod>2025-03-31</lastmod>
     </url>
 </urlset>

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc22/techdoc2.html">
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc8/Flask_Intro.html">
       
       
         <link rel="prev" href="../doc7/Sending_Requests.html">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Introduction to Flask - Dinesh's Writings and Resume</title>
+        <title>Getting Started with Flask - Dinesh's Writings and Resume</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#coming-soon" class="md-skip">
+        <a href="#getting-started-with-flask-building-a-dynamic-web-page" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction to Flask
+              Getting Started with Flask
             
           </span>
         </div>
@@ -560,16 +560,83 @@
         
       
       
-      <a href="techdoc2.html" class="md-nav__link md-nav__link--active">
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Getting Started with Flask
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Flask_Intro.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Introduction to Flask
+    Getting Started with Flask
     
   </span>
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-up-the-flask-environment-in-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Up the Flask Environment in Windows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-flask-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the Flask Application
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-html-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the HTML File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the Application
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -611,6 +678,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-up-the-flask-environment-in-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Up the Flask Environment in Windows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-flask-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the Flask Application
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-the-html-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create the HTML File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-the-application" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run the Application
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -625,8 +736,144 @@
 
 
 
-<h1 id="coming-soon">Coming soon!!</h1>
-<p>Stay tuned for more documents as I continue to expand this collection!</p>
+<h1 id="getting-started-with-flask-building-a-dynamic-web-page">Getting Started with Flask: Building a Dynamic Web Page</h1>
+<p>Flask is a Python framework to create web applications. In this guide, we will explore how to build a dynamic web page using Flask.</p>
+<hr />
+<h2 id="set-up-the-flask-environment-in-windows">Set Up the Flask Environment in Windows</h2>
+<p>Step 1: Open the terminal in Visual Studio Code and type: <code>python -m venv venv</code></p>
+<p>This creates a virtual environment. Using virtual environments ensures that the dependencies for one project don't interfere with the dependencies of other projects.</p>
+<p>Step 2: Activate the virtual environment: <code>venv\Scripts\activate</code></p>
+<p>Step 3: Install Flask: <code>pip install Flask</code></p>
+<h2 id="create-the-flask-application">Create the Flask Application</h2>
+<p>To illustrate how to make a web page dynamic, we'll create a Flask application that will collect teacher and course names from users and display these names. The application stores this information in a JSON file.</p>
+<p>Step 1: Create a file named <code>teachers.py</code>.</p>
+<p>Step 2: Import necessary components and create an instance of the Flask class:</p>
+<pre><code class="language-python">import json
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+</code></pre>
+<ul>
+<li>
+<p>We’ve imported Python's built-in <code>json</code> module, which is used for working with JSON (JavaScript Object Notation) data. JSON is a common data format used for transmitting data, especially in web applications. We’re also importing the Flask class that’s used to create a Flask application.</p>
+</li>
+<li>
+<p><code>render_template</code> is a Flask function for working with HTML templates. Flask allows you to use templates (usually <code>.html</code> files) to dynamically generate HTML by passing data to them.</p>
+</li>
+<li>
+<p><code>request</code> is used to access incoming HTTP request data in Flask. When a user submits data through a form, the <code>request</code> object provides access to the data.</p>
+</li>
+<li>
+<p><code>app = Flask(__name__)</code>: Initializes the Flask application.</p>
+</li>
+</ul>
+<p>Step 3: Define the load and save functions for teacher names and their corresponding courses:</p>
+<pre><code class="language-python"># Function to load teacher and course names from a JSON file
+def load_teachers():
+    try:
+        with open('teachers.json', 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print(&quot;Currently, there's no record for teachers and their courses.&quot;)
+        return {}
+
+# Function to save teacher and course names to a JSON file
+def save_teachers(teachers_dict):
+    with open('teachers.json', 'w') as file:
+        json.dump(teachers_dict, file)
+
+# Load initial data
+teachers_dict = load_teachers()
+</code></pre>
+<ul>
+<li>
+<p>When the Flask application is launched, <code>load_teachers()</code> is called to read the data from the <code>teachers.json</code> file and store it in the <code>teachers_dict</code> dictionary.</p>
+</li>
+<li>
+<p>When a user submits the form (POST request), the <code>save_teachers(teachers_dict)</code> function is called to save the updated data to the <code>teachers.json</code> file. If the JSON file doesn't exist, the function creates it.</p>
+</li>
+</ul>
+<p>Step 4: Define the route and handle the HTML form submission:</p>
+<pre><code class="language-python">@app.route('/', methods=['GET', 'POST'])
+def home():
+    if request.method == 'POST':
+        teacher = request.form['teacher']
+        course = request.form['course']
+        teachers_dict[teacher] = course
+        save_teachers(teachers_dict)
+    return render_template('home.html', teachers=teachers_dict)
+</code></pre>
+<ul>
+<li>
+<p><code>'/'</code> in <code>@app.route('/', methods=['GET', 'POST'])</code> indicates the root URL. For example, when the user accesses the page using <code>http://127.0.0.1:5000</code>, the root URL is accessed. When the user accesses the root URL, the <code>home</code> function is triggered. <code>methods=['GET', 'POST']</code> specifies that the route can handle both GET and POST HTTP methods.</p>
+</li>
+<li>
+<p>When a user submits the form (POST request), the <code>save_teachers(teachers_dict)</code> function is called to save the updated data to the <code>teachers.json</code> file.</p>
+</li>
+<li>
+<p>The <code>render_template('home.html', teachers=teachers_dict)</code> function displays the HTML page that the user sees when accessing the root URL (GET request). The function populates the <code>teachers</code> variable in the HTML template with the dictionary data from <code>teachers_dict</code>. <code>teachers_dict</code> contains the data that the <code>load_teachers()</code> function retrieves from the JSON file.</p>
+</li>
+</ul>
+<p>Step 5: Run the application when the <code>teachers.py</code> file is run:</p>
+<pre><code class="language-python">if __name__ == '__main__':
+    app.run(debug=True)
+</code></pre>
+<p>This will run the application locally in the Flask development server with the debug mode on. When you run a Python file directly, the special built-in variable <code>__name__</code> is set to <code>'__main__'</code>.</p>
+<h2 id="create-the-html-file">Create the HTML File</h2>
+<p>Create a <code>templates</code> directory. Then, create<code>home.html</code> inside this directory with this code:</p>
+<pre><code class="language-xml">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Teachers and Courses&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Teachers and Their Corresponding Courses&lt;/h1&gt;
+    &lt;ul&gt;
+    {% for teacher, course in teachers.items() %}
+        &lt;li&gt;{{ teacher }}: {{ course }}&lt;/li&gt;
+    {% endfor %}
+    &lt;/ul&gt;
+
+    &lt;h2&gt;Add a New Teacher and Course&lt;/h2&gt;
+    &lt;form method=&quot;POST&quot;&gt;
+        &lt;label for=&quot;teacher&quot;&gt;Teacher:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; id=&quot;teacher&quot; name=&quot;teacher&quot; required&gt;
+        &lt;br&gt;&lt;br&gt;
+        &lt;label for=&quot;course&quot;&gt;Course:&lt;/label&gt;
+        &lt;input type=&quot;text&quot; id=&quot;course&quot; name=&quot;course&quot; required&gt;
+        &lt;br&gt;&lt;br&gt;
+        &lt;button type=&quot;submit&quot;&gt;Add&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<ul>
+<li>
+<p>The for loop iterates over the <code>teachers</code> dictionary and displays each teacher and their corresponding course in a list format.</p>
+</li>
+<li>
+<p><code>teachers.items()</code> returns all key-value pairs (teacher-course pairs) from the <code>teachers</code> dictionary.</p>
+</li>
+<li>
+<p><code>teacher</code> represents the key (teacher's name), and <code>course</code> represents the value (course name).</p>
+</li>
+</ul>
+<h2 id="run-the-application">Run the Application</h2>
+<p>Take a look at the directory structure in the Explorer pane. This is what the files look like, with the HTML file located in the <code>templates</code> folder:</p>
+<p><img alt="Directory structure in the Explorer pane" src="webapp1.png" /></p>
+<p>Now, let's run the application.</p>
+<p>Step 1: Click <strong>Run</strong> for <code>teachers.py</code>.</p>
+<p>Step 2: Your application should now be running on <code>http://127.0.0.1:5000/</code>.</p>
+<p>In the terminal, press <code>Ctrl</code> and click the link to open the web page:</p>
+<p><img alt="Link in the Visual Studio Code terminal" src="webapp2.png" /></p>
+<p>Step 3: Enter the teacher's name and the corresponding course. Once you fill in both fields, click <strong>Add</strong>.</p>
+<p><img alt="Web page with fields and add button" src="webapp3.png" /></p>
+<p>Step 4: Keep adding more records. As you add them, the records will appear on the page:</p>
+<p><img alt="Web page with the entered records" src="webapp4.png" /></p>
+<p>Even if you stop the server and run the Python file again to start the server, the previously added records will still be displayed on the page. This is because we're storing them in the JSON file that was created and updated by the <code>save_teachers</code> function. You can check the JSON file by clicking on it in the Explorer pane:</p>
+<p><img alt="Stored records in JSON file" src="webapp5.png" /></p>
+<p>Congratulations! You've learned how to build a dynamic web page using Flask. We created a Python file that allows users to add teacher and course names, stored the added information in a JSON file for data persistence, and displayed the added information on the page.</p>
 
 
 
