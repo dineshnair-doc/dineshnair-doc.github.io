@@ -2,6 +2,9 @@
 
 This document explains how to use Postman to connect to the Spotify API. We'll walk through the process of obtaining authorization and making authenticated API requests to Spotify.
 
+---
+## 401 Unauthorized: Why Authorization is Essential
+
 Spotify implements the OAuth 2.0 authorization framework. With OAuth 2.0, an application first retrieves an access token for the API, then uses that token to authenticate subsequent requests.
 
 ![Application gets the access token and then use that token for requests](diagram_accesstoken.png)

@@ -14,7 +14,7 @@
         <link rel="prev" href="../doc5/Postman_Intro.html">
       
       
-        <link rel="next" href="../doc22/techdoc2.html">
+        <link rel="next" href="../doc7/Sending_Requests.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -513,6 +513,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#401-unauthorized-why-authorization-is-essential" class="md-nav__link">
+    <span class="md-ellipsis">
+      401 Unauthorized: Why Authorization is Essential
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#create-an-app-on-spotify" class="md-nav__link">
     <span class="md-ellipsis">
       Create an App on Spotify
@@ -543,6 +552,28 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc7/Sending_Requests.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sending Requests
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -656,6 +687,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#401-unauthorized-why-authorization-is-essential" class="md-nav__link">
+    <span class="md-ellipsis">
+      401 Unauthorized: Why Authorization is Essential
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#create-an-app-on-spotify" class="md-nav__link">
     <span class="md-ellipsis">
       Create an App on Spotify
@@ -700,6 +740,8 @@
 
 <h1 id="postman-obtaining-authorization">Postman: Obtaining Authorization</h1>
 <p>This document explains how to use Postman to connect to the Spotify API. We'll walk through the process of obtaining authorization and making authenticated API requests to Spotify.</p>
+<hr />
+<h2 id="401-unauthorized-why-authorization-is-essential">401 Unauthorized: Why Authorization is Essential</h2>
 <p>Spotify implements the OAuth 2.0 authorization framework. With OAuth 2.0, an application first retrieves an access token for the API, then uses that token to authenticate subsequent requests.</p>
 <p><img alt="Application gets the access token and then use that token for requests" src="diagram_accesstoken.png" /></p>
 <p>Let's see what happens when we send a request to Spotify without setting up authorization.</p>

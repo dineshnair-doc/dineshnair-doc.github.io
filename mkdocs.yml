@@ -18,6 +18,7 @@ nav:
       - Postman:
           - Introduction to Postman: mytechdocs/doc5/Postman_Intro.md
           - Obtaining Authorization: mytechdocs/doc6/Postman_Obtain_Auth.md
+          - Sending Requests: mytechdocs/doc7/Sending_Requests.md
       - Flask:
           - Introduction to Flask: mytechdocs/doc22/techdoc2.md
 site_dir: docs
