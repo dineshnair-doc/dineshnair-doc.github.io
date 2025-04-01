@@ -1,4 +1,4 @@
 Welcome!  
 
 - [View My Resume](resumedineshnair.md)
-- [View My Writings](https://techdineshwrites.hashnode.dev/)
+- [View My Writings](my_writings.md)

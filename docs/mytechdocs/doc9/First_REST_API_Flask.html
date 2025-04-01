@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc8/Flask_Intro.html">
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc9/First_REST_API_Flask.html">
       
       
-        <link rel="prev" href="../doc7/Sending_Requests.html">
+        <link rel="prev" href="../doc8/Flask_Intro.html">
       
-      
-        <link rel="next" href="../doc9/First_REST_API_Flask.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Getting Started with Flask - Dinesh's Writings and Resume</title>
+        <title>First REST API Using Flask - Dinesh's Writings and Resume</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started-with-flask-building-a-dynamic-web-page" class="md-skip">
+        <a href="#building-your-first-rest-api-using-flask" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Getting Started with Flask
+              First REST API Using Flask
             
           </span>
         </div>
@@ -550,6 +548,28 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc8/Flask_Intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started with Flask
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -566,7 +586,7 @@
           
   
   <span class="md-ellipsis">
-    Getting Started with Flask
+    First REST API Using Flask
     
   </span>
   
@@ -574,11 +594,11 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="Flask_Intro.html" class="md-nav__link md-nav__link--active">
+      <a href="First_REST_API_Flask.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Getting Started with Flask
+    First REST API Using Flask
     
   </span>
   
@@ -619,15 +639,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-html-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create the HTML File
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#run-the-application" class="md-nav__link">
     <span class="md-ellipsis">
       Run the Application
@@ -636,32 +647,70 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#interacting-with-the-flask-employees-api" class="md-nav__link">
+    <span class="md-ellipsis">
+      Interacting with the Flask Employees API
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Interacting with the Flask Employees API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sending-a-post-request-to-add-a-new-employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending a POST Request to Add a New Employee
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-a-get-request-to-retrieve-all-employees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending a GET Request to Retrieve All Employees
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-a-get-request-to-retrieve-a-specific-employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending a GET Request to Retrieve a Specific Employee
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-a-put-request-to-update-an-employees-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending a PUT Request to Update an Employee's Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-a-delete-request-to-remove-an-employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending a DELETE Request to Remove an Employee
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../doc9/First_REST_API_Flask.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    First REST API Using Flask
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -727,20 +776,71 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-the-html-file" class="md-nav__link">
+  <a href="#run-the-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Create the HTML File
+      Run the Application
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-the-application" class="md-nav__link">
+  <a href="#interacting-with-the-flask-employees-api" class="md-nav__link">
     <span class="md-ellipsis">
-      Run the Application
+      Interacting with the Flask Employees API
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Interacting with the Flask Employees API">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sending-a-post-request-to-add-a-new-employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending a POST Request to Add a New Employee
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-a-get-request-to-retrieve-all-employees" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending a GET Request to Retrieve All Employees
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-a-get-request-to-retrieve-a-specific-employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending a GET Request to Retrieve a Specific Employee
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-a-put-request-to-update-an-employees-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending a PUT Request to Update an Employee's Information
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sending-a-delete-request-to-remove-an-employee" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sending a DELETE Request to Remove an Employee
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -760,8 +860,23 @@
 
 
 
-<h1 id="getting-started-with-flask-building-a-dynamic-web-page">Getting Started with Flask: Building a Dynamic Web Page</h1>
-<p>Flask is a Python framework to create web applications. In this guide, we will explore how to build a dynamic web page using Flask.</p>
+<h1 id="building-your-first-rest-api-using-flask">Building Your First REST API Using Flask</h1>
+<p>Flask is a Python web framework. In this walkthrough, we'll create a basic REST API to manage a list of employees. We'll cover the following operations:</p>
+<ul>
+<li>
+<p><strong>GET</strong> requests to retrieve employee information</p>
+</li>
+<li>
+<p><strong>POST</strong> requests to add new employees</p>
+</li>
+<li>
+<p><strong>PUT</strong> requests to update existing employee details</p>
+</li>
+<li>
+<p><strong>DELETE</strong> requests to remove employees from the list</p>
+</li>
+</ul>
+<p>By following along, we'll discover the fundamental techniques for creating an API using Flask, including handling HTTP requests and responses, and creating endpoints.</p>
 <hr />
 <h2 id="set-up-the-flask-environment-in-windows">Set Up the Flask Environment in Windows</h2>
 <p>Step 1: Open the terminal in Visual Studio Code and type: <code>python -m venv venv</code></p>
@@ -769,135 +884,152 @@
 <p>Step 2: Activate the virtual environment: <code>venv\Scripts\activate</code></p>
 <p>Step 3: Install Flask: <code>pip install Flask</code></p>
 <h2 id="create-the-flask-application">Create the Flask Application</h2>
-<p>To illustrate how to make a web page dynamic, we'll create a Flask application that will collect teacher and course names from users and display these names. The application stores this information in a JSON file.</p>
-<p>Step 1: Create a file named <code>teachers.py</code>.</p>
+<p>Step 1: Create a file named <code>employees.py</code>.</p>
 <p>Step 2: Import necessary components and create an instance of the Flask class:</p>
-<pre><code class="language-python">import json
-from flask import Flask, render_template, request
+<pre><code class="language-python">from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 </code></pre>
 <ul>
 <li>
-<p>We’ve imported Python's built-in <code>json</code> module, which is used for working with JSON (JavaScript Object Notation) data. JSON is a common data format used for transmitting data, especially in web applications. We’re also importing the Flask class that’s used to create a Flask application.</p>
+<p><strong>Flask</strong> is the main class for creating a Flask application.</p>
 </li>
 <li>
-<p><code>render_template</code> is a Flask function for working with HTML templates. Flask allows you to use templates (usually <code>.html</code> files) to dynamically generate HTML by passing data to them.</p>
+<p><strong>request</strong> object handles incoming HTTP requests, such as GET and POST.</p>
 </li>
 <li>
-<p><code>request</code> is used to access incoming HTTP request data in Flask. When a user submits data through a form, the <code>request</code> object provides access to the data.</p>
-</li>
-<li>
-<p><code>app = Flask(__name__)</code>: Initializes the Flask application.</p>
+<p><strong>jsonify</strong> function converts Python dictionaries into JSON responses. We will see later that each employee item will be stored as a dictionary and sent as a JSON response.</p>
 </li>
 </ul>
-<p>Step 3: Define the load and save functions for teacher names and their corresponding courses:</p>
-<pre><code class="language-python"># Function to load teacher and course names from a JSON file
-def load_teachers():
-    try:
-        with open('teachers.json', 'r') as file:
-            return json.load(file)
-    except FileNotFoundError:
-        print(&quot;Currently, there's no record for teachers and their courses.&quot;)
-        return {}
-
-# Function to save teacher and course names to a JSON file
-def save_teachers(teachers_dict):
-    with open('teachers.json', 'w') as file:
-        json.dump(teachers_dict, file)
-
-# Load initial data
-teachers_dict = load_teachers()
+<p><code>app = Flask(__name__)</code> creates an instance of the Flask class, initializing a new Flask application.</p>
+<p>Step 3: Define the data structure for storing employee data:</p>
+<pre><code class="language-python">employees = [
+    {'id': 1, 'name': 'James Smith', 'role': 'Business Analyst'},
+    {'id': 2, 'name': 'Ananya Patel', 'role': 'Operations Manager'}
+]
 </code></pre>
-<ul>
-<li>
-<p>When the Flask application is launched, <code>load_teachers()</code> is called to read the data from the <code>teachers.json</code> file and store it in the <code>teachers_dict</code> dictionary.</p>
-</li>
-<li>
-<p>When a user submits the form (POST request), the <code>save_teachers(teachers_dict)</code> function is called to save the updated data to the <code>teachers.json</code> file. If the JSON file doesn't exist, the function creates it.</p>
-</li>
-</ul>
-<p>Step 4: Define the route and handle the HTML form submission:</p>
-<pre><code class="language-python">@app.route('/', methods=['GET', 'POST'])
-def home():
-    if request.method == 'POST':
-        teacher = request.form['teacher']
-        course = request.form['course']
-        teachers_dict[teacher] = course
-        save_teachers(teachers_dict)
-    return render_template('home.html', teachers=teachers_dict)
+<p>Here, we define a list of dictionaries, where each dictionary represents an employee.</p>
+<p>Step 4: Create an API endpoint for adding a new employee (POST):</p>
+<pre><code class="language-python">@app.route('/employees', methods=['POST'])
+def add_employee():
+    new_employee = request.json
+    employees.append(new_employee)
+    return jsonify(new_employee), 201
 </code></pre>
-<ul>
-<li>
-<p><code>'/'</code> in <code>@app.route('/', methods=['GET', 'POST'])</code> indicates the root URL. For example, when the user accesses the page using <code>http://127.0.0.1:5000</code>, the root URL is accessed. When the user accesses the root URL, the <code>home</code> function is triggered. <code>methods=['GET', 'POST']</code> specifies that the route can handle both GET and POST HTTP methods.</p>
-</li>
-<li>
-<p>When a user submits the form (POST request), the <code>save_teachers(teachers_dict)</code> function is called to save the updated data to the <code>teachers.json</code> file.</p>
-</li>
-<li>
-<p>The <code>render_template('home.html', teachers=teachers_dict)</code> function displays the HTML page that the user sees when accessing the root URL (GET request). The function populates the <code>teachers</code> variable in the HTML template with the dictionary data from <code>teachers_dict</code>. <code>teachers_dict</code> contains the data that the <code>load_teachers()</code> function retrieves from the JSON file.</p>
-</li>
-</ul>
-<p>Step 5: Run the application when the <code>teachers.py</code> file is run:</p>
+<p>The <code>def add_employee()</code> function is run when a POST request is made to the <code>/employees</code> endpoint. The function takes the new employee data from the request, adds it to the <code>employees</code> list, and returns the new employee data in JSON format with a <code>201 Created</code> status code.</p>
+<p>Step 5: Create an API endpoint for getting all employee (GET):</p>
+<pre><code class="language-python">@app.route('/employees', methods=['GET'])
+def get_employees():
+    return jsonify(employees)
+</code></pre>
+<p>The function returns the list of all employees.</p>
+<p>Step 6: Create an API endpoint for getting a specific employee (GET):</p>
+<pre><code class="language-python">@app.route('/employees/&lt;int:id&gt;', methods=['GET'])
+def get_employee(id):
+    for employee in employees:
+        if employee['id'] == id:
+            return jsonify(employee)
+    return jsonify({'error': 'Employee not found'}), 404
+</code></pre>
+<p>The <code>&lt;int:id&gt;</code> part of the route means that the endpoint expects an integer as part of the URL. The integer represents the employee's ID.</p>
+<p>Flask extracts the <code>id</code> value from the URL and passes it to the <code>get_employee(id)</code> function. For example, if the endpoint is <a href="http://localhost:5000/employees/2"><code>http://localhost:5000/employees/2</code></a>, Flask assigns <code>2</code> to the variable <code>id</code> and calls the function with <code>id</code> set to <code>2</code>.</p>
+<p>The function uses a <em>for</em> loop to check if an <code>id</code> matches the <code>id</code> provided through the URL. If a match is found, the function returns the employee's data in JSON format using <code>jsonify(employee)</code>. If no matching employee is found, the function returns a JSON response with an error message and a <code>404 Not Found</code> status.</p>
+<p>Step 7: Create an API endpoint for updating a specific employee (PUT):</p>
+<pre><code class="language-python">@app.route('/employees/&lt;int:id&gt;', methods=['PUT'])
+def update_employee(id):
+    updated_data = request.json
+    for employee in employees:
+        if employee['id'] == id:
+            employee.update(updated_data)
+            return jsonify(employee)
+    return jsonify({'error': 'Employee not found'}), 404
+</code></pre>
+<p>Flask extracts the <code>id</code> value from the URL and passes it to the <code>update_employee(id)</code> function.</p>
+<p>The function uses a for loop to check if an <code>id</code> matches the <code>id</code> provided through the URL. If a match is found, the function updates the employee data and returns the updated data in JSON format using <code>jsonify(employee)</code>. If no matching employee is found, the function returns a JSON response with an error message and a <code>404 Not Found</code> status.</p>
+<p>Step 8: Create an API endpoint for deleting a specific employee (DELETE):</p>
+<pre><code class="language-python">@app.route('/employees/&lt;int:id&gt;', methods=['DELETE'])
+def delete_employee(id):
+    employee = next((emp for emp in employees if emp['id'] == id), None)
+    if employee:
+        employees.remove(employee)
+        return '', 204
+    else:
+        return jsonify({'error': 'Employee not found'}), 404
+</code></pre>
+<p>Flask extracts the <code>id</code> value from the URL and passes it to the <code>delete_employee(id)</code> function.</p>
+<p>This line <code>employee = next((emp for emp in employees if emp['id'] == id), None)</code> uses a generator expression to find the first employee in the <code>employees</code> list whose <code>id</code> matches the given <code>id</code>. If a matching employee is found, it's assigned to the <code>employee</code> variable. If no match is found, <code>employee</code> is set to <code>None</code>.</p>
+<p>If a matching employee is found, it's removed from the <code>employees</code> list using the <code>remove</code> method.</p>
+<p>The function then returns an empty response body with a <code>204 No Content</code> status code, indicating that the deletion was successful.</p>
+<p>Step 9: Run the application when the <code>employees.py</code> file is run:</p>
 <pre><code class="language-python">if __name__ == '__main__':
     app.run(debug=True)
 </code></pre>
-<p>This will run the application locally in the Flask development server with the debug mode on. When you run a Python file directly, the special built-in variable <code>__name__</code> is set to <code>'__main__'</code>.</p>
-<h2 id="create-the-html-file">Create the HTML File</h2>
-<p>Create a <code>templates</code> directory. Then, create<code>home.html</code> inside this directory with this code:</p>
-<pre><code class="language-xml">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;title&gt;Teachers and Courses&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    &lt;h1&gt;Teachers and Their Corresponding Courses&lt;/h1&gt;
-    &lt;ul&gt;
-    {% for teacher, course in teachers.items() %}
-        &lt;li&gt;{{ teacher }}: {{ course }}&lt;/li&gt;
-    {% endfor %}
-    &lt;/ul&gt;
-
-    &lt;h2&gt;Add a New Teacher and Course&lt;/h2&gt;
-    &lt;form method=&quot;POST&quot;&gt;
-        &lt;label for=&quot;teacher&quot;&gt;Teacher:&lt;/label&gt;
-        &lt;input type=&quot;text&quot; id=&quot;teacher&quot; name=&quot;teacher&quot; required&gt;
-        &lt;br&gt;&lt;br&gt;
-        &lt;label for=&quot;course&quot;&gt;Course:&lt;/label&gt;
-        &lt;input type=&quot;text&quot; id=&quot;course&quot; name=&quot;course&quot; required&gt;
-        &lt;br&gt;&lt;br&gt;
-        &lt;button type=&quot;submit&quot;&gt;Add&lt;/button&gt;
-    &lt;/form&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<ul>
-<li>
-<p>The for loop iterates over the <code>teachers</code> dictionary and displays each teacher and their corresponding course in a list format.</p>
-</li>
-<li>
-<p><code>teachers.items()</code> returns all key-value pairs (teacher-course pairs) from the <code>teachers</code> dictionary.</p>
-</li>
-<li>
-<p><code>teacher</code> represents the key (teacher's name), and <code>course</code> represents the value (course name).</p>
-</li>
-</ul>
+<p>This ensures that the Flask application runs with debugging enabled when you execute <code>employees.py</code> directly.</p>
 <h2 id="run-the-application">Run the Application</h2>
-<p>Take a look at the directory structure in the Explorer pane. This is what the files look like, with the HTML file located in the <code>templates</code> folder:</p>
-<p><img alt="Directory structure in the Explorer pane" src="webapp1.png" /></p>
-<p>Now, let's run the application.</p>
-<p>Step 1: Click <strong>Run</strong> for <code>teachers.py</code>.</p>
-<p>Step 2: Your application should now be running on <code>http://127.0.0.1:5000/</code>.</p>
-<p>In the terminal, press <code>Ctrl</code> and click the link to open the web page:</p>
-<p><img alt="Link in the Visual Studio Code terminal" src="webapp2.png" /></p>
-<p>Step 3: Enter the teacher's name and the corresponding course. Once you fill in both fields, click <strong>Add</strong>.</p>
-<p><img alt="Web page with fields and add button" src="webapp3.png" /></p>
-<p>Step 4: Keep adding more records. As you add them, the records will appear on the page:</p>
-<p><img alt="Web page with the entered records" src="webapp4.png" /></p>
-<p>Even if you stop the server and run the Python file again to start the server, the previously added records will still be displayed on the page. This is because we're storing them in the JSON file that was created and updated by the <code>save_teachers</code> function. You can check the JSON file by clicking on it in the Explorer pane:</p>
-<p><img alt="Stored records in JSON file" src="webapp5.png" /></p>
-<p>Congratulations! You've learned how to build a dynamic web page using Flask. We created a Python file that allows users to add teacher and course names, stored the added information in a JSON file for data persistence, and displayed the added information on the page.</p>
+<p>On Visual Studio Code, click <strong>Run</strong> for <code>employees.py</code> to run the Flask application. This will launch the server locally on 127.0.0.1, usually port 5000:</p>
+<p><img alt="Server running locally" src="serverupforempl.png" /></p>
+<h2 id="interacting-with-the-flask-employees-api">Interacting with the Flask Employees API</h2>
+<p>Once the server is up and running, you can use tools like Postman, cURL, or any other API testing tool to test the endpoints for adding, retrieving, updating, and deleting employee data.</p>
+<p>We'll use Postman for this walkthrough.</p>
+<h3 id="sending-a-post-request-to-add-a-new-employee">Sending a POST Request to Add a New Employee</h3>
+<p>Step 1: In Postman, create a new request. You can group all your requests in a collection. For example, I created a collection specific for the Employees API called <em>Dinesh Testing Employees API</em>:</p>
+<p><img alt="Postman collection for Employees API" src="postmanempl1.png" /></p>
+<p>Step 2: Select the POST method from the dropdown menu.</p>
+<p>Step 3: Enter the endpoint URL. For example, <code>http://127.0.0.1:5000/employees</code>.</p>
+<p>Step 4: Click on the <strong>Body</strong> tab.</p>
+<p>Step 5: Select the <strong>raw</strong> radio button.</p>
+<p>Step 6: Choose <strong>JSON</strong> from the dropdown menu next to the <strong>raw</strong> radio button.</p>
+<p>Step 7: Enter the request body in JSON format. Here's an example of what the body might look like:</p>
+<pre><code class="language-json">{
+    &quot;id&quot;: 3,
+    &quot;name&quot;: &quot;David Williams&quot;,
+    &quot;role&quot;: &quot;Business Analyst&quot;
+}
+</code></pre>
+<p>Step 8: Click <strong>Send</strong> to submit the request:</p>
+<p><img alt="Send button next to endpoint for add employee" src="postmanempl2.png" /></p>
+<p>You will get a response in the response pane, showing the newly added employee's data and a <code>201 Created</code> status code:</p>
+<p><img alt="201 Created status code as response" src="postmanempl3.png" /></p>
+<h3 id="sending-a-get-request-to-retrieve-all-employees">Sending a GET Request to Retrieve All Employees</h3>
+<p>Step 1: Create a new request.</p>
+<p>Step 2: Select the GET method from the dropdown menu.</p>
+<p>Step 3: Enter the endpoint URL. For example, <code>http://127.0.0.1:5000/employees</code>.</p>
+<p>Step 4: Click <strong>Send</strong>.</p>
+<p>You will get a response showing the data of all the employees and a <code>200 OK</code> status code:</p>
+<p><img alt="200 OK status code and data of all employees as response" src="postmanempl4.png" /></p>
+<h3 id="sending-a-get-request-to-retrieve-a-specific-employee">Sending a GET Request to Retrieve a Specific Employee</h3>
+<p>Step 1: Create a new request.</p>
+<p>Step 2: Select the GET method from the dropdown menu.</p>
+<p>Step 3: Enter the endpoint URL. In this case, we'll enter an endpoint URL with a specific employee ID. For example, <code>http://127.0.0.1:5000/employees/2</code>.</p>
+<p>Step 4: Click <strong>Send</strong>.</p>
+<p>You will get a response showing the data of the employee who has an ID of 2 and a <code>200 OK</code> status code:</p>
+<p><img alt="200 OK status code and data of the employee" src="postmanempl5.png" /></p>
+<h3 id="sending-a-put-request-to-update-an-employees-information">Sending a PUT Request to Update an Employee's Information</h3>
+<p>Step 1: Create a new request.</p>
+<p>Step 2: Select the PUT method from the dropdown menu.</p>
+<p>Step 3: Enter the endpoint URL. In this case, we'll enter an endpoint URL with a specific employee ID. For example, <code>http://127.0.0.1:5000/employees/3</code>.</p>
+<p>Step 4: Click on the <strong>Body</strong> tab.</p>
+<p>Step 5: Select the <strong>raw</strong> radio button.</p>
+<p>Step 6: Choose <strong>JSON</strong> from the dropdown menu next to the <strong>raw</strong> radio button.</p>
+<p>Step 7: Enter the request body in JSON format. Here's an example of what the body might look like:</p>
+<pre><code class="language-json">{
+  &quot;id&quot;: 3,
+  &quot;name&quot;: &quot;David Williams&quot;,
+  &quot;role&quot;: &quot;Senior Business Analyst&quot;
+}
+</code></pre>
+<p>We're changing the role from <em>Business Analyst</em> to <em>Senior Business Analyst.</em></p>
+<p>Step 8: Click <strong>Send</strong>.</p>
+<p>You should receive a response with the updated employee data and a <code>200 OK</code> response code:</p>
+<p><img alt="Updated employee data and a 200 OK response" src="postmanempl6.png" /></p>
+<h3 id="sending-a-delete-request-to-remove-an-employee">Sending a DELETE Request to Remove an Employee</h3>
+<p>Step 1: Create a new request.</p>
+<p>Step 2: Select the DELETE method from the dropdown menu.</p>
+<p>Step 3: Enter the endpoint URL. In this case, we'll enter an endpoint URL with a specific employee ID. For example, <code>http://127.0.0.1:5000/employees/3</code>.</p>
+<p>Step 4: Click <strong>Send</strong>.</p>
+<p>Upon deletion, you should receive a response with no content and a <code>204 No Content</code> status code:</p>
+<p><img alt="Response with no content upon deletion" src="postmanempl7.png" /></p>
+<p>Congratulations! By following this walkthrough, we successfully created an Employees API using Flask. By handling GET, POST, PUT, and DELETE requests, this API adheres to the principles of RESTful web services.</p>
 
 
 
