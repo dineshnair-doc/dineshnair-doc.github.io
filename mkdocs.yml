@@ -12,7 +12,7 @@ copyright: Copyright &copy; 2024-2025 Dinesh Nair
 nav:
   - Home: index.md
   - Resume: resumedineshnair.md
-  - My Writings:
+  - Tech Writing Portfolio:
       - Python:
           - Getting Started with Python: mytechdocs/doc1/Getting_Started_with_Python.md
           - Casting in Python: mytechdocs/doc2/Casting_in_Python.md

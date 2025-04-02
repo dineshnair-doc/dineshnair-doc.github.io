@@ -1,4 +1,4 @@
-# My Writings
+# Technical Writing Portfolio
 
 <div class="grid cards" markdown>
   - **Python**
