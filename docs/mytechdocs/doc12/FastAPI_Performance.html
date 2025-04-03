@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc7/Sending_Requests.html">
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc12/FastAPI_Performance.html">
       
       
-        <link rel="prev" href="../doc6/Postman_Obtain_Auth.html">
+        <link rel="prev" href="../doc11/Flask_Restx_Swagger.html">
       
-      
-        <link rel="next" href="../doc8/Flask_Intro.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Sending Requests - Dinesh's Writings and Resume</title>
+        <title>FastAPI Performance - Dinesh's Writings and Resume</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#postman-sending-requests" class="md-skip">
+        <a href="#fastapi-performance-comparing-sync-and-async-endpoints" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Sending Requests
+              FastAPI Performance
             
           </span>
         </div>
@@ -402,19 +400,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -429,7 +425,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Postman
@@ -484,31 +480,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Sending Requests
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="Sending_Requests.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../doc7/Sending_Requests.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -518,53 +493,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#send-a-post-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      Send a POST Request
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#send-a-put-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      Send a PUT Request
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#send-a-delete-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      Send a DELETE Request
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -714,17 +642,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
         
           
           <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
@@ -739,7 +669,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             FastAPI
@@ -750,10 +680,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../doc12/FastAPI_Performance.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    FastAPI Performance
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="FastAPI_Performance.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -763,6 +714,86 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#set-up-the-fastapi-environment-in-windows" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Up the FastAPI Environment in Windows
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-synchronous-endpoint-with-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Synchronous Endpoint with FastAPI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-an-asynchronous-endpoint-with-fastapi" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create an Asynchronous Endpoint with FastAPI
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-the-synchronous-and-asynchronous-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the Synchronous and Asynchronous Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test the Synchronous and Asynchronous Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-the-synchronous-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing the Synchronous Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-the-asynchronous-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing the Asynchronous Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -810,29 +841,62 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#send-a-post-request" class="md-nav__link">
+  <a href="#set-up-the-fastapi-environment-in-windows" class="md-nav__link">
     <span class="md-ellipsis">
-      Send a POST Request
+      Set Up the FastAPI Environment in Windows
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#send-a-put-request" class="md-nav__link">
+  <a href="#create-a-synchronous-endpoint-with-fastapi" class="md-nav__link">
     <span class="md-ellipsis">
-      Send a PUT Request
+      Create a Synchronous Endpoint with FastAPI
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#send-a-delete-request" class="md-nav__link">
+  <a href="#create-an-asynchronous-endpoint-with-fastapi" class="md-nav__link">
     <span class="md-ellipsis">
-      Send a DELETE Request
+      Create an Asynchronous Endpoint with FastAPI
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#test-the-synchronous-and-asynchronous-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      Test the Synchronous and Asynchronous Endpoints
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Test the Synchronous and Asynchronous Endpoints">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#testing-the-synchronous-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing the Synchronous Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-the-asynchronous-endpoint" class="md-nav__link">
+    <span class="md-ellipsis">
+      Testing the Asynchronous Endpoint
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -852,72 +916,232 @@
 
 
 
-<h1 id="postman-sending-requests">Postman: Sending Requests</h1>
-<p>In the <a href="../doc6/Postman_Obtain_Auth.html">previous document</a>, we used Postman to complete the authorization process to gain access to the Spotify service and used the GET method to retrieve data. In this document, we'll extend our knowledge by examining the POST, PUT, and DELETE methods to interact with the Spotify service more comprehensively.</p>
+<h1 id="fastapi-performance-comparing-sync-and-async-endpoints">FastAPI Performance: Comparing Sync and Async Endpoints</h1>
+<p>FastAPI is a Python-based framework designed to build APIs. We'll install FastAPI and explore the benefits of asynchronous programming, which allows tasks to be handled concurrently, leading to more efficient response times. By creating both synchronous and asynchronous endpoints, we'll test and compare their performance.</p>
 <hr />
-<h2 id="send-a-post-request">Send a POST Request</h2>
-<p>Let's start with sending a POST request to create a playlist.</p>
-<p>Step 1: In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Create Playlist topic and copy the endpoint URL.</p>
-<p>Step 2: Open the Postman desktop app. We already created the <em>Spotify</em> collection in the previous tutorial. In the Spotify collection, add a new request.</p>
-<p><img alt="Add a new request option" src="post1.png" /></p>
-<p>Step 3: Give a name to the request. For instance, <em>Create my playlist</em>.</p>
-<p>Step 4: Select POST and paste the endpoint URL you copied from the Spotify doc. You’ll need to replace <code>{user_id}</code> with the username from Spotify.</p>
-<p><img alt="Endpoint URL that mentions user ID" src="post2.png" /></p>
-<p>Step 5: Go to your account in the <a href="https://open.spotify.com/">Spotify Web Player</a>, then click <strong>Edit profile</strong>, and copy the username value.</p>
-<p><img alt="username value" src="post3.png" /></p>
-<p>Step 6: In Postman, replace the <code>{user_id}</code> value of the URL with the copied username. We can use a variable to store that username. Select the pasted username, then click <strong>Set as variable</strong>, and choose <strong>Set as new variable</strong>. Name the variable, for example, <em>username,</em> and set the scope of the variable as <em>Collection.</em> Finally, click <strong>Set variable</strong>. The endpoint will now have the variable in place of <code>{user_id}</code>.</p>
-<p><img alt="Username variable in the URL" src="post4.png" /></p>
-<p>Step 7: The body of the POST request should contain the data to be created. In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Create Playlist topic, copy the request body. Note that in request body <em>false</em> means the playlist will be private.</p>
-<p><img alt="Doc request body" src="post5.png" /></p>
-<p>Step 8: In Postman, click <strong>Body</strong>, and then <strong>raw</strong>. Paste the request body. I edited the copied request body to give a name to the playlist and a description.</p>
-<p><img alt="Post request body with playlist name" src="post6.png" /></p>
-<p>Step 9: Click <strong>Send</strong>.</p>
-<p>When you click send, you'll see <em>Status 201</em> appear. This status means the playlist was successfully created. Go ahead and copy the playlist ID from the response - we'll need it for the next step.</p>
-<p><img alt="Playlist ID in the response" src="post8.png" /></p>
-<p>You should now see your new playlist in your Spotify account as well.</p>
-<p><img alt="New playlist in Spotify account UI" src="post9.png" /></p>
-<p>Next, we'll add a couple of songs to the playlist.</p>
-<p>Step 1: In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Add Items to Playlist topic and copy the endpoint URL.</p>
-<p>Step 2: In the <em>Spotify</em> collection of Postman, add a new request. Name the request. For instance, <em>Add songs to my playlist</em>.</p>
-<p>Step 3: Select POST and paste the endpoint URL you copied from the Spotify doc.</p>
-<p>Step 4: In the endpoint URL, replace <code>{playlist_id}</code> with the ID of the playlist you just created. We'll use a variable like we used earlier for the username. Select the pasted playlist ID, then click <strong>Set as variable</strong>, followed by <strong>Set as new variable</strong>. Give the variable a name, for example, <em>playlistID</em>. Set the scope of the variable as <em>Collection</em> and click <strong>Set variable</strong>. The endpoint will now have the variable in place of <code>{playlist_id}</code>.</p>
-<p><img alt="playlistID in the endpoint URL" src="post10.png" /></p>
-<p>Step 5: In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Add Items to Playlist topic and copy the example of the request body.</p>
-<p><img alt="Doc example of request body" src="post11.png" /></p>
-<p>Step 6: In Postman, click <strong>Body</strong> and then <strong>raw</strong>. Then, paste the request body. I edited the copied request body to add two songs of my choice to the playlist.</p>
-<p><img alt="Request body with the two items to be added" src="post12.png" /></p>
-<p>You can find the track ID within the URL of the song on Spotify. For example, if the URL is <code>https://open.spotify.com/track/2va1fTXhffQcr6TfPGf16y</code>, the track ID would be <code>2va1fTXhffQcr6TfPGf16y</code>.</p>
-<p>Step 7: Click <strong>Send</strong>.</p>
-<p>When you click send, you’ll see <em>Status 201</em> appear. This status means the songs were successfully added to the playlist. Spotify returns the snapshot ID of the playlist's current state.</p>
-<p><img alt="Snapshot ID of the playlist" src="post13.png" /></p>
-<p>You should now see the songs added to your playlist in your Spotify account as well.</p>
-<h2 id="send-a-put-request">Send a PUT Request</h2>
-<p>We'll now use the PUT request to replace the two existing songs in the playlist with two new songs.</p>
-<p>Step 1: In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Update Playlist Items topic and copy the endpoint URL.</p>
-<p>Step 2: In the <em>Spotify</em> collection of Postman, add a new request. Give a name to the request. For instance, <em>Update my playlist</em>.</p>
-<p>Step 3: Select PUT and paste the endpoint URL you copied from the Spotify doc.</p>
-<p>Step 4: In the endpoint URL, replace <code>{playlist_id}</code> with the actual ID of the playlist. As we did previously for adding songs, we'll use the variable <code>playlistID</code>.</p>
-<p>Step 5: Copy the example of the URI array request body from the Spotify doc.</p>
-<p>Step 6: In Postman, click <strong>Body</strong>, and then <strong>raw</strong>. Then, paste the request body. I edited the request body to add the two songs of my choice to the playlist.</p>
-<p><img alt="Request body of the update endpoint" src="put1.png" /></p>
-<p>Step 7: Click <strong>Send</strong>.</p>
-<p>When you click send, you'll see <em>Status 200</em> appear. This status means the songs were successfully added to the playlist, replacing the earlier songs. Spotify returns the snapshot ID of the playlist's current state.</p>
-<p><img alt="Status 200 with snapshot ID of the playlist" src="put2.png" /></p>
-<p>You should now see your updated playlist in your Spotify account as well.</p>
-<h2 id="send-a-delete-request">Send a DELETE Request</h2>
-<p>Let's now use the DELETE request to delete a song from the playlist.</p>
-<p>Step 1: In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Remove Playlist Items topic and copy the endpoint URL.</p>
-<p>Step 2: In the <em>Spotify</em> collection of Postman, add a new request. Give a name to the request. For instance, <em>Delete from my playlist</em>.</p>
-<p>Step 3: Select DELETE and paste the endpoint URL you copied from the Spotify doc.</p>
-<p>Step 4: In the endpoint URL, replace <code>{playlist_id}</code> with the actual ID of the playlist. As we did previously for adding songs, we'll use the variable <code>playlistID</code>.</p>
-<p>Step 5: Copy the example of the URI array request body from the Spotify doc.</p>
-<p>Step 6: In Postman, click <strong>Body</strong>, and then <strong>raw</strong>. Then, paste the request body. I edited the request body to specify the one song that will be deleted from the playlist.</p>
-<p><img alt="Request body of delete endpoint" src="del1.png" /></p>
-<p>Step 7: Click <strong>Send</strong>.</p>
-<p>When you click send, you'll see <em>Status 200</em> appear. This status means the song was successfully deleted from the playlist. Spotify returns the snapshot ID of the playlist's current state.</p>
-<p><img alt="Status 200 that indicates successful deletion" src="del2.png" /></p>
-<p>You should now see your updated playlist in your Spotify account as well. The playlist will no longer include the song we just deleted.</p>
-<p>In this document, we covered how to use POST, PUT, and DELETE requests with the Spotify API and Postman. We added songs to a playlist with a POST request, updated the playlist with new songs using a PUT request, and deleted a song with a DELETE request. By referencing the Spotify documentation, we learned how to construct our request bodies and understood the endpoints necessary for these operations. This hands-on experience should give you a good understanding of working with APIs.</p>
+<h2 id="set-up-the-fastapi-environment-in-windows">Set Up the FastAPI Environment in Windows</h2>
+<p>Step 1: Open the terminal in Visual Studio Code and type: <code>python -m venv venv</code></p>
+<p>This creates a virtual environment. Using virtual environments ensures that the dependencies for one project don't interfere with the dependencies of other projects.</p>
+<p>Step 2: Activate the virtual environment: <code>venv\Scripts\activate</code></p>
+<p>Step 3: Once the virtual environment is activated, you can install FastAPI using this command: <code>pip install fastapi</code></p>
+<p><img alt="pip install Fastapi on the terminal" src="install1.png" /></p>
+<p>Step 4: FastAPI requires an ASGI server to run, such as Uvicorn. You can install it with: <code>pip install "uvicorn[standard]"</code></p>
+<p><img alt="pip install Uvicorn on the terminal" src="install2.png" /></p>
+<p>ASGI (Asynchronous Server Gateway Interface) is a specification for building and running web applications in Python that support asynchronous programming. It allows for handling multiple tasks concurrently, making it ideal for high-performance applications.</p>
+<p>Step 5: To install the necessary libraries for our synchronous and asynchronous scripts, use the following command: <code>pip install requests httpx</code></p>
+<p><img alt="pip install requests httpx libraries" src="install3.png" /></p>
+<h2 id="create-a-synchronous-endpoint-with-fastapi">Create a Synchronous Endpoint with FastAPI</h2>
+<p>Step 1: Create a file named <code>sync.py</code>.</p>
+<p>Step 2: Import the necessary components:</p>
+<pre><code class="language-python">from fastapi import FastAPI
+import requests
+import time
+</code></pre>
+<ul>
+<li>
+<p><code>FastAPI</code>: Framework for creating the API.</p>
+</li>
+<li>
+<p><code>requests</code>: For making HTTP requests.</p>
+</li>
+<li>
+<p><code>time</code>: For measuring the duration of processing.</p>
+</li>
+</ul>
+<p>Step 3: Create the FastAPI instance:</p>
+<pre><code class="language-python">app = FastAPI()
+</code></pre>
+<p>Step 4: Define the <code>fetch_data</code> function:</p>
+<pre><code class="language-python">def fetch_data(url):
+    response = requests.get(url)
+    return response.json()
+</code></pre>
+<p><code>fetch_data(url)</code>: Makes an HTTP GET request to the specified URL and returns the JSON response.</p>
+<p>Step 5: Create the synchronous endpoint:</p>
+<pre><code class="language-python">@app.get(&quot;/multiple-sync/&quot;)
+def multiple_sync():
+    urls = [
+        &quot;https://jsonplaceholder.typicode.com/todos/1&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/2&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/3&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/4&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/5&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/6&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/7&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/8&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/9&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/10&quot;
+    ]
+
+    start_time = time.time()
+    results = [fetch_data(url) for url in urls]
+    end_time = time.time()
+
+    return {&quot;results&quot;: results, &quot;duration&quot;: end_time - start_time}
+</code></pre>
+<p>The code:</p>
+<ul>
+<li>
+<p>Defines an endpoint <code>/multiple-sync/</code>.</p>
+</li>
+<li>
+<p>Defines a list of URLs to fetch data from.</p>
+</li>
+<li>
+<p>Captures the start time.</p>
+</li>
+<li>
+<p>Loops through the URLs and fetches data synchronously using the <code>fetch_data</code> function.</p>
+</li>
+<li>
+<p>Captures the end time.</p>
+</li>
+<li>
+<p>Returns the fetched results and the total duration taken to process the requests.</p>
+</li>
+</ul>
+<p>The <code>fetch_data</code> function performs the requests one at a time in a blocking manner. This means each request is completed before the next one starts. The line <code>results = [fetch_data(url) for url in urls]</code> calls <code>fetch_data</code> in each iteration of the loop, gets the JSON response for each request, stores it in <code>results</code>, then moves to the next request.</p>
+<p><strong>JSONPlaceholder</strong> is a free online REST API that you can use for testing and prototyping. These URLs in our code are endpoints provided by JSONPlaceholder, each returning a JSON object representing a to-do item.</p>
+<p>Step 6: Run the FastAPI application:</p>
+<pre><code class="language-python">if __name__ == &quot;__main__&quot;:
+    import uvicorn
+    uvicorn.run(app, host=&quot;127.0.0.1&quot;, port=8000)
+</code></pre>
+<h2 id="create-an-asynchronous-endpoint-with-fastapi">Create an Asynchronous Endpoint with FastAPI</h2>
+<p>Step 1: Create a file named <code>async.py</code>.</p>
+<p>Step 2: Import the necessary components:</p>
+<pre><code class="language-python">from fastapi import FastAPI
+import httpx
+import asyncio
+import time
+</code></pre>
+<ul>
+<li>
+<p><strong>FastAPI</strong>: Framework for creating the API.</p>
+</li>
+<li>
+<p><strong>httpx</strong>: For making asynchronous HTTP requests.</p>
+</li>
+<li>
+<p><strong>asyncio</strong>: For writing concurrent code using <code>async</code> and <code>await</code> keywords.</p>
+</li>
+<li>
+<p><strong>time</strong>: For measuring the duration of processing.</p>
+</li>
+</ul>
+<p>Step 3: Create the FastAPI instance:</p>
+<pre><code class="language-python">app = FastAPI()
+</code></pre>
+<p>Step 4: Define the asynchronous data fetching function:</p>
+<pre><code class="language-python">async def fetch_data(client, url):
+    response = await client.get(url)
+    return response.json()
+</code></pre>
+<p>This function takes an HTTP client and a URL, sends a GET request to the URL, and returns the JSON response.</p>
+<ul>
+<li>
+<p><code>async def</code> keyword defines an asynchronous function.</p>
+</li>
+<li>
+<p><code>client.get(url)</code> sends an HTTP GET request to the specified URL. The <code>await</code> keyword allows the function to pause and wait for the response while other tasks continue to execute concurrently. For example, while one <code>fetch_data</code> call is waiting for a response from an HTTP GET request, another <code>fetch_data</code> call can send another HTTP request.</p>
+</li>
+</ul>
+<p>Step 5: Create the asynchronous endpoint:</p>
+<pre><code class="language-python">@app.get(&quot;/multiple-async/&quot;)
+async def multiple_async():
+    urls = [
+        &quot;https://jsonplaceholder.typicode.com/todos/1&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/2&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/3&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/4&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/5&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/6&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/7&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/8&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/9&quot;,
+        &quot;https://jsonplaceholder.typicode.com/todos/10&quot;
+    ]
+
+    start_time = time.time()
+    async with httpx.AsyncClient() as client:
+        tasks = [fetch_data(client, url) for url in urls]
+        results = await asyncio.gather(*tasks)
+    end_time = time.time()
+
+    return {&quot;results&quot;: results, &quot;duration&quot;: end_time - start_time}
+</code></pre>
+<ul>
+<li>
+<p>Defines a GET endpoint <code>/multiple-async/</code> that will handle asynchronous requests.</p>
+</li>
+<li>
+<p>Creates a list of URLs to fetch data from.</p>
+</li>
+<li>
+<p>Records the start time to measure the duration of processing.</p>
+</li>
+<li>
+<p>Creates an asynchronous HTTP client using <code>httpx.AsyncClient</code>.</p>
+</li>
+<li>
+<p>Creates a list of tasks to fetch data from each URL concurrently.</p>
+</li>
+<li>
+<p><code>await asyncio.gather(*tasks)</code> runs all the tasks concurrently and waits for them to complete, collecting the results.</p>
+</li>
+<li>
+<p>Records the end time and calculates the duration of the operation.</p>
+</li>
+<li>
+<p>Returns the fetched results and the duration.</p>
+</li>
+</ul>
+<p>In summary:</p>
+<ol>
+<li>
+<p><code>async def fetch_data(client, url)</code><strong>:</strong> Makes the individual requests asynchronous, allowing them to run concurrently.</p>
+</li>
+<li>
+<p><code>async with httpx.AsyncClient() as client</code><strong>:</strong> Ensures that all client requests are handled asynchronously.</p>
+</li>
+<li>
+<p><code>tasks = [fetch_data(client, url) for url in urls]</code> <strong>and</strong> <code>await asyncio.gather(*tasks)</code><strong>:</strong> Runs all tasks concurrently, collecting all the responses once they're all completed.</p>
+</li>
+</ol>
+<p>These components work together to make your application handle multiple HTTP requests concurrently.</p>
+<p>Step 6: Run the FastAPI application:</p>
+<pre><code class="language-python">if __name__ == &quot;__main__&quot;:
+    import uvicorn
+    uvicorn.run(app, host=&quot;127.0.0.1&quot;, port=8001)
+</code></pre>
+<h2 id="test-the-synchronous-and-asynchronous-endpoints">Test the Synchronous and Asynchronous Endpoints</h2>
+<p>We'll test the endpoints using Postman.</p>
+<h3 id="testing-the-synchronous-endpoint">Testing the Synchronous Endpoint</h3>
+<p>Step 1: Run <code>sync.py</code>.</p>
+<p><img alt="Synchronous application running" src="sync1.png" /></p>
+<p>Step 2: In Postman, add a new GET request. I created a collection <em>Dinesh_FastAPI_Syn_Asyn</em> and added a new request. Enter the URL for your synchronous endpoint: <code>http://127.0.0.1:8000/multiple-sync/</code></p>
+<p><img alt="Synchronous endpoint in Postman" src="sync3.png" /></p>
+<p>Step 3: Click <strong>Send</strong>. You can find the response time in milliseconds (ms) just below the response body:</p>
+<p><img alt="Response time in milliseconds from synchronous endpoint" src="sync4.png" /></p>
+<p>For me, the total time taken was <strong>5.53 seconds</strong>.</p>
+<h3 id="testing-the-asynchronous-endpoint">Testing the Asynchronous Endpoint</h3>
+<p>Step 1: Run <code>async.py</code>.</p>
+<p><img alt="Asynchronous application running" src="async1.png" /></p>
+<p>Step 2: In Postman, add a new GET request. Enter the URL for your asynchronous endpoint: <code>http://127.0.0.1:8001/multiple-async/</code></p>
+<p><img alt="Asynchronous endpoint in Postman" src="async2.png" /></p>
+<p>Step 3: Click <strong>Send</strong>. You can find the response time in milliseconds (ms) just below the response body:</p>
+<p><img alt="Response time in milliseconds from asynchronous endpoint" src="async3.png" /></p>
+<p>For me, the total time taken was <strong>1.71 seconds</strong>.</p>
+<p>Comparing both:</p>
+<ul>
+<li>
+<p><strong>Synchronous Duration:</strong> 5.53 seconds</p>
+</li>
+<li>
+<p><strong>Asynchronous Duration:</strong> 1.71 seconds</p>
+</li>
+</ul>
+<p>As you can see, the asynchronous endpoint (/multiple-async/) took noticeably less time to complete compared to the synchronous endpoint (/multiple-sync/). This demonstrates the performance benefits of asynchronous programming in FastAPI.</p>
 
 
 
