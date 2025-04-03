@@ -149,7 +149,7 @@ On Visual Studio Code, click **Run** for `employees.py` to run the Flask applica
 
 ![Server running locally](serverupforempl.png)
 
-## Interacting with the Flask Employees API
+## Interact with the Flask Employees API
 
 Once the server is up and running, you can use tools like Postman, cURL, or any other API testing tool to test the endpoints for adding, retrieving, updating, and deleting employee data.
 
