@@ -2,7 +2,7 @@
 
 Using the [Getting Started with Flask](../doc8/Flask_Intro.md){target="_blank"} document, we created a Flask application that collects teacher and course names from users and displays these names. The application stored this information in a JSON file.
 
-This document guides you on how to use PostgreSQL instead of a JSON file for storing and retrieving the teacher and course names. PostgreSQL is a database system that uses SQL. You can download and install PostgreSQL from the official website: [https://www.postgresql.org/download/windows/](https://www.postgresql.org/download/windows/)
+This document guides you on how to use PostgreSQL instead of a JSON file for storing and retrieving the teacher and course names. PostgreSQL is a database system that uses SQL. You can download and install PostgreSQL from the official website: [https://www.postgresql.org/download/windows/](https://www.postgresql.org/download/windows/){target="_blank"}
 
 Use the same Flask environment in Windows that we used in the [Getting Started with Flask](../doc8/Flask_Intro.md){target="_blank"} document.
 

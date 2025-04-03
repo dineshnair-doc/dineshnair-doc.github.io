@@ -1,7 +1,7 @@
 # Resume of Dinesh Nair
 
-**LinkedIn:** [https://www.linkedin.com/in/dineshn1/](https://www.linkedin.com/in/dineshn1/)  
-**Email:** [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com)
+- **LinkedIn:** [https://www.linkedin.com/in/dineshn1/](https://www.linkedin.com/in/dineshn1/){target="_blank"}
+- **Email:** [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com)
 
 ---
 
@@ -9,9 +9,9 @@
 
 Technical writer skilled in enhancing product value through clear and impactful documentation.
 
-My approach is hands-on, actively working with the product, as demonstrated by the screenshots and practical examples featured in my [recent work](my_writings.md). I translate complex tech into clear narratives that empower users and drive sales. I'm here to make your product's brilliance shine by visually demonstrating its use with practical examples, rather than simply describing it.
+My approach is hands-on, actively working with the product, as demonstrated by the screenshots and practical examples featured in my [recent work](my_writings.md){target="_blank"}. I translate complex tech into clear narratives that empower users and drive sales. I'm here to make your product's brilliance shine by visually demonstrating its use with practical examples, rather than simply describing it.
 
-Looking for a remote work opportunity in India or an in-office role in Hyderabad, India. Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/dineshn1/) or reach out to me through email at [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com).
+Looking for a remote work opportunity in India or an in-office role in Hyderabad, India. Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/dineshn1/){target="_blank"} or reach out to me through email at [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com).
 
 ---
 
@@ -25,12 +25,12 @@ Technical Documentation, REST API Documentation, Training Content, UX Writing, D
 ### **Technical Content Development and Knowledge Sharing**
 *Oct 2024 - Present*
 
-Authored a diverse range of technical content on [this website](my_writings.md), covering topics such as Python, Postman, Flask, and REST API.
+Authored a diverse range of technical content on [this website](my_writings.md){target="_blank"}, covering topics such as Python, Postman, Flask, and REST API.
 
 My explanatory articles on Medium about DITA (Darwin Information Typing Architecture) and Diataxis:
 
-- [Using DITA for Technical Documentation](https://medium.com/@techdineshwrites/using-dita-for-technical-documentation-c5c846260a73)
-- [My Take on the Diátaxis Approach](https://medium.com/@techdineshwrites/my-take-on-the-diataxis-approach-9400e65e2f5b)
+- [Using DITA for Technical Documentation](https://medium.com/@techdineshwrites/using-dita-for-technical-documentation-c5c846260a73){target="_blank"}
+- [My Take on the Diátaxis Approach](https://medium.com/@techdineshwrites/my-take-on-the-diataxis-approach-9400e65e2f5b){target="_blank"}
 
 ### **Principal Technical Writer**  
 *Oracle, India   | Jan 2004 - Oct 2024*
