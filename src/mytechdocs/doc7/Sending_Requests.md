@@ -1,5 +1,5 @@
 # Postman: Sending Requests
-In the [previous document](../doc6/Postman_Obtain_Auth.md), we used Postman to complete the authorization process to gain access to the Spotify service and used the GET method to retrieve data. In this document, we'll extend our knowledge by examining the POST, PUT, and DELETE methods to interact with the Spotify service more comprehensively.
+In the [previous document](../doc6/Postman_Obtain_Auth.md){target="_blank"}, we used Postman to complete the authorization process to gain access to the Spotify service and used the GET method to retrieve data. In this document, we'll extend our knowledge by examining the POST, PUT, and DELETE methods to interact with the Spotify service more comprehensively.
 
 ---
 

@@ -20,4 +20,5 @@
  
   - **FastAPI**
     - [FastAPI: Sync vs Async Performance](mytechdocs/doc12/FastAPI_Performance.md)
+    - [FastAPI with PostgreSQL and Swagger Doc](mytechdocs/doc13/FastAPI_Postgres_Swagger.md)
 </div>

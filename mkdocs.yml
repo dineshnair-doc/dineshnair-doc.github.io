@@ -29,8 +29,6 @@ nav:
           - Flask-RESTx API with Swagger Doc: mytechdocs/doc11/Flask_Restx_Swagger.md
       - FastAPI:
           - FastAPI Performance: mytechdocs/doc12/FastAPI_Performance.md
+          - FastAPI with PostgreSQL and Swagger Doc: mytechdocs/doc13/FastAPI_Postgres_Swagger.md
 site_dir: docs
 docs_dir: src
-extra:
-  html_header: |
-    <meta name="google-site-verification" content="DLdzoDXuAYivyJBTvGZNhZP_UU_7hQ1end3TguatY1o" />

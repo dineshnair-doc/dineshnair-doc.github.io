@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc12/FastAPI_Performance.html">
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc13/FastAPI_Postgres_Swagger.html">
       
       
-        <link rel="prev" href="../doc11/Flask_Restx_Swagger.html">
+        <link rel="prev" href="../doc12/FastAPI_Performance.html">
       
-      
-        <link rel="next" href="../doc13/FastAPI_Postgres_Swagger.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>FastAPI Performance - Dinesh's Writings and Resume</title>
+        <title>FastAPI with PostgreSQL and Swagger Doc - Dinesh's Writings and Resume</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#fastapi-performance-comparing-sync-and-async-endpoints" class="md-skip">
+        <a href="#building-a-rest-api-with-fastapi-postgresql-and-swagger-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              FastAPI Performance
+              FastAPI with PostgreSQL and Swagger Doc
             
           </span>
         </div>
@@ -682,6 +680,28 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc12/FastAPI_Performance.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FastAPI Performance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -698,7 +718,7 @@
           
   
   <span class="md-ellipsis">
-    FastAPI Performance
+    FastAPI with PostgreSQL and Swagger Doc
     
   </span>
   
@@ -706,11 +726,11 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="FastAPI_Performance.html" class="md-nav__link md-nav__link--active">
+      <a href="FastAPI_Postgres_Swagger.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    FastAPI Performance
+    FastAPI with PostgreSQL and Swagger Doc
     
   </span>
   
@@ -742,46 +762,73 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-synchronous-endpoint-with-fastapi" class="md-nav__link">
+  <a href="#prepare-your-postgresql-database-and-environment" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a Synchronous Endpoint with FastAPI
+      Prepare Your PostgreSQL Database and Environment
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-an-asynchronous-endpoint-with-fastapi" class="md-nav__link">
+  <a href="#create-the-fastapi-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Create an Asynchronous Endpoint with FastAPI
+      Create the FastAPI Application
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-the-synchronous-and-asynchronous-endpoints" class="md-nav__link">
+  <a href="#run-the-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Test the Synchronous and Asynchronous Endpoints
+      Run the Application
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Test the Synchronous and Asynchronous Endpoints">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-the-swagger-documentation-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use the Swagger Documentation Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Use the Swagger Documentation Interface">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#testing-the-synchronous-endpoint" class="md-nav__link">
+  <a href="#creating-an-employee-review" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing the Synchronous Endpoint
+      Creating an Employee Review
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#testing-the-asynchronous-endpoint" class="md-nav__link">
+  <a href="#retrieving-employee-reviews" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing the Asynchronous Endpoint
+      Retrieving Employee Reviews
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-an-employee-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating an Employee Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-an-employee-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting an Employee Review
     </span>
   </a>
   
@@ -796,28 +843,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../doc13/FastAPI_Postgres_Swagger.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    FastAPI with PostgreSQL and Swagger Doc
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -874,46 +899,73 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-synchronous-endpoint-with-fastapi" class="md-nav__link">
+  <a href="#prepare-your-postgresql-database-and-environment" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a Synchronous Endpoint with FastAPI
+      Prepare Your PostgreSQL Database and Environment
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-an-asynchronous-endpoint-with-fastapi" class="md-nav__link">
+  <a href="#create-the-fastapi-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Create an Asynchronous Endpoint with FastAPI
+      Create the FastAPI Application
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#test-the-synchronous-and-asynchronous-endpoints" class="md-nav__link">
+  <a href="#run-the-application" class="md-nav__link">
     <span class="md-ellipsis">
-      Test the Synchronous and Asynchronous Endpoints
+      Run the Application
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Test the Synchronous and Asynchronous Endpoints">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-the-swagger-documentation-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Use the Swagger Documentation Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Use the Swagger Documentation Interface">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#testing-the-synchronous-endpoint" class="md-nav__link">
+  <a href="#creating-an-employee-review" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing the Synchronous Endpoint
+      Creating an Employee Review
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#testing-the-asynchronous-endpoint" class="md-nav__link">
+  <a href="#retrieving-employee-reviews" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing the Asynchronous Endpoint
+      Retrieving Employee Reviews
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#updating-an-employee-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Updating an Employee Review
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deleting-an-employee-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deleting an Employee Review
     </span>
   </a>
   
@@ -940,232 +992,308 @@
 
 
 
-<h1 id="fastapi-performance-comparing-sync-and-async-endpoints">FastAPI Performance: Comparing Sync and Async Endpoints</h1>
-<p>FastAPI is a Python-based framework designed to build APIs. We'll install FastAPI and explore the benefits of asynchronous programming, which allows tasks to be handled concurrently, leading to more efficient response times. By creating both synchronous and asynchronous endpoints, we'll test and compare their performance.</p>
+<h1 id="building-a-rest-api-with-fastapi-postgresql-and-swagger-documentation">Building a REST API with FastAPI, PostgreSQL, and Swagger Documentation</h1>
+<p>Using FastAPI, we'll create a basic API for employee performance review. This API will be tied to a PostgreSQL database, ensuring the data storage and retrieval. Later on, we'll use Swagger documentation for interacting with the API. FastAPI automatically generates the Swagger documentation for our API, making it easy to test and visualize our endpoints.</p>
+<p>The API will cover the following operations:</p>
+<ul>
+<li>
+<p><strong>GET</strong> requests to retrieve employee reviews</p>
+</li>
+<li>
+<p><strong>POST</strong> requests to add new employee reviews</p>
+</li>
+<li>
+<p><strong>PUT</strong> requests to update existing employee reviews</p>
+</li>
+<li>
+<p><strong>DELETE</strong> requests to remove employee reviews</p>
+</li>
+</ul>
 <hr />
 <h2 id="set-up-the-fastapi-environment-in-windows">Set Up the FastAPI Environment in Windows</h2>
-<p>Step 1: Open the terminal in Visual Studio Code and type: <code>python -m venv venv</code></p>
-<p>This creates a virtual environment. Using virtual environments ensures that the dependencies for one project don't interfere with the dependencies of other projects.</p>
-<p>Step 2: Activate the virtual environment: <code>venv\Scripts\activate</code></p>
-<p>Step 3: Once the virtual environment is activated, you can install FastAPI using this command: <code>pip install fastapi</code></p>
-<p><img alt="pip install Fastapi on the terminal" src="install1.png" /></p>
-<p>Step 4: FastAPI requires an ASGI server to run, such as Uvicorn. You can install it with: <code>pip install "uvicorn[standard]"</code></p>
-<p><img alt="pip install Uvicorn on the terminal" src="install2.png" /></p>
-<p>ASGI (Asynchronous Server Gateway Interface) is a specification for building and running web applications in Python that support asynchronous programming. It allows for handling multiple tasks concurrently, making it ideal for high-performance applications.</p>
-<p>Step 5: To install the necessary libraries for our synchronous and asynchronous scripts, use the following command: <code>pip install requests httpx</code></p>
-<p><img alt="pip install requests httpx libraries" src="install3.png" /></p>
-<h2 id="create-a-synchronous-endpoint-with-fastapi">Create a Synchronous Endpoint with FastAPI</h2>
-<p>Step 1: Create a file named <code>sync.py</code>.</p>
-<p>Step 2: Import the necessary components:</p>
-<pre><code class="language-python">from fastapi import FastAPI
-import requests
-import time
+<p>Step 1: Install and activate the virtual environment using the Visual Studio Code (VS Code) terminal, then install FastAPI and Uvicorn.</p>
+<p>For more information on this step, see the <em>Set Up the FastAPI Environment in Windows</em> section in <a href="../doc12/FastAPI_Performance.html" target="_blank">FastAPI Performance: Comparing Sync and Async Endpoints</a>.</p>
+<p>Step 2: Install <code>asyncpg</code> using the command: <code>pip install asyncpg</code></p>
+<p><img alt="pip install asyncpg" src="fadb1.png" /></p>
+<p><code>asyncpg</code> lets you interact with the PostgreSQL database asynchronously, which can enhance your application's performance and responsiveness.</p>
+<h2 id="prepare-your-postgresql-database-and-environment">Prepare Your PostgreSQL Database and Environment</h2>
+<p>Step 1: Connect to the PostgreSQL database and create a table for storing the employee reviews. To create the table, you can use this command in the SQL shell:</p>
+<pre><code class="language-pgsql">CREATE TABLE employee_reviews (
+    employee_id INT,
+    employee_name VARCHAR(255) NOT NULL,
+    evaluation_period VARCHAR(255) NOT NULL,
+    performance_rating INT,
+    feedback_comments TEXT, 
+    goals_objectives TEXT,
+    reviewer_id INT,
+    reviewer_name VARCHAR(255),
+    PRIMARY KEY (employee_id, evaluation_period)
+);
+</code></pre>
+<p>The combination of <code>employee_id</code> and <code>evaluation_period</code> must be unique, which is why they are set as the primary key. This setup allows employees to have multiple reviews for different periods.</p>
+<p>When you create the table, you should see the response as <em>CREATE TABLE</em>:</p>
+<p><img alt="Response as CREATE TABLE" src="fadb2.png" /></p>
+<p>Step 2: There are several ways to store sensitive information. For now, we'll store the database username and password in an environment variable and access it from the application.</p>
+<p>Type this command in the VS Code terminal (PowerShell):</p>
+<pre><code class="language-powershell">$env:DATABASE_URL=&quot;postgresql://myusername:mypassword@localhost/dbname
+</code></pre>
+<p>You'll need to replace <code>myusername</code> and <code>mypassword</code> with your actual database username and password. Also, replace <code>dbname</code> with the name of the database you want to connect to.</p>
+<p>Note that the environment variable set using this command is temporary and will be lost when you close the terminal or deactivate the virtual environment.</p>
+<h2 id="create-the-fastapi-application">Create the FastAPI Application</h2>
+<p>Step 1: Create a file named <code>employee_reviews.py</code>.</p>
+<p>Step 2: Import necessary components:</p>
+<pre><code class="language-python">import os
+import asyncpg
+from fastapi import FastAPI, HTTPException
+from pydantic import BaseModel
 </code></pre>
 <ul>
 <li>
-<p><code>FastAPI</code>: Framework for creating the API.</p>
+<p><code>import os</code>: To read the environment variable for the database.</p>
 </li>
 <li>
-<p><code>requests</code>: For making HTTP requests.</p>
+<p><code>import asyncpg</code>: To interact with the PostgreSQL database.</p>
 </li>
 <li>
-<p><code>time</code>: For measuring the duration of processing.</p>
+<p><code>from fastapi import FastAPI, HTTPException</code>: To import the main components of FastAPI. FastAPI is the web framework, and HTTPException is used to handle errors.</p>
+</li>
+<li>
+<p><code>from pydantic import BaseModel</code>: To define the structure of the data we expect in requests and responses.</p>
 </li>
 </ul>
-<p>Step 3: Create the FastAPI instance:</p>
-<pre><code class="language-python">app = FastAPI()
+<p>Step 3: Initialize the FastAPI application:</p>
+<pre><code class="language-python">app = FastAPI(
+    title=&quot;Dinesh's Employee Review API&quot;,
+    version=&quot;1.0&quot;,
+    description=&quot;Create, update, or delete a performance review. You can also see all reviews.&quot;,
+    contact={
+        &quot;name&quot;: &quot;Dinesh Nair&quot;,
+        &quot;email&quot;: &quot;dineshn@example.com&quot;
+    }
+)
 </code></pre>
-<p>Step 4: Define the <code>fetch_data</code> function:</p>
-<pre><code class="language-python">def fetch_data(url):
-    response = requests.get(url)
-    return response.json()
+<p>This initializes the FastAPI application with metadata such as title, version, description, and contact information.</p>
+<div data-node-type="callout">
+<div data-node-type="callout-emoji">💡</div>
+<div data-node-type="callout-text">The auto-generated Swagger documentation will display this metadata to the users.</div>
+</div>
+
+<p>Step 4: Define a data model for employee reviews using Pydantic. Each field has a type, ensuring data validation.</p>
+<pre><code class="language-python">class EmployeeReview(BaseModel):
+    employee_id: int
+    employee_name: str
+    evaluation_period: str
+    performance_rating: int
+    feedback_comments: str
+    goals_objectives: str
+    reviewer_id: int
+    reviewer_name: str
 </code></pre>
-<p><code>fetch_data(url)</code>: Makes an HTTP GET request to the specified URL and returns the JSON response.</p>
-<p>Step 5: Create the synchronous endpoint:</p>
-<pre><code class="language-python">@app.get(&quot;/multiple-sync/&quot;)
-def multiple_sync():
-    urls = [
-        &quot;https://jsonplaceholder.typicode.com/todos/1&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/2&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/3&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/4&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/5&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/6&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/7&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/8&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/9&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/10&quot;
-    ]
+<p>Pydantic uses Python types to validate and parse data. By defining the <code>EmployeeReview</code> class as a subclass of <code>BaseModel</code>, we create a data model where each field has a specific type. This means that <code>EmployeeReview</code> inherits all the features and capabilities of <code>BaseModel</code>, which ensures that the data is validated according to the types specified for each field.</p>
+<p>For example:</p>
+<ul>
+<li>
+<p><code>employee_id</code> and <code>reviewer_id</code> must be integers.</p>
+</li>
+<li>
+<p><code>employee_name</code>, <code>evaluation_period</code>, <code>feedback_comments</code>, <code>goals_objectives</code>, and <code>reviewer_name</code> must be strings.</p>
+</li>
+<li>
+<p><code>performance_rating</code> must be an integer.</p>
+</li>
+</ul>
+<p>This ensures that only valid data is accepted, which helps maintain data integrity and prevents errors.</p>
+<p>Step 5: Create the database connection:</p>
+<pre><code class="language-python">DATABASE_URL = os.getenv(&quot;DATABASE_URL&quot;)
 
-    start_time = time.time()
-    results = [fetch_data(url) for url in urls]
-    end_time = time.time()
+async def connect_to_db():
+    return await asyncpg.connect(DATABASE_URL)
+</code></pre>
+<ul>
+<li>
+<p><code>os.getenv</code>: Reads the <code>DATABASE_URL</code> environment variable to get the database connection string.</p>
+</li>
+<li>
+<p><code>connect_to_db()</code>: Asynchronous function that connects to the PostgreSQL database using <code>asyncpg</code>.</p>
+</li>
+</ul>
+<p>Step 6: Define the endpoint for creating an employee review:</p>
+<pre><code class="language-python">@app.post(&quot;/employee_reviews/&quot;, response_model=EmployeeReview)
+async def create_employee_review(employee_review: EmployeeReview):
+    &quot;&quot;&quot;
+    Create a performance review for an employee.
 
-    return {&quot;results&quot;: results, &quot;duration&quot;: end_time - start_time}
+    Fields:
+    - **Employee ID**: Unique identifier of the employee whose performance is being reviewed.
+    - **Employee Name**: Name of the employee.
+    - **Evaluation Period**: Evaluation period for the review, such as &quot;Q1 2023&quot; or &quot;January - June 2024&quot;.
+    - **Performance Rating**: Performance rating of the employee. For example, on a scale of 1 to 5, you can enter 4.
+    - **Feedback Comments**: Feedback comments for the employee.
+    - **Goals Objectives**: Goals and objectives for the employee, such as increasing sales by 10%.
+    - **Reviewer ID**: Unique identifier of the reviewer.
+    - **Reviewer Name**: Name of the reviewer.
+    &quot;&quot;&quot;
+    conn = await connect_to_db()
+    try:
+        await conn.execute('''
+            INSERT INTO employee_reviews(employee_id, employee_name, evaluation_period, performance_rating, feedback_comments, goals_objectives, reviewer_id, reviewer_name)
+            VALUES($1, $2, $3, $4, $5, $6, $7, $8)
+        ''', employee_review.employee_id, employee_review.employee_name, employee_review.evaluation_period, employee_review.performance_rating, employee_review.feedback_comments, employee_review.goals_objectives, employee_review.reviewer_id, employee_review.reviewer_name)
+    finally:
+        await conn.close()
+    return employee_review
+</code></pre>
+<p>The code connects to the database, runs an SQL <code>INSERT</code> command, and returns the created review.</p>
+<ul>
+<li>
+<p><code>app.post("/employee_reviews/")</code>: Defines a POST endpoint for creating a new employee review.</p>
+</li>
+<li>
+<p><code>response_model=EmployeeReview</code>: Specifies the response model.</p>
+</li>
+<li>
+<p><strong>Docstring</strong>: Provides a detailed description of the endpoint and the fields expected in the request body. FastAPI uses the docstring in the auto-generated Swagger documentation.</p>
+</li>
+</ul>
+<p>Step 7: Define the endpoint for retrieving employee reviews:</p>
+<pre><code class="language-python">@app.get(&quot;/employee_reviews/&quot;, response_model=list[EmployeeReview])
+async def read_employee_reviews():
+    # (Docstring describing what the endpoint does and its fields)
+    conn = await connect_to_db()
+    try:
+        rows = await conn.fetch('SELECT * FROM employee_reviews')
+    finally:
+        await conn.close()
+
+    if rows:
+        return [EmployeeReview(**row) for row in rows]
+    raise HTTPException(status_code=404, detail=&quot;No reviews found&quot;)
 </code></pre>
 <p>The code:</p>
 <ul>
 <li>
-<p>Defines an endpoint <code>/multiple-sync/</code>.</p>
+<p>Retrieves all records from the <code>employee_reviews</code> table.</p>
 </li>
 <li>
-<p>Defines a list of URLs to fetch data from.</p>
-</li>
-<li>
-<p>Captures the start time.</p>
-</li>
-<li>
-<p>Loops through the URLs and fetches data synchronously using the <code>fetch_data</code> function.</p>
-</li>
-<li>
-<p>Captures the end time.</p>
-</li>
-<li>
-<p>Returns the fetched results and the total duration taken to process the requests.</p>
+<p>Converts these records into a list of <code>EmployeeReview</code> objects and returns it as a response.</p>
 </li>
 </ul>
-<p>The <code>fetch_data</code> function performs the requests one at a time in a blocking manner. This means each request is completed before the next one starts. The line <code>results = [fetch_data(url) for url in urls]</code> calls <code>fetch_data</code> in each iteration of the loop, gets the JSON response for each request, stores it in <code>results</code>, then moves to the next request.</p>
-<p><strong>JSONPlaceholder</strong> is a free online REST API that you can use for testing and prototyping. These URLs in our code are endpoints provided by JSONPlaceholder, each returning a JSON object representing a to-do item.</p>
-<p>Step 6: Run the FastAPI application:</p>
+<p>Step 8: Define the endpoint for updating an employee review:</p>
+<pre><code class="language-python">@app.put(&quot;/employee_reviews/{employee_id}&quot;, response_model=EmployeeReview)
+async def update_employee_review(employee_id: int, employee_review: EmployeeReview):
+    # (Docstring describing what the endpoint does and its fields)
+    conn = await connect_to_db()
+    try:
+        result = await conn.execute('''
+            UPDATE employee_reviews
+            SET employee_name=$1, evaluation_period=$2, performance_rating=$3, feedback_comments=$4, goals_objectives=$5, reviewer_id=$6, reviewer_name=$7
+            WHERE employee_id=$8
+        ''', employee_review.employee_name, employee_review.evaluation_period, employee_review.performance_rating, employee_review.feedback_comments, employee_review.goals_objectives, employee_review.reviewer_id, employee_review.reviewer_name, employee_id)
+    finally:
+        await conn.close()
+    if result == 'UPDATE 0':
+        raise HTTPException(status_code=404, detail=&quot;Employee not found&quot;)
+    return employee_review
+</code></pre>
+<p>The code:</p>
+<ul>
+<li>
+<p>Updates the review data in the <code>employee_reviews</code> table where the <code>employee_id</code> matches.</p>
+</li>
+<li>
+<p>Returns the updated <code>employee_review</code> object as a response.</p>
+</li>
+</ul>
+<p>Step 9: Define the endpoint for deleting an employee review:</p>
+<pre><code class="language-python">@app.delete(&quot;/employee_reviews/{employee_id}&quot;)
+async def delete_employee_review(employee_id: int):
+    # (Docstring describing what the endpoint does)
+    conn = await connect_to_db()
+    try:
+        result = await conn.execute('DELETE FROM employee_reviews WHERE employee_id=$1', employee_id)
+    finally:
+        await conn.close()
+    if result == 'DELETE 0':
+        raise HTTPException(status_code=404, detail=&quot;Employee not found&quot;)
+    return {&quot;detail&quot;: &quot;Employee review deleted&quot;}
+</code></pre>
+<p>The code:</p>
+<ul>
+<li>
+<p>Deletes the review data from the <code>employee_reviews</code> table where the <code>employee_id</code> matches.</p>
+</li>
+<li>
+<p>Returns a success message indicating that the review was deleted.</p>
+</li>
+</ul>
+<p>Step 10: Run the FastAPI application using the Uvicorn server:</p>
 <pre><code class="language-python">if __name__ == &quot;__main__&quot;:
     import uvicorn
     uvicorn.run(app, host=&quot;127.0.0.1&quot;, port=8000)
 </code></pre>
-<h2 id="create-an-asynchronous-endpoint-with-fastapi">Create an Asynchronous Endpoint with FastAPI</h2>
-<p>Step 1: Create a file named <code>async.py</code>.</p>
-<p>Step 2: Import the necessary components:</p>
-<pre><code class="language-python">from fastapi import FastAPI
-import httpx
-import asyncio
-import time
+<h2 id="run-the-application">Run the Application</h2>
+<p>Run <code>employee_reviews.py</code>. Once the server is running, you should see an output indicating that Uvicorn is running on <code>http://127.0.0.1:8000</code>.</p>
+<p><img alt="Uvicorn server is running" src="fadb3.png" /></p>
+<h2 id="use-the-swagger-documentation-interface">Use the Swagger Documentation Interface</h2>
+<p>FastAPI provides an interactive API documentation interface using Swagger, which makes it easy to test your endpoints. Open your web browser and go to <code>http://127.0.0.1:8000/docs</code>. You should see the Swagger documentation.</p>
+<p><img alt="Swagger doc with API metadata and available endpoints" src="fadb4swg.png" /></p>
+<p>The doc shows all the available endpoints. You can interact with the API directly from this interface by clicking on the endpoints and providing the necessary input data.</p>
+<h3 id="creating-an-employee-review">Creating an Employee Review</h3>
+<p>Step 1: Expand POST in the doc. You can see the docstring explaining the endpoint and its fields:</p>
+<p><img alt="Endpoint description and its fields" src="fadb5.png" /></p>
+<p>Step 2: Click <strong>Try it out</strong>.</p>
+<p>Step 3: Enter the request body:</p>
+<p><img alt="Request body such as employee name and performance rating" src="fadb6_clickexcafterthis.png" /></p>
+<p>Step 4: Click <strong>Execute</strong> to send the request to the API.</p>
+<p>Step 5: You will see a 200 response if all goes well:</p>
+<p><img alt="200 response from server" src="fadb7_postresponse.png" /></p>
+<p>We'll create a couple more records:</p>
+<pre><code class="language-json">  {
+    &quot;employee_id&quot;: 12933,
+    &quot;employee_name&quot;: &quot;Michael Johnson&quot;,
+    &quot;evaluation_period&quot;: &quot;Q4 2024&quot;,
+    &quot;performance_rating&quot;: 4,
+    &quot;feedback_comments&quot;: &quot;Met expectations.&quot;,
+    &quot;goals_objectives&quot;: &quot;Improve client communication&quot;,
+    &quot;reviewer_id&quot;: 18855,
+    &quot;reviewer_name&quot;: &quot;Emily Anderson&quot;
+  },
+  {
+    &quot;employee_id&quot;: 12934,
+    &quot;employee_name&quot;: &quot;Jessica Taylor&quot;,
+    &quot;evaluation_period&quot;: &quot;Q4 2024&quot;,
+    &quot;performance_rating&quot;: 5,
+    &quot;feedback_comments&quot;: &quot;Outstanding performance.&quot;,
+    &quot;goals_objectives&quot;: &quot;Lead a new project&quot;,
+    &quot;reviewer_id&quot;: 18856,
+    &quot;reviewer_name&quot;: &quot;Priya Desai&quot;
+  }
 </code></pre>
-<ul>
-<li>
-<p><strong>FastAPI</strong>: Framework for creating the API.</p>
-</li>
-<li>
-<p><strong>httpx</strong>: For making asynchronous HTTP requests.</p>
-</li>
-<li>
-<p><strong>asyncio</strong>: For writing concurrent code using <code>async</code> and <code>await</code> keywords.</p>
-</li>
-<li>
-<p><strong>time</strong>: For measuring the duration of processing.</p>
-</li>
-</ul>
-<p>Step 3: Create the FastAPI instance:</p>
-<pre><code class="language-python">app = FastAPI()
-</code></pre>
-<p>Step 4: Define the asynchronous data fetching function:</p>
-<pre><code class="language-python">async def fetch_data(client, url):
-    response = await client.get(url)
-    return response.json()
-</code></pre>
-<p>This function takes an HTTP client and a URL, sends a GET request to the URL, and returns the JSON response.</p>
-<ul>
-<li>
-<p><code>async def</code> keyword defines an asynchronous function.</p>
-</li>
-<li>
-<p><code>client.get(url)</code> sends an HTTP GET request to the specified URL. The <code>await</code> keyword allows the function to pause and wait for the response while other tasks continue to execute concurrently. For example, while one <code>fetch_data</code> call is waiting for a response from an HTTP GET request, another <code>fetch_data</code> call can send another HTTP request.</p>
-</li>
-</ul>
-<p>Step 5: Create the asynchronous endpoint:</p>
-<pre><code class="language-python">@app.get(&quot;/multiple-async/&quot;)
-async def multiple_async():
-    urls = [
-        &quot;https://jsonplaceholder.typicode.com/todos/1&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/2&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/3&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/4&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/5&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/6&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/7&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/8&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/9&quot;,
-        &quot;https://jsonplaceholder.typicode.com/todos/10&quot;
-    ]
-
-    start_time = time.time()
-    async with httpx.AsyncClient() as client:
-        tasks = [fetch_data(client, url) for url in urls]
-        results = await asyncio.gather(*tasks)
-    end_time = time.time()
-
-    return {&quot;results&quot;: results, &quot;duration&quot;: end_time - start_time}
-</code></pre>
-<ul>
-<li>
-<p>Defines a GET endpoint <code>/multiple-async/</code> that will handle asynchronous requests.</p>
-</li>
-<li>
-<p>Creates a list of URLs to fetch data from.</p>
-</li>
-<li>
-<p>Records the start time to measure the duration of processing.</p>
-</li>
-<li>
-<p>Creates an asynchronous HTTP client using <code>httpx.AsyncClient</code>.</p>
-</li>
-<li>
-<p>Creates a list of tasks to fetch data from each URL concurrently.</p>
-</li>
-<li>
-<p><code>await asyncio.gather(*tasks)</code> runs all the tasks concurrently and waits for them to complete, collecting the results.</p>
-</li>
-<li>
-<p>Records the end time and calculates the duration of the operation.</p>
-</li>
-<li>
-<p>Returns the fetched results and the duration.</p>
-</li>
-</ul>
-<p>In summary:</p>
-<ol>
-<li>
-<p><code>async def fetch_data(client, url)</code><strong>:</strong> Makes the individual requests asynchronous, allowing them to run concurrently.</p>
-</li>
-<li>
-<p><code>async with httpx.AsyncClient() as client</code><strong>:</strong> Ensures that all client requests are handled asynchronously.</p>
-</li>
-<li>
-<p><code>tasks = [fetch_data(client, url) for url in urls]</code> <strong>and</strong> <code>await asyncio.gather(*tasks)</code><strong>:</strong> Runs all tasks concurrently, collecting all the responses once they're all completed.</p>
-</li>
-</ol>
-<p>These components work together to make your application handle multiple HTTP requests concurrently.</p>
-<p>Step 6: Run the FastAPI application:</p>
-<pre><code class="language-python">if __name__ == &quot;__main__&quot;:
-    import uvicorn
-    uvicorn.run(app, host=&quot;127.0.0.1&quot;, port=8001)
-</code></pre>
-<h2 id="test-the-synchronous-and-asynchronous-endpoints">Test the Synchronous and Asynchronous Endpoints</h2>
-<p>We'll test the endpoints using Postman.</p>
-<h3 id="testing-the-synchronous-endpoint">Testing the Synchronous Endpoint</h3>
-<p>Step 1: Run <code>sync.py</code>.</p>
-<p><img alt="Synchronous application running" src="sync1.png" /></p>
-<p>Step 2: In Postman, add a new GET request. I created a collection <em>Dinesh_FastAPI_Syn_Asyn</em> and added a new request. Enter the URL for your synchronous endpoint: <code>http://127.0.0.1:8000/multiple-sync/</code></p>
-<p><img alt="Synchronous endpoint in Postman" src="sync3.png" /></p>
-<p>Step 3: Click <strong>Send</strong>. You can find the response time in milliseconds (ms) just below the response body:</p>
-<p><img alt="Response time in milliseconds from synchronous endpoint" src="sync4.png" /></p>
-<p>For me, the total time taken was <strong>5.53 seconds</strong>.</p>
-<h3 id="testing-the-asynchronous-endpoint">Testing the Asynchronous Endpoint</h3>
-<p>Step 1: Run <code>async.py</code>.</p>
-<p><img alt="Asynchronous application running" src="async1.png" /></p>
-<p>Step 2: In Postman, add a new GET request. Enter the URL for your asynchronous endpoint: <code>http://127.0.0.1:8001/multiple-async/</code></p>
-<p><img alt="Asynchronous endpoint in Postman" src="async2.png" /></p>
-<p>Step 3: Click <strong>Send</strong>. You can find the response time in milliseconds (ms) just below the response body:</p>
-<p><img alt="Response time in milliseconds from asynchronous endpoint" src="async3.png" /></p>
-<p>For me, the total time taken was <strong>1.71 seconds</strong>.</p>
-<p>Comparing both:</p>
-<ul>
-<li>
-<p><strong>Synchronous Duration:</strong> 5.53 seconds</p>
-</li>
-<li>
-<p><strong>Asynchronous Duration:</strong> 1.71 seconds</p>
-</li>
-</ul>
-<p>As you can see, the asynchronous endpoint (/multiple-async/) took noticeably less time to complete compared to the synchronous endpoint (/multiple-sync/). This demonstrates the performance benefits of asynchronous programming in FastAPI.</p>
+<h3 id="retrieving-employee-reviews">Retrieving Employee Reviews</h3>
+<p>Step 1: Expand GET in the doc. You can see the docstring explaining the endpoint and its fields:</p>
+<p><img alt="Get section in the doc with descriptions" src="fadb8_getstart.png" /></p>
+<p>Step 2: Click <strong>Try it out</strong>.</p>
+<p>Step 3: Click <strong>Execute</strong>.</p>
+<p>The API will process the request and retrieve all the employee reviews from the database. The response section displays the retrieved records:</p>
+<p><img alt="200 response with records of the 3 employees" src="fadb9.png" /></p>
+<h3 id="updating-an-employee-review">Updating an Employee Review</h3>
+<p>Step 1: Expand PUT in the doc. You can see the docstring explaining the endpoint and its fields.</p>
+<p>Step 2: Click <strong>Try it out</strong>.</p>
+<p>Step 3: Enter the employee ID, for example, <code>12932</code>, which we used earlier with the POST endpoint.</p>
+<p>Step 4: Enter the request body. For example, change <code>“evaluation_period": "Q4 2024"</code> to <code>"evaluation_period": "Q3 2024"</code> while keeping the other text unchanged:</p>
+<p><img alt="JSON request body with the changed value for evaluation_period" src="fadb10put.png" /></p>
+<p>Step 5: Click <strong>Execute</strong> to send the updated data to the API.</p>
+<p>If successful, the updated employee review will be displayed with a response code <strong>200:</strong></p>
+<p><img alt="200 response with updated record of the employee" src="fadb11.png" /></p>
+<h3 id="deleting-an-employee-review">Deleting an Employee Review</h3>
+<p>Step 1: Expand DELETE.</p>
+<p>Step 2: Click <strong>Try it out</strong>.</p>
+<p>Step 3: Enter employee ID for the record you want to delete. For example, enter <code>12932</code>:</p>
+<p><img alt="Employee ID entered in delete section of doc" src="fadb12.png" /></p>
+<p>Step 4: Click <strong>Execute</strong>.</p>
+<p>You will see a response indicating that the employee review has been deleted:</p>
+<p><img alt="Response body showing employee review is deleted" src="fadb13.png" /></p>
+<p>Congratulations! You've learned how to build a basic REST API using FastAPI and PostgreSQL, covering GET, POST, PUT, and DELETE operations. You've seen how to describe the endpoints and their fields in the code to make the auto-generated API documentation clearer and more informative. Additionally, we've explored how to use the Swagger documentation interface to interact with the API effectively.</p>
 
 
 
