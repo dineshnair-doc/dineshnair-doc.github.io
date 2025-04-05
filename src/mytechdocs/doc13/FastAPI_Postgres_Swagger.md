@@ -98,10 +98,7 @@ app = FastAPI(
 
 This initializes the FastAPI application with metadata such as title, version, description, and contact information.
 
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">💡</div>
-<div data-node-type="callout-text">The auto-generated Swagger documentation will display this metadata to the users.</div>
-</div>
+> 💡 **Note:** The auto-generated Swagger documentation will display this metadata to the users.
 
 Step 4: Define a data model for employee reviews using Pydantic. Each field has a type, ensuring data validation.
 

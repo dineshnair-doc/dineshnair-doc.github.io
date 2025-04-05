@@ -1073,11 +1073,9 @@ from pydantic import BaseModel
 )
 </code></pre>
 <p>This initializes the FastAPI application with metadata such as title, version, description, and contact information.</p>
-<div data-node-type="callout">
-<div data-node-type="callout-emoji">💡</div>
-<div data-node-type="callout-text">The auto-generated Swagger documentation will display this metadata to the users.</div>
-</div>
-
+<blockquote>
+<p>💡 <strong>Note:</strong> The auto-generated Swagger documentation will display this metadata to the users.</p>
+</blockquote>
 <p>Step 4: Define a data model for employee reviews using Pydantic. Each field has a type, ensuring data validation.</p>
 <pre><code class="language-python">class EmployeeReview(BaseModel):
     employee_id: int

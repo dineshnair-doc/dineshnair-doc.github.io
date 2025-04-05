@@ -5,11 +5,13 @@
 
 ---
 
-## Summary
+## About Me
 
 Technical writer skilled in enhancing product value through clear and impactful documentation.
 
 My approach is hands-on, actively working with the product, as demonstrated by the screenshots and practical examples featured in my [recent work](my_writings.md){target="_blank"}. I translate complex tech into clear narratives that empower users and drive sales. I'm here to make your product's brilliance shine by visually demonstrating its use with practical examples, rather than simply describing it.
+
+I've a good understanding of the Docs as Code workflow, including writing documentation in Visual Studio Code, managing version control with Git, hosting on GitHub, and publishing using static site generators. For API documentation, I can demonstrate how Swagger automates the generation of accurate, up-to-date documentation directly from FastAPI or Flask-RESTx API code, enhancing developer collaboration and ensuring documentation is closely integrated with the codebase.
 
 Looking for a remote work opportunity in India or an in-office role in Hyderabad, India. Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/dineshn1/){target="_blank"} or reach out to me through email at [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com).
 
