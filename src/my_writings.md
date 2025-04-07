@@ -21,4 +21,8 @@
   - **FastAPI**
     - [FastAPI: Sync vs Async Performance](mytechdocs/doc12/FastAPI_Performance.md)
     - [FastAPI with PostgreSQL and Swagger Doc](mytechdocs/doc13/FastAPI_Postgres_Swagger.md)
+  
+  - **PostgreSQL**
+    - [SQL Joins](mytechdocs/doc14/Joins_Explained.md)
+    - [Aggregate Functions](mytechdocs/doc15/Aggregate Functions.md)
 </div>

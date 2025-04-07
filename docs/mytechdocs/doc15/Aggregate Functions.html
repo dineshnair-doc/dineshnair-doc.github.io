@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc5/Postman_Intro.html">
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc15/Aggregate%20Functions.html">
       
       
-        <link rel="prev" href="../doc4/Classes_and_Objects.html">
+        <link rel="prev" href="../doc14/Joins_Explained.html">
       
-      
-        <link rel="next" href="../doc6/Postman_Obtain_Auth.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Introduction to Postman - Dinesh's Writings and Resume</title>
+        <title>Aggregate Functions - Dinesh's Writings and Resume</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-postman" class="md-skip">
+        <a href="#using-aggregate-functions-in-postgresql" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction to Postman
+              Aggregate Functions
             
           </span>
         </div>
@@ -402,19 +400,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -429,7 +425,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Postman
@@ -440,31 +436,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Introduction to Postman
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="Postman_Intro.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../doc5/Postman_Intro.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,71 +449,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#whats-postman" class="md-nav__link">
-    <span class="md-ellipsis">
-      What’s Postman?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      What’s API?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sample API
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      GET Request
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#send-a-get-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      Send a GET Request
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -820,17 +730,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -845,7 +757,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             PostgreSQL
@@ -878,10 +790,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../doc15/Aggregate%20Functions.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Aggregate Functions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Aggregate%20Functions.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -891,6 +824,80 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-a-table-with-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up a Table with Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#count" class="md-nav__link">
+    <span class="md-ellipsis">
+      Count
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maximum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Maximum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#minimum" class="md-nav__link">
+    <span class="md-ellipsis">
+      Minimum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#average" class="md-nav__link">
+    <span class="md-ellipsis">
+      Average
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -938,45 +945,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#whats-postman" class="md-nav__link">
+  <a href="#setting-up-a-table-with-data" class="md-nav__link">
     <span class="md-ellipsis">
-      What’s Postman?
+      Setting Up a Table with Data
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-api" class="md-nav__link">
+  <a href="#count" class="md-nav__link">
     <span class="md-ellipsis">
-      What’s API?
+      Count
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sample-api" class="md-nav__link">
+  <a href="#sum" class="md-nav__link">
     <span class="md-ellipsis">
-      Sample API
+      Sum
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-request" class="md-nav__link">
+  <a href="#maximum" class="md-nav__link">
     <span class="md-ellipsis">
-      GET Request
+      Maximum
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#send-a-get-request" class="md-nav__link">
+  <a href="#minimum" class="md-nav__link">
     <span class="md-ellipsis">
-      Send a GET Request
+      Minimum
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#average" class="md-nav__link">
+    <span class="md-ellipsis">
+      Average
     </span>
   </a>
   
@@ -998,34 +1014,124 @@
 
 
 
-<h1 id="introduction-to-postman">Introduction to Postman</h1>
-<h2 id="whats-postman">What’s Postman?</h2>
-<p>Postman is a tool for creating, testing, and using APIs.</p>
-<h2 id="whats-api">What’s API?</h2>
-<p>API (Application Programming Interface) enables different applications to talk to each other. This happens through a request and response mechanism.</p>
-<p><img alt="Application 1 requesting and Application 2 responding" src="postmanintro1.png" /></p>
-<h2 id="sample-api">Sample API</h2>
-<p>To interact with an API, we'll use Reqres API. Reqres API is a mock API for experimenting and testing.</p>
-<p>The API endpoint highlighted in the screenshot is for fetching user data. Think of an endpoint as the location your application visits to get this data.</p>
-<p><img alt="Endpoint that fetches the second page of user data" src="postmanintro2.png" /></p>
-<h2 id="get-request">GET Request</h2>
-<p>A GET request is how one application asks another application for information. For instance, Application 1 might ask Application 2 for a list of users. Application 2 processes this request and sends back the data.</p>
-<h2 id="send-a-get-request">Send a GET Request</h2>
-<p>Let's now send a GET request to the Reqres API to retrieve information about users.</p>
-<p>Step 1: Open Postman and click the + sign to select a new request.</p>
-<p>Step 2: In the text box adjacent to GET, enter the Reqres endpoint URL <code>https://reqres.in/api/users?page=1</code>.</p>
-<p><img alt="Postman with the endpoint URL and page parameter displayed is 1" src="postmanintro3.png" /></p>
-<p>Note the page parameter is <em>1</em>. When handling APIs that return large sets of data, pagination helps break down the data into manageable chunks. Many APIs provide query parameters to go through pages, like <code>?page=1</code>, <code>?page=2</code>.</p>
-<p>Step 3: Click <strong>Send</strong>.</p>
-<p>Step 4: When you click <strong>Send</strong>, Postman responds with a 200 OK status and displays the response from the Reqres API. The response contains details of users such as first name and last name of users.</p>
-<p><img alt="Response containing details of users" src="postmanintro4.png" /></p>
-<p>Step 5: To save this request to a collection, click <strong>Save</strong>. In Postman we can group requests into collections.</p>
-<p><img alt="Save button on the UI" src="postmanintro5.png" /></p>
-<p>Step 6: Name the request.</p>
-<p>Step 7: Save the request in an existing collection or create a new collection.</p>
-<p>Step 8: After saving the request, it appears in the collection for easy access and future use.</p>
-<p><img alt="Get request saved in a collection" src="postmanintro6.png" /></p>
-<p>Congrats! You’ve learned the basics of Postman: what it is, sending GET requests, and creating collections.</p>
+<h1 id="using-aggregate-functions-in-postgresql">Using Aggregate Functions in PostgreSQL</h1>
+<p>This write-up covers five key aggregate functions: COUNT, SUM, MAX, MIN, and AVG. These functions are powerful tools for summarizing and analyzing your data. We'll walk through practical examples to illustrate how each function works.</p>
+<hr />
+<h2 id="setting-up-a-table-with-data">Setting Up a Table with Data</h2>
+<p>Before we look at the examples, let's set up our environment. We'll create a sample table in PostgreSQL on a Windows system and add data to it. If you need to create a database to work with these functions, refer to the steps in my <a href="https://techdineshwrites.hashnode.dev/postgresql-joins-explained-with-practical-examples" target="_blank">previous tutorial on SQL joins</a>.</p>
+<p>Step 1: Open your PostgreSQL command line interface (<em>psql</em>) and run the following command to create the <code>TrainingPrograms</code> table with columns such as program duration and participant's satisfaction score:</p>
+<pre><code class="language-pgsql">CREATE TABLE TrainingPrograms (
+    ProgramID INT PRIMARY KEY,
+    ProgramName VARCHAR(50),
+    Trainer VARCHAR(50),
+    Duration INT,
+    Participants INT,
+    SatisfactionScore INT
+);
+</code></pre>
+<p>Step 2: Add some data to the table:</p>
+<pre><code class="language-pgsql">INSERT INTO TrainingPrograms (ProgramID, ProgramName, Trainer, Duration, Participants, SatisfactionScore) VALUES
+(1, 'Leadership Skills', 'Alice', 5, 39, 8),
+(2, 'Business Analysis', 'Emily', 3, 25, 9),
+(3, 'Effective Communication', 'James', 2, 31, 6),
+(4, 'Sales Techniques', 'James', 1, 15, 8),
+(5, 'Web Development', 'Ritu', 4, 39, 9),
+(6, 'Cybersecurity', 'Ritu', 4, 22, 8),
+(7, 'Devops', 'Ritu', 2, 15, 8),
+(8, 'Data Analysis', 'Emily', 2, 18, 9),
+(9, 'Sales Strategies', 'James', 2, 11, 5);
+</code></pre>
+<h2 id="count">Count</h2>
+<p>The <code>COUNT()</code> function returns the number of rows.</p>
+<p>For example, this gives us the number of rows where trainer is <em>James</em>:</p>
+<pre><code class="language-pgsql">SELECT COUNT(*) 
+FROM TrainingPrograms 
+WHERE Trainer = 'James';
+</code></pre>
+<p>Here's the result from the SQL query:</p>
+<p><img alt="Count is 3" src="sqlfun1.png" /></p>
+<p>If a column is provided, <code>Count</code> returns the number of non-NULL values in that column. For example, when you run:</p>
+<pre><code class="language-pgsql">SELECT COUNT(ProgramID) FROM TrainingPrograms;
+</code></pre>
+<p>The output will be <code>9</code>.</p>
+<p>To find the total number of trainers:</p>
+<pre><code class="language-pgsql">SELECT COUNT(DISTINCT Trainer) AS TotalTrainers
+FROM TrainingPrograms;
+</code></pre>
+<p>The output will be <code>4</code>.</p>
+<p>Let's consider an interesting use case for the <code>COUNT()</code> function. Suppose we want to analyze how many training programs each trainer has conducted. This can help us understand workload distribution of trainers. Use <code>DESC</code> to order from the most programs to the least.</p>
+<pre><code class="language-pgsql">SELECT Trainer, COUNT(ProgramID) AS NumberOfPrograms
+FROM TrainingPrograms
+GROUP BY Trainer
+ORDER BY NumberOfPrograms DESC;
+</code></pre>
+<p><img alt="Ritu 3, James 3, Emily 2, Alice 1" src="sqlfun2.png" /></p>
+<p><code>COUNT(ProgramID)</code> counts the total number of programs, and the <code>GROUP BY</code> clause ensures that the count is calculated separately for each trainer.</p>
+<blockquote>
+<p>💡 <strong>Note:</strong> When you use aggregate functions and other columns together, every non-aggregated column must appear in the <code>GROUP BY</code> clause.</p>
+</blockquote>
+<h2 id="sum">Sum</h2>
+<p>The <code>SUM()</code> function calculates the total sum of a numeric column.</p>
+<p>For example, this gives us the total number of participants:</p>
+<pre><code class="language-pgsql">SELECT SUM(Participants) FROM TrainingPrograms;
+</code></pre>
+<p>The result will be <code>215</code>.</p>
+<p>One interesting use case could be to calculate the total duration of all training programs for each trainer. This can help us understand the overall workload and time investment each trainer has made:</p>
+<pre><code class="language-pgsql">SELECT Trainer, SUM(Duration) AS TotalDuration
+FROM TrainingPrograms
+GROUP BY Trainer;
+</code></pre>
+<p>Result of the query:</p>
+<p><img alt="Alice 5, Ritu 10, James 5, Emily 5" src="sqlfun3.png" /></p>
+<p>Let's take another user case. Calculate the total satisfaction scores given by participants for each trainer:</p>
+<pre><code class="language-pgsql">SELECT Trainer, SUM(SatisfactionScore) AS TotalSatisfactionScore
+FROM TrainingPrograms
+GROUP BY Trainer
+ORDER BY TotalSatisfactionScore DESC;
+</code></pre>
+<p>The query returns:</p>
+<p><img alt="Ritu 25, James 19, Emily 18, Alice 8" src="sqlfun4.png" /></p>
+<h2 id="maximum">Maximum</h2>
+<p>The <code>MAX()</code> function returns the maximum value within a column of a table.</p>
+<p>For example, this query returns the maximum satisfaction score:</p>
+<pre><code class="language-pgsql">SELECT MAX(SatisfactionScore) FROM TrainingPrograms;
+</code></pre>
+<p>The result will be <code>9</code>.</p>
+<p>To find the programs that achieved the maximum satisfaction score, you can use a subquery to first find the maximum satisfaction score, and then retrieve the programs that have that score:</p>
+<pre><code class="language-pgsql">SELECT ProgramName, SatisfactionScore
+FROM TrainingPrograms
+WHERE SatisfactionScore = (SELECT MAX(SatisfactionScore) FROM TrainingPrograms);
+</code></pre>
+<p>Here's the result from the query:</p>
+<p><img alt="3 programs had maximum satisfaction score of 9" src="sqlfun5.png" /></p>
+<h2 id="minimum">Minimum</h2>
+<p>The <code>MIN()</code> function returns the minimum value within a column of a table.</p>
+<p>For example, this query returns the lowest number of participants:</p>
+<pre><code class="language-pgsql">SELECT MIN(Participants) FROM TrainingPrograms;
+</code></pre>
+<p>The result is <code>11</code>.</p>
+<p>To find the lowest number of participants and then retrieve the corresponding program:</p>
+<pre><code class="language-pgsql">SELECT ProgramName, Participants
+FROM TrainingPrograms
+WHERE Participants = (SELECT MIN(Participants) FROM TrainingPrograms);
+</code></pre>
+<p>The query returns:</p>
+<p><img alt="Sales strategies program had the least" src="sqlfun6.png" /></p>
+<h2 id="average">Average</h2>
+<p>The <code>AVG()</code> function returns the average value of a numeric column.</p>
+<p>For example, this query returns the average satisfaction score:</p>
+<pre><code class="language-pgsql">SELECT ROUND(AVG(SatisfactionScore), 2) FROM TrainingPrograms;
+</code></pre>
+<p>We've used the <code>ROUND()</code> function to limit the decimal points to 2.</p>
+<p>The query result is <code>7.78</code>.</p>
+<p>This query uses a subquery to find programs with a number of participants above the average:</p>
+<pre><code class="language-pgsql">SELECT ProgramName, Participants
+FROM TrainingPrograms
+WHERE Participants &gt; (SELECT AVG(Participants) FROM TrainingPrograms);
+</code></pre>
+<p>The result shows:</p>
+<p><img alt="Shows the 4 programs that have a number of participants above the average" src="sqlfun7.png" /></p>
+<p>To summarize, we've looked into essential SQL aggregate functions: COUNT, SUM, MAX, MIN, and AVG. We applied these functions to practical scenarios, such as calculating total participants and maximum satisfaction score. Through these examples, you've seen how these functions can be used to extract valuable insights from your data.</p>
 
 
 

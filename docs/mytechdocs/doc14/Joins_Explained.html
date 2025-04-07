@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc5/Postman_Intro.html">
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc14/Joins_Explained.html">
       
       
-        <link rel="prev" href="../doc4/Classes_and_Objects.html">
+        <link rel="prev" href="../doc13/FastAPI_Postgres_Swagger.html">
       
       
-        <link rel="next" href="../doc6/Postman_Obtain_Auth.html">
+        <link rel="next" href="../doc15/Aggregate%20Functions.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Introduction to Postman - Dinesh's Writings and Resume</title>
+        <title>SQL Joins - Dinesh's Writings and Resume</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-postman" class="md-skip">
+        <a href="#postgresql-joins-explained-with-practical-examples" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Introduction to Postman
+              SQL Joins
             
           </span>
         </div>
@@ -402,19 +402,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -429,7 +427,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Postman
@@ -440,31 +438,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Introduction to Postman
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="Postman_Intro.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../doc5/Postman_Intro.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,71 +451,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#whats-postman" class="md-nav__link">
-    <span class="md-ellipsis">
-      What’s Postman?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#whats-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      What’s API?
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sample API
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#get-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      GET Request
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#send-a-get-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      Send a GET Request
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -820,17 +732,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -845,7 +759,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             PostgreSQL
@@ -856,10 +770,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../doc14/Joins_Explained.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    SQL Joins
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Joins_Explained.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -869,6 +804,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-tables-with-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up Tables with Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inner-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inner Join
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#left-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      Left Join
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#right-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      Right Join
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#full-outer-join" class="md-nav__link">
+    <span class="md-ellipsis">
+      Full Outer Join
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -938,45 +938,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#whats-postman" class="md-nav__link">
+  <a href="#setting-up-tables-with-data" class="md-nav__link">
     <span class="md-ellipsis">
-      What’s Postman?
+      Setting Up Tables with Data
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-api" class="md-nav__link">
+  <a href="#inner-join" class="md-nav__link">
     <span class="md-ellipsis">
-      What’s API?
+      Inner Join
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sample-api" class="md-nav__link">
+  <a href="#left-join" class="md-nav__link">
     <span class="md-ellipsis">
-      Sample API
+      Left Join
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#get-request" class="md-nav__link">
+  <a href="#right-join" class="md-nav__link">
     <span class="md-ellipsis">
-      GET Request
+      Right Join
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#send-a-get-request" class="md-nav__link">
+  <a href="#full-outer-join" class="md-nav__link">
     <span class="md-ellipsis">
-      Send a GET Request
+      Full Outer Join
     </span>
   </a>
   
@@ -998,34 +998,89 @@
 
 
 
-<h1 id="introduction-to-postman">Introduction to Postman</h1>
-<h2 id="whats-postman">What’s Postman?</h2>
-<p>Postman is a tool for creating, testing, and using APIs.</p>
-<h2 id="whats-api">What’s API?</h2>
-<p>API (Application Programming Interface) enables different applications to talk to each other. This happens through a request and response mechanism.</p>
-<p><img alt="Application 1 requesting and Application 2 responding" src="postmanintro1.png" /></p>
-<h2 id="sample-api">Sample API</h2>
-<p>To interact with an API, we'll use Reqres API. Reqres API is a mock API for experimenting and testing.</p>
-<p>The API endpoint highlighted in the screenshot is for fetching user data. Think of an endpoint as the location your application visits to get this data.</p>
-<p><img alt="Endpoint that fetches the second page of user data" src="postmanintro2.png" /></p>
-<h2 id="get-request">GET Request</h2>
-<p>A GET request is how one application asks another application for information. For instance, Application 1 might ask Application 2 for a list of users. Application 2 processes this request and sends back the data.</p>
-<h2 id="send-a-get-request">Send a GET Request</h2>
-<p>Let's now send a GET request to the Reqres API to retrieve information about users.</p>
-<p>Step 1: Open Postman and click the + sign to select a new request.</p>
-<p>Step 2: In the text box adjacent to GET, enter the Reqres endpoint URL <code>https://reqres.in/api/users?page=1</code>.</p>
-<p><img alt="Postman with the endpoint URL and page parameter displayed is 1" src="postmanintro3.png" /></p>
-<p>Note the page parameter is <em>1</em>. When handling APIs that return large sets of data, pagination helps break down the data into manageable chunks. Many APIs provide query parameters to go through pages, like <code>?page=1</code>, <code>?page=2</code>.</p>
-<p>Step 3: Click <strong>Send</strong>.</p>
-<p>Step 4: When you click <strong>Send</strong>, Postman responds with a 200 OK status and displays the response from the Reqres API. The response contains details of users such as first name and last name of users.</p>
-<p><img alt="Response containing details of users" src="postmanintro4.png" /></p>
-<p>Step 5: To save this request to a collection, click <strong>Save</strong>. In Postman we can group requests into collections.</p>
-<p><img alt="Save button on the UI" src="postmanintro5.png" /></p>
-<p>Step 6: Name the request.</p>
-<p>Step 7: Save the request in an existing collection or create a new collection.</p>
-<p>Step 8: After saving the request, it appears in the collection for easy access and future use.</p>
-<p><img alt="Get request saved in a collection" src="postmanintro6.png" /></p>
-<p>Congrats! You’ve learned the basics of Postman: what it is, sending GET requests, and creating collections.</p>
+<h1 id="postgresql-joins-explained-with-practical-examples">PostgreSQL Joins Explained with Practical Examples</h1>
+<p>This document explores the world of PostgreSQL joins, covering inner, left, right, and full outer joins through practical examples. We'll start by setting up sample tables in the Windows environment and inserting data into them, and then we'll walk through each type of join with an example and explanation.</p>
+<hr />
+<h2 id="setting-up-tables-with-data">Setting Up Tables with Data</h2>
+<p>When you start psql and connect to your PostgreSQL server, you're generally connecting to an existing database, usually the <em>postgres</em> database with the <em>postgres</em> username by default. To work through the examples, we'll create a separate database.</p>
+<p>Step 1: Create the database:</p>
+<pre><code class="language-pgsql">CREATE DATABASE dinesh_sql_guide;
+</code></pre>
+<p>Step 2: Connect to the new database:</p>
+<pre><code class="language-pgsql">\c dinesh_sql_guide
+</code></pre>
+<p>Here's my psql window where I am creating and connecting to the new database:</p>
+<p><img alt="psql window showing database is created and connected to" src="advsql1.png" /></p>
+<p>Step 3: Create the tables to store skills and training programs:</p>
+<pre><code class="language-pgsql">CREATE TABLE Skills (
+    SkillID SERIAL PRIMARY KEY,
+    SkillName VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE TrainingPrograms (
+    ProgramID SERIAL PRIMARY KEY,
+    SkillID INT,
+    ProgramName VARCHAR(255) NOT NULL,
+    FOREIGN KEY (SkillID) REFERENCES Skills(SkillID)
+);
+</code></pre>
+<p>Step 4: Add the data to the tables:</p>
+<pre><code class="language-pgsql">-- Inserting Skills into the Skills table
+INSERT INTO Skills (SkillName) VALUES 
+    ('Business'),
+    ('Personal Development'),
+    ('Web Development');
+
+-- Inserting Training Programs into the TrainingPrograms table
+INSERT INTO TrainingPrograms (SkillID, ProgramName) VALUES 
+    (1, 'Basics of Entrepreneurship'),
+    (1, 'Business Analysis'),
+    (2, 'Problem Solving'),
+    (NULL, 'General Skills Workshop'); -- This entry has no matching SkillID
+</code></pre>
+<h2 id="inner-join">Inner Join</h2>
+<p>An inner join is an SQL operation that combines rows from two or more tables based on a related column. The operation will return only the rows that have matching related column values in both tables.</p>
+<p>Here's an inner join:</p>
+<pre><code class="language-pgsql">SELECT Skills.SkillName, TrainingPrograms.ProgramName
+FROM Skills
+INNER JOIN TrainingPrograms ON Skills.SkillID = TrainingPrograms.SkillID;
+</code></pre>
+<p>This query will return skill names and corresponding training programs. Any training programs that don't have a <code>SkillID</code> will be filtered out. The programs <em>Basics of Entrepreneurship</em>, <em>Business Analysis</em>, and <em>Problem Solving</em> will be returned because they all have <code>SkillID</code> values that match existing skills in the <code>Skills</code> table. The <em>General Skills Workshop</em> program is filtered out because it has a <code>NULL SkillID</code>, which doesn't match any <code>SkillID</code> in the Skills table.</p>
+<p><img alt="Showing only the rows that have matching related column values in both tables" src="advsql2_innerjoin.png" /></p>
+<h2 id="left-join">Left Join</h2>
+<p>A left join returns all rows from the left table and the matched rows from the right table. When there's no match, the result is NULL on the side of the right table.</p>
+<p>Here's a left join:</p>
+<pre><code class="language-pgsql">SELECT Skills.SkillName, TrainingPrograms.ProgramName
+FROM Skills
+LEFT JOIN TrainingPrograms ON Skills.SkillID = TrainingPrograms.SkillID;
+</code></pre>
+<p>This query will return skill names and corresponding training programs. All skill names from the left table (<code>Skills</code>) are returned, including those that don’t have corresponding entries in the <code>TrainingPrograms</code> table.</p>
+<p>For example, the <em>Web Development</em> skill will be included in the results with a <code>NULL</code> value for <code>ProgramName</code>, indicating that there are no training programs associated with that skill.</p>
+<p><img alt="Returns all left, matching right, with nulls" src="advsql2_leftjoin.png" /></p>
+<h2 id="right-join">Right Join</h2>
+<p>A right join returns all rows from the right table and the matching rows from the left table. If there's no match, you'll see NULLs for columns from the left table.</p>
+<p>Here's a right join:</p>
+<pre><code class="language-pgsql">SELECT Skills.SkillName, TrainingPrograms.ProgramName
+FROM Skills
+RIGHT JOIN TrainingPrograms ON Skills.SkillID = TrainingPrograms.SkillID;
+</code></pre>
+<p>This query will return skill names and corresponding training programs. All training programs from the right table (<code>TrainingPrograms</code>) are returned, including those that don’t have corresponding entries in the <code>Skills</code> table.</p>
+<p>For example, the <em>General Skills Workshop</em> program will be included in the results with a <code>NULL</code> value for <code>SkillName</code>, indicating that there are no skills associated with that program.</p>
+<p><img alt="Returns all right, matching left, including nulls" src="advsql2_rightjoin.png" /></p>
+<h2 id="full-outer-join">Full Outer Join</h2>
+<p>A full outer join returns all rows from both tables, inserting NULLs in places where there are no matches on either side. This way, no data from either table is excluded from the result.</p>
+<p>Here's a full outer join:</p>
+<pre><code class="language-pgsql">SELECT Skills.SkillName, TrainingPrograms.ProgramName
+FROM Skills
+FULL OUTER JOIN TrainingPrograms ON Skills.SkillID = TrainingPrograms.SkillID;
+</code></pre>
+<p>The query will return every skill name and training program from both the <code>Skills</code> and <code>TrainingPrograms</code> tables, with NULLs where there are no matching entries.</p>
+<p><img alt="Returns all, fills unmatched rows with nulls" src="advsql2_outerjoin.png" /></p>
+<p>Congratulations! We've covered how SQL joins, such as left join and full outer join, can be used for querying and integrating data. Key points on joins:
+- Inner Join: Returns only matching rows from both tables. 
+- Left Join: Returns all left, matching right, with nulls on the right for missing matches. 
+- Right Join: Returns all right, matching left, with nulls on the left for missing matches.
+- Full Outer Join: Returns both, with nulls for missing matches.</p>
 
 
 
