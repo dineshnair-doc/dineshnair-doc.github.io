@@ -1076,11 +1076,13 @@ FULL OUTER JOIN TrainingPrograms ON Skills.SkillID = TrainingPrograms.SkillID;
 </code></pre>
 <p>The query will return every skill name and training program from both the <code>Skills</code> and <code>TrainingPrograms</code> tables, with NULLs where there are no matching entries.</p>
 <p><img alt="Returns all, fills unmatched rows with nulls" src="advsql2_outerjoin.png" /></p>
-<p>Congratulations! We've covered how SQL joins, such as left join and full outer join, can be used for querying and integrating data. Key points on joins:
-- Inner Join: Returns only matching rows from both tables. 
-- Left Join: Returns all left, matching right, with nulls on the right for missing matches. 
-- Right Join: Returns all right, matching left, with nulls on the left for missing matches.
-- Full Outer Join: Returns both, with nulls for missing matches.</p>
+<p>Congratulations! We've covered how SQL joins, such as left join and full outer join, can be used for querying and integrating data. Key points on joins:</p>
+<ul>
+<li>Inner Join: Returns only matching rows from both tables. </li>
+<li>Left Join: Returns all left, matching right, with nulls on the right for missing matches. </li>
+<li>Right Join: Returns all right, matching left, with nulls on the left for missing matches.</li>
+<li>Full Outer Join: Returns both, with nulls for missing matches.</li>
+</ul>
 
 
 
