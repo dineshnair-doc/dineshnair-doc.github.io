@@ -5,9 +5,14 @@ theme:
   name: material
   features:
     - content.code.copy
+  icon:
+    admonition:
+      info: material/cube-outline
 markdown_extensions:
   - attr_list  # Enables adding attributes to Markdown elements
   - md_in_html # Enables Markdown inside HTML tags
+  - admonition
+  - pymdownx.details
 copyright: Copyright &copy; 2024-2025 Dinesh Nair
 nav:
   - Home: index.md
