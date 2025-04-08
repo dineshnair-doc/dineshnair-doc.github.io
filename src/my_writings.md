@@ -24,5 +24,6 @@
   
   - **PostgreSQL**
     - [SQL Joins](mytechdocs/doc14/Joins_Explained.md)
-    - [Aggregate Functions](mytechdocs/doc15/Aggregate Functions.md)
+    - [Aggregate Functions](mytechdocs/doc15/Aggregate_Functions.md)
+    - [User-Defined Functions](mytechdocs/doc16/UDF_Functions.md)
 </div>

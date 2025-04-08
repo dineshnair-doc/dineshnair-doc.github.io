@@ -4,7 +4,7 @@ This write-up covers five key aggregate functions: COUNT, SUM, MAX, MIN, and AVG
 ---
 
 ## Setting Up a Table with Data
-Before we look at the examples, let's set up our environment. We'll create a sample table in PostgreSQL on a Windows system and add data to it. If you need to create a database to work with these functions, refer to the steps in my [previous tutorial on SQL joins](https://techdineshwrites.hashnode.dev/postgresql-joins-explained-with-practical-examples){target="_blank"}.
+Before we look at the examples, let's set up our environment. We'll create a sample table in PostgreSQL on a Windows system and add data to it. 
 
 Step 1: Open your PostgreSQL command line interface (*psql*) and run the following command to create the `TrainingPrograms` table with columns such as program duration and participant's satisfaction score:
 

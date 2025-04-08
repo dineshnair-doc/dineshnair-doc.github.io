@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc10/Webpage_Flask_Postgres.html">
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc16/UDF_Functions.html">
       
       
-        <link rel="prev" href="../doc9/First_REST_API_Flask.html">
+        <link rel="prev" href="../doc15/Aggregate_Functions.html">
       
-      
-        <link rel="next" href="../doc11/Flask_Restx_Swagger.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Web Page Using Flask and PostgreSQL - Dinesh's Writings and Resume</title>
+        <title>User-Defined Functions - Dinesh's Writings and Resume</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#building-a-dynamic-web-page-with-flask-and-postgresql" class="md-skip">
+        <a href="#defining-functions-using-postgresqls-procedural-language" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Web Page Using Flask and PostgreSQL
+              User-Defined Functions
             
           </span>
         </div>
@@ -512,19 +510,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
         
           
           <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
@@ -539,7 +535,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_3">
             <span class="md-nav__icon md-icon"></span>
             Flask
@@ -594,31 +590,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Web Page Using Flask and PostgreSQL
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="Webpage_Flask_Postgres.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../doc10/Webpage_Flask_Postgres.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -628,62 +603,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#create-the-database-table" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create the Database Table
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#set-up-the-postgresql-connection" class="md-nav__link">
-    <span class="md-ellipsis">
-      Set Up the PostgreSQL Connection
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#update-the-flask-application-to-use-postgresql" class="md-nav__link">
-    <span class="md-ellipsis">
-      Update the Flask Application to Use PostgreSQL
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-the-flask-application" class="md-nav__link">
-    <span class="md-ellipsis">
-      Run the Flask Application
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -811,17 +730,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -836,7 +757,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             PostgreSQL
@@ -891,10 +812,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../doc16/UDF_Functions.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    User-Defined Functions
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="UDF_Functions.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -904,6 +846,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#user-defined-function-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      User-Defined Function Syntax
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-1-function-to-add-days-to-a-date" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 1: Function to Add Days to a Date
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-2-function-to-calculate-grades" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 2: Function to Calculate Grades
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-3-function-to-determine-campaign-priority-for-a-store" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example 3: Function to Determine Campaign Priority for a Store
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -951,36 +949,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#create-the-database-table" class="md-nav__link">
+  <a href="#user-defined-function-syntax" class="md-nav__link">
     <span class="md-ellipsis">
-      Create the Database Table
+      User-Defined Function Syntax
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#set-up-the-postgresql-connection" class="md-nav__link">
+  <a href="#example-1-function-to-add-days-to-a-date" class="md-nav__link">
     <span class="md-ellipsis">
-      Set Up the PostgreSQL Connection
+      Example 1: Function to Add Days to a Date
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#update-the-flask-application-to-use-postgresql" class="md-nav__link">
+  <a href="#example-2-function-to-calculate-grades" class="md-nav__link">
     <span class="md-ellipsis">
-      Update the Flask Application to Use PostgreSQL
+      Example 2: Function to Calculate Grades
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-the-flask-application" class="md-nav__link">
+  <a href="#example-3-function-to-determine-campaign-priority-for-a-store" class="md-nav__link">
     <span class="md-ellipsis">
-      Run the Flask Application
+      Example 3: Function to Determine Campaign Priority for a Store
     </span>
   </a>
   
@@ -1002,140 +1000,149 @@
 
 
 
-<h1 id="building-a-dynamic-web-page-with-flask-and-postgresql">Building a Dynamic Web Page with Flask and PostgreSQL</h1>
-<p>Using the <a href="../doc8/Flask_Intro.html" target="_blank">Getting Started with Flask</a> document, we created a Flask application that collects teacher and course names from users and displays these names. The application stored this information in a JSON file.</p>
-<p>This document guides you on how to use PostgreSQL instead of a JSON file for storing and retrieving the teacher and course names. PostgreSQL is a database system that uses SQL. You can download and install PostgreSQL from the official website: <a href="https://www.postgresql.org/download/windows/" target="_blank">https://www.postgresql.org/download/windows/</a></p>
-<p>Use the same Flask environment in Windows that we used in the <a href="../doc8/Flask_Intro.html" target="_blank">Getting Started with Flask</a> document.</p>
+<h1 id="defining-functions-using-postgresqls-procedural-language">Defining Functions using PostgreSQL's Procedural Language</h1>
+<p>A function in PostgreSQL is a named block of code that accepts arguments, performs operations, and returns a result. User-defined functions (UDFs) enable you to perform specific tasks within PostgreSQL. Let's see how to create these functions using PostgreSQL's Procedural Language (<em>PL/pgSQL</em>).</p>
 <hr />
-<h2 id="create-the-database-table">Create the Database Table</h2>
-<p>Connect to the PostgreSQL database and create a table. To create the table, you can use this command in the SQL shell:</p>
-<pre><code class="language-pgsql">postgres=# CREATE TABLE teachers (
-postgres(#     id SERIAL PRIMARY KEY,
-postgres(#     teacher VARCHAR(255) NOT NULL,
-postgres(#     course VARCHAR(255) NOT NULL
-postgres(# );
+<h2 id="user-defined-function-syntax">User-Defined Function Syntax</h2>
+<p>Here's the syntax for creating a user-defined function using PL/pgSQL:</p>
+<pre><code class="language-pgsql">CREATE OR REPLACE FUNCTION function_name(parameter_name data_type)
+RETURNS return_data_type AS $$
+BEGIN
+  -- Function logic goes here
+  RETURN value;
+END;
+$$ LANGUAGE plpgsql;
 </code></pre>
-<p>If everything goes well, you should see the <code>CREATE TABLE</code> message like this:</p>
-<p><img alt="CREATE TABLE message" src="dbwebapp1.png" /></p>
-<h2 id="set-up-the-postgresql-connection">Set Up the PostgreSQL Connection</h2>
-<p>Step 1: Activate the virtual environment in the Visual Studio Code (VS Code) terminal by typing the command: <code>venv\Scripts\activate</code></p>
-<p>Step 2: Use the <code>pip</code> command to install <em>psycopg2</em> to connect to your PostgreSQL database from Flask: <code>pip install psycopg2-binary</code></p>
-<p><img alt="Pip command to install PostgreSQL database adapter for Python" src="dbwebapp2a.png" /></p>
-<p>Psycopg2 is a popular PostgreSQL database connector for Python.</p>
-<p>Step 3: There are several ways to store sensitive information. For now, we will store the database username and password in environment variables and access them from the application.</p>
-<p>Type the following commands in the VS Code terminal (PowerShell):</p>
-<pre><code class="language-powershell">$env:DB_USER=&quot;your_db_username&quot;
-$env:DB_PASSWORD=&quot;your_db_password&quot;
-</code></pre>
-<p>You'll need to replace <code>your_db_username</code> and <code>your_db_password</code> with your actual database username and password.</p>
-<p>Note that the environment variables set using these commands are temporary and will be lost when you close the terminal or deactivate the virtual environment.</p>
-<h2 id="update-the-flask-application-to-use-postgresql">Update the Flask Application to Use PostgreSQL</h2>
-<p>Update your Flask application to use PostgreSQL instead of JSON:</p>
 <ul>
 <li>
-<p>Import the necessary libraries and establish a connection to the PostgreSQL database.</p>
+<p>The opening statement defines the function's name, parameters, and the return type.</p>
 </li>
 <li>
-<p>With the switch to using a PostgreSQL database, we no longer need the <code>json</code> module, as we're not working with JSON files anymore. You can safely remove the <code>import json</code> line from your code.</p>
+<p>The <code>AS $$ ... $$</code> section contains the function's code.</p>
 </li>
 <li>
-<p>The <code>load_teachers</code> function fetches teacher and course information from the PostgreSQL database.</p>
+<p>The <code>BEGIN ... END;</code> block is where you implement the function's logic.</p>
 </li>
 <li>
-<p>The <code>save_teacher</code> function inserts a teacher and course record into the database.</p>
+<p>The final line specifies the language used (<code>PL/pgSQL</code>).</p>
 </li>
 </ul>
-<p>Here's the updated code for the application:</p>
-<pre><code class="language-python">import os
-import psycopg2
-from flask import Flask, render_template, request
-
-app = Flask(__name__)
-
-# Function to establish a connection to the PostgreSQL database
-def connect_db():
-    conn = psycopg2.connect(
-        dbname=&quot;postgres&quot;,
-        user=os.getenv(&quot;DB_USER&quot;),
-        password=os.getenv(&quot;DB_PASSWORD&quot;),
-        host=&quot;localhost&quot;,
-        port=&quot;5432&quot;
-    )
-    return conn
-
-# Function to load teacher and course names from the PostgreSQL database
-def load_teachers():
-    conn = connect_db()
-    cur = conn.cursor()
-    cur.execute(&quot;SELECT teacher, course FROM teachers&quot;)
-    rows = cur.fetchall()
-    conn.close()
-    return {row[0]: row[1] for row in rows}
-
-# Function to save a teacher name and the corresponding course name to the PostgreSQL database
-def save_teacher(teacher, course):
-    conn = connect_db()
-    cur = conn.cursor()
-    cur.execute(&quot;INSERT INTO teachers (teacher, course) VALUES (%s, %s)&quot;, (teacher, course))
-    conn.commit()
-    conn.close()
-
-# Load initial data
-teachers_dict = load_teachers()
-
-@app.route('/', methods=['GET', 'POST'])
-def home():
-    if request.method == 'POST':
-        teacher = request.form['teacher']
-        course = request.form['course']
-        save_teacher(teacher, course)
-        teachers_dict[teacher] = course
-    return render_template('home.html', teachers=teachers_dict)
-
-if __name__ == '__main__':
-    app.run(debug=True)
+<h2 id="example-1-function-to-add-days-to-a-date">Example 1: Function to Add Days to a Date</h2>
+<p>Let's begin with creating a function that takes a date and an integer representing the number of days to be added. The function then returns the new date after adding the specified number of days.</p>
+<pre><code class="language-pgsql">CREATE OR REPLACE FUNCTION add_days(start_date DATE, days_to_add INT)
+RETURNS DATE AS $$
+BEGIN
+  RETURN start_date + days_to_add;
+END;
+$$ LANGUAGE plpgsql;
 </code></pre>
-<p>The <code>load_teachers</code> function:</p>
+<p>You can call this function like this: <code>SELECT add_days('2025-03-16', 10);</code>. It will return a date 10 days after March 16, 2025:
+<img alt="Returns March 26, 2025" src="add_daysfunc.png" /></p>
+<h2 id="example-2-function-to-calculate-grades">Example 2: Function to Calculate Grades</h2>
+<p>Next up, we'll see how conditional logic and error handling can be implemented in a function. This function takes an integer score as input and returns a corresponding grade.</p>
+<pre><code class="language-pgsql">CREATE FUNCTION calculate_grade(score INTEGER)
+RETURNS TEXT AS $$
+DECLARE
+    grade TEXT;
+BEGIN
+    IF score &lt; 0 OR score &gt; 100 THEN
+        RETURN 'The score should not be less than 0 or greater than 100';
+    END IF;
+
+    grade := CASE
+        WHEN score &gt;= 90 THEN 'A+'
+        WHEN score &gt;= 80 THEN 'A'
+        WHEN score &gt;= 70 THEN 'B+'
+        WHEN score &gt;= 60 THEN 'B'
+        ELSE 'C'
+    END;
+
+    RETURN grade;
+END;
+$$ LANGUAGE plpgsql;
+</code></pre>
+<p>The function first checks if the input score is within the valid range (0-100). If it's not, an error message is returned.</p>
+<p><code>CASE WHEN</code> is a control flow statement (like IF/ELSIF/ELSE) used for conditional logic.</p>
 <ul>
 <li>
-<p>Connects to the PostgreSQL database using the <code>connect_db()</code> function.</p>
+<p><strong>CASE</strong>: Starts the CASE statement.</p>
 </li>
 <li>
-<p>Runs an SQL query to retrieve the teacher and course information.</p>
+<p><strong>WHEN condition THEN result</strong>: Each WHEN clause specifies a condition and the result to return if that condition is true. Each condition is checked one by one. The first condition that evaluates to true determines the result that's returned.</p>
 </li>
 <li>
-<p>Fetches the results as a list of tuples and transforms them into a dictionary. For example, in a list <code>[('Anjali', 'Microbiology'), ('James', 'Environmental Science')]</code>, <code>row[0]</code> will be <code>'Anjali'</code> for the first tuple and <code>'James'</code> for the second tuple. <code>row[1]</code> will be <code>'Microbiology'</code> for the first tuple and <code>'Environmental Science'</code> for the second tuple.</p>
+<p><strong>ELSE default_result</strong>: The ELSE clause is optional. If none of the WHEN conditions are true, the ELSE result is returned. If you omit the ELSE clause and none of the WHEN conditions are true, the CASE statement will return NULL.</p>
 </li>
 <li>
-<p>Closes the database connection.</p>
+<p><strong>END</strong>: Concludes the CASE statement. This is <em>required</em>.</p>
 </li>
 </ul>
-<p>The <code>save_teacher</code> function:</p>
+<p>Finally, the function returns the calculated grade.</p>
+<p>You can call the function like this:</p>
+<pre><code class="language-pgsql">SELECT calculate_grade(95);   -- Returns 'A+'
+SELECT calculate_grade(82);   -- Returns 'A'
+SELECT calculate_grade(71);   -- Returns 'B+'
+SELECT calculate_grade(55);   -- Returns 'C'
+SELECT calculate_grade(105);  -- Returns 'The score should not be less than 0 or greater than 100'
+</code></pre>
+<p>Take a look at the screenshot to see it in action:
+<img alt="Function returning the calculated grades" src="calcgradefunct.png" /></p>
+<h2 id="example-3-function-to-determine-campaign-priority-for-a-store">Example 3: Function to Determine Campaign Priority for a Store</h2>
+<p>In our final example, we'll create a function that uses a table. The function determines the priority level (High, Medium, or Low) for implementing a marketing campaign based on estimated total revenue.</p>
+<p>Create a table that includes the necessary columns to store the campaign name, store name, and total estimated revenue. These columns will provide the data needed for the function to determine the priority level based on the estimated revenue.</p>
+<pre><code class="language-pgsql">CREATE TABLE campaign_targets (
+    campaign_name TEXT NOT NULL,
+    store_name TEXT NOT NULL,
+    estimated_total_revenue NUMERIC NOT NULL
+);
+</code></pre>
+<p>Let's add some sample data to the <code>campaign_targets</code> table:</p>
+<pre><code class="language-pgsql">INSERT INTO campaign_targets (campaign_name, store_name, estimated_total_revenue)
+VALUES 
+    ('Black Friday Sale', 'Store A', 20000),
+    ('Summer Clearance', 'Store B', 1500),
+    ('Golden Week Promo', 'Store C', 9000),
+    ('Winter Fest Sale', 'Store D', 10000),
+    ('Summer Splash', 'Store E', 5000),
+    ('Holiday Bonanza', 'Store F', 16000);
+</code></pre>
+<p>Create the function that takes the name of a campaign as input and determines the priority level for implementing that campaign based on the estimated total revenue for a store. It returns a table with two columns: <code>priority_level</code> and <code>store_name</code>. The priority level is categorized as <em>High Priority</em>, <em>Medium Priority</em>, or <em>Low Priority</em> depending on the revenue thresholds.</p>
+<pre><code class="language-pgsql">CREATE OR REPLACE FUNCTION get_campaign_priority(campaign_name_input TEXT)
+RETURNS TABLE (priority_level TEXT, store_name TEXT) AS $$
+BEGIN
+  RETURN QUERY
+  SELECT
+    CASE
+      WHEN campaign_targets.estimated_total_revenue &gt; 10000 THEN 'High Priority'
+      WHEN campaign_targets.estimated_total_revenue &gt; 5000 THEN 'Medium Priority'
+      ELSE 'Low Priority'
+    END AS priority_level,
+    campaign_targets.store_name
+  FROM
+    campaign_targets
+  WHERE
+    campaign_targets.campaign_name = campaign_name_input;
+END;
+$$
+LANGUAGE plpgsql;
+</code></pre>
 <ul>
 <li>
-<p>Uses the <code>connect_db()</code> function to establish a connection to the PostgreSQL database.</p>
+<p><strong>RETURN Query</strong>: Runs the <code>SELECT</code> query and return its result. The result of this query forms the table structure defined in the <code>RETURNS TABLE</code> clause.</p>
 </li>
 <li>
-<p>Runs an SQL INSERT statement to add the teacher and course pair into the <code>teachers</code> database table.</p>
-</li>
-<li>
-<p>Commits the transaction to ensure the changes are saved to the database.</p>
-</li>
-<li>
-<p>Closes the database connection.</p>
+<p><strong>SELECT Query</strong>: The result of the <code>CASE</code> expression is aliased as <code>priority_level</code>. The <code>store_name</code> is selected directly from the <code>campaign_targets</code> table.</p>
 </li>
 </ul>
-<p>The <code>home</code> function is called when the user accesses the web page. When a new teacher and course are added, the function passes these values to the <code>save_teacher</code> function to insert them into the database table. The <code>home</code> function then updates the <code>teachers_dict</code> dictionary and returns the updated dictionary to be displayed on the web page.</p>
-<blockquote>
-<p>💡 <strong>Tip:</strong> The <code>home.html</code> file we created using the <a href="../doc8/Flask_Intro.html" target="_blank">Getting Started with Flask</a> document will remain in the <code>templates</code> directory.</p>
-</blockquote>
-<h2 id="run-the-flask-application">Run the Flask Application</h2>
-<p>Run the application and test the web page as discussed in the <em>Run the Application</em> section of the <a href="../doc8/Flask_Intro.html" target="_blank">Getting Started with Flask</a> document.</p>
-<p>For example, you should now be able to add teachers and courses on the web page:</p>
-<p><img alt="Add teachers and courses on the web page" src="dbwebapp4.png" /></p>
-<p>You can also verify that the data has been successfully inserted into the database by running the select query in the SQL shell:</p>
-<p><img alt="Select query displaying results in the SQL shell" src="dbwebapp5.png" /></p>
-<p>Congratulations! You've learned how to build a dynamic web page using Flask and store the added information in PostgreSQL for data persistence.</p>
+<p>You can call the function like this:</p>
+<pre><code class="language-pgsql">SELECT * FROM get_campaign_priority('Black Friday Sale'); 
+SELECT * FROM get_campaign_priority('Summer Clearance'); 
+SELECT * FROM get_campaign_priority('Golden Week Promo'); 
+SELECT * FROM get_campaign_priority('Winter Fest Sale');
+</code></pre>
+<p>The function returns the priority level based on the estimated total revenue:
+<img alt="Returns priority level, for example, for store A it is high-priority" src="calccampaignprior.png" /></p>
+<p>Congratulations! We have covered the syntax for creating a function, incorporated conditional logic using the <code>CASE</code> statement, and worked with table data. We also discussed error handling to ensure the function runs smoothly.</p>
 
 
 

@@ -8,11 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc15/Aggregate%20Functions.html">
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc15/Aggregate_Functions.html">
       
       
         <link rel="prev" href="../doc14/Joins_Explained.html">
       
+      
+        <link rel="next" href="../doc16/UDF_Functions.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -814,7 +816,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="Aggregate%20Functions.html" class="md-nav__link md-nav__link--active">
+      <a href="Aggregate_Functions.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -898,6 +900,28 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc16/UDF_Functions.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User-Defined Functions
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1018,7 +1042,7 @@
 <p>This write-up covers five key aggregate functions: COUNT, SUM, MAX, MIN, and AVG. These functions are powerful tools for summarizing and analyzing your data. We'll walk through practical examples to illustrate how each function works.</p>
 <hr />
 <h2 id="setting-up-a-table-with-data">Setting Up a Table with Data</h2>
-<p>Before we look at the examples, let's set up our environment. We'll create a sample table in PostgreSQL on a Windows system and add data to it. If you need to create a database to work with these functions, refer to the steps in my <a href="https://techdineshwrites.hashnode.dev/postgresql-joins-explained-with-practical-examples" target="_blank">previous tutorial on SQL joins</a>.</p>
+<p>Before we look at the examples, let's set up our environment. We'll create a sample table in PostgreSQL on a Windows system and add data to it. </p>
 <p>Step 1: Open your PostgreSQL command line interface (<em>psql</em>) and run the following command to create the <code>TrainingPrograms</code> table with columns such as program duration and participant's satisfaction score:</p>
 <pre><code class="language-pgsql">CREATE TABLE TrainingPrograms (
     ProgramID INT PRIMARY KEY,
