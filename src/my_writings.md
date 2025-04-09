@@ -1,4 +1,4 @@
-# Technical Writing Portfolio
+# A Collection of My Technical Writing
 This page highlights my technical writing across various technologies, including Python, Flask, REST API, PostgreSQL, and more.
 ??? info "Python"
     - [Getting Started with Python](mytechdocs/doc1/Getting_Started_with_Python.md)
