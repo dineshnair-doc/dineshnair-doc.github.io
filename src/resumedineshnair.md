@@ -49,3 +49,4 @@ notes, and REST documentation.
 *Delhi University*
 
 ---
+[📄 Download Resume as PDF](Resume_DineshNair_TechWriter.pdf){:download .md-button .md-button--secondary}
