@@ -11,6 +11,8 @@
         <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc17/Access_Control.html">
       
       
+        <link rel="prev" href="../doc16/UDF_Functions.html">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -18,7 +20,7 @@
     
     
       
-        <title>Implementing Access Control with Row-Level Security in PostgreSQL - Dinesh's Writings and Resume</title>
+        <title>Access Control - Dinesh's Writings and Resume</title>
       
     
     
@@ -98,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Implementing Access Control with Row-Level Security in PostgreSQL
+              Access Control
             
           </span>
         </div>
@@ -230,17 +232,19 @@
       
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -255,7 +259,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             My Tech Writing
@@ -728,17 +732,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -753,7 +759,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             PostgreSQL
@@ -821,6 +827,123 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Access Control
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Access_Control.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Access Control
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-tables-and-add-data-to-the-tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Tables and Add Data to the Tables
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-users" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create Users
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grant-privileges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Grant Privileges
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enable-row-level-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable Row-Level Security
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-row-level-security-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Row-Level Security Policy
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#log-in-and-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Log In and Test
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -938,8 +1061,7 @@
 
 
 <h1 id="implementing-access-control-with-row-level-security-in-postgresql">Implementing Access Control with Row-Level Security in PostgreSQL</h1>
-<p><img alt="Returns March 26, 2025" src="add_daysfunc.png" />
-Consider this scenario: Managers, Alice and Swati, can only see the skills of their direct reports. For example, Alice can see the skills of employees who report to her and cannot see the skills of employees who report to Swati. To implement this scenario, we'll create the users (Alice and Swati), grant privileges to both, and implement the row-level security so that each manager can only see the skills of their direct reports.</p>
+<p>Consider this scenario: Managers, Alice and Swati, can only see the skills of their direct reports. For example, Alice can see the skills of employees who report to her and cannot see the skills of employees who report to Swati. To implement this scenario, we'll create the users (Alice and Swati), grant privileges to both, and implement the row-level security so that each manager can only see the skills of their direct reports.</p>
 <p><img alt="Create users, grant privileges, implement the row-level security" src="diagram_rls.png" /></p>
 <h2 id="create-tables-and-add-data-to-the-tables">Create Tables and Add Data to the Tables</h2>
 <p>Create an <code>employees</code> table and a <code>skills</code> table to store the relevant data:</p>
@@ -985,15 +1107,15 @@ CREATE ROLE “Swati” WITH LOGIN PASSWORD 'password_for_swati';
 </code></pre>
 <p>Ensure that you choose a strong password for each user.</p>
 <h2 id="grant-privileges">Grant Privileges</h2>
-<p>The users, Alice and Swati, won’t have access to the <code>employees</code> and <code>skills</code> tables. For example, if Alice logs in and tries to query the <code>skills</code> table, she will get a permission denied error message:</p>
-<p><img alt="" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1739965230304/e0ce9a94-13d9-4311-a111-59f70ee2dca2.png align=" title="center" /></p>
-<p>Use the <code>GRANT</code> command to assign privileges. There are different kinds of privileges such as <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, and <code>DELETE</code>. To give Alice and Swati view access to the tables, we’ll grant them <code>SELECT</code> privilege:</p>
+<p>The users, Alice and Swati, won't have access to the <code>employees</code> and <code>skills</code> tables. For example, if Alice logs in and tries to query the <code>skills</code> table, she will get a permission denied error message:</p>
+<p><img alt="Permission denied for Alice" src="rolepriv1.png" /></p>
+<p>Use the <code>GRANT</code> command to assign privileges. There are different kinds of privileges such as <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, and <code>DELETE</code>. To give Alice and Swati view access to the tables, we'll grant them <code>SELECT</code> privilege:</p>
 <pre><code class="language-pgsql">GRANT SELECT ON employees TO “Alice”, “Swati”;
 GRANT SELECT ON skills TO “Alice”, “Swati”;
 </code></pre>
 <h2 id="enable-row-level-security">Enable Row-Level Security</h2>
-<p>We don’t want the two users to access the skills of all employees. For example, because we gave her SELECT privilege, Alice can now use a select query to view all employees' skills:</p>
-<p><img alt="" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1739965753870/0685e8c3-22f9-4397-a857-8eb4e4ba6273.png align=" title="center" /></p>
+<p>We don't want the two users to access the skills of all employees. For example, because we gave her SELECT privilege, Alice can now use a select query to view all employees' skills:</p>
+<p><img alt="Alice can see skills of all employees" src="rolepriv2.png" /></p>
 <p>We want to restrict data access on the <code>skills</code> table based on user roles. So, enable row-level security on the <code>skills</code> table:</p>
 <pre><code class="language-pgsql">ALTER TABLE skills ENABLE ROW LEVEL SECURITY;
 </code></pre>
@@ -1006,10 +1128,10 @@ USING (employee_id IN (SELECT id FROM employees WHERE manager = current_user));
 </code></pre>
 <h2 id="log-in-and-test">Log In and Test</h2>
 <p>Users can log in, and when they access the <code>skills</code> table, they will only see the skills of their direct reports. For instance, when Alice logs in and does a select query on <code>skills</code>, she can only see the skills of her direct reports:</p>
-<p><img alt="" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1739966087383/51e198eb-eb6f-4ae2-b84c-6b0a85e1c3ca.png align=" title="center" /></p>
+<p><img alt="Alice can only see the skills of her direct reports" src="rolepriv3.png" /></p>
 <p>Swati logs in and runs a select query to see both employee names and their skills. The query displays this information only for those employees who report to her:</p>
-<p><img alt="" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1739966298119/d1b231dd-6a68-487e-92b2-0509d4e42102.png align=" title="center" /></p>
-<p>Congratulations! We’ve implemented a basic access control scenario in PostgreSQL. We started by creating user roles using the CREATE ROLE command. We then granted SELECT access to these users so that they have view access to the tables. Finally, we configured a row-level security policy to ensure each user could only access the data they were permitted to see.</p>
+<p><img alt="Swati can only see the skills of her direct reports" src="rolepriv4.png" /></p>
+<p>Congratulations! We've implemented a basic access control scenario in PostgreSQL. We started by creating user roles using the CREATE ROLE command. We then granted SELECT access to these users so that they have view access to the tables. Finally, we configured a row-level security policy to ensure each user could only access the data they were permitted to see.</p>
 
 
 
