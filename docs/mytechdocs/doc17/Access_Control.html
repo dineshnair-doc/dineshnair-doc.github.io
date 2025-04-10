@@ -8,13 +8,9 @@
       
       
       
-        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc15/Aggregate_Functions.html">
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc17/Access_Control.html">
       
       
-        <link rel="prev" href="../doc14/Joins_Explained.html">
-      
-      
-        <link rel="next" href="../doc16/UDF_Functions.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +18,7 @@
     
     
       
-        <title>Aggregate Functions - Dinesh's Writings and Resume</title>
+        <title>Implementing Access Control with Row-Level Security in PostgreSQL - Dinesh's Writings and Resume</title>
       
     
     
@@ -66,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#using-aggregate-functions-in-postgresql" class="md-skip">
+        <a href="#implementing-access-control-with-row-level-security-in-postgresql" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Aggregate Functions
+              Implementing Access Control with Row-Level Security in PostgreSQL
             
           </span>
         </div>
@@ -234,19 +230,17 @@
       
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
@@ -261,7 +255,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             My Tech Writing
@@ -734,19 +728,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -761,7 +753,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             PostgreSQL
@@ -794,31 +786,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Aggregate Functions
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="Aggregate_Functions.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../doc15/Aggregate_Functions.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -828,80 +799,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#setting-up-a-table-with-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setting Up a Table with Data
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#count" class="md-nav__link">
-    <span class="md-ellipsis">
-      Count
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sum" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sum
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#maximum" class="md-nav__link">
-    <span class="md-ellipsis">
-      Maximum
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#minimum" class="md-nav__link">
-    <span class="md-ellipsis">
-      Minimum
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#average" class="md-nav__link">
-    <span class="md-ellipsis">
-      Average
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -971,54 +868,54 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setting-up-a-table-with-data" class="md-nav__link">
+  <a href="#create-tables-and-add-data-to-the-tables" class="md-nav__link">
     <span class="md-ellipsis">
-      Setting Up a Table with Data
+      Create Tables and Add Data to the Tables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#count" class="md-nav__link">
+  <a href="#create-users" class="md-nav__link">
     <span class="md-ellipsis">
-      Count
+      Create Users
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sum" class="md-nav__link">
+  <a href="#grant-privileges" class="md-nav__link">
     <span class="md-ellipsis">
-      Sum
+      Grant Privileges
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#maximum" class="md-nav__link">
+  <a href="#enable-row-level-security" class="md-nav__link">
     <span class="md-ellipsis">
-      Maximum
+      Enable Row-Level Security
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#minimum" class="md-nav__link">
+  <a href="#create-a-row-level-security-policy" class="md-nav__link">
     <span class="md-ellipsis">
-      Minimum
+      Create a Row-Level Security Policy
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#average" class="md-nav__link">
+  <a href="#log-in-and-test" class="md-nav__link">
     <span class="md-ellipsis">
-      Average
+      Log In and Test
     </span>
   </a>
   
@@ -1040,124 +937,79 @@
 
 
 
-<h1 id="using-aggregate-functions-in-postgresql">Using Aggregate Functions in PostgreSQL</h1>
-<p>This write-up covers five key aggregate functions: COUNT, SUM, MAX, MIN, and AVG. These functions are powerful tools for summarizing and analyzing your data. We'll walk through practical examples to illustrate how each function works.</p>
-<hr />
-<h2 id="setting-up-a-table-with-data">Setting Up a Table with Data</h2>
-<p>Before we look at the examples, let's set up our environment. We'll create a sample table in PostgreSQL on a Windows system and add data to it. </p>
-<p>Step 1: Open your PostgreSQL command line interface (<em>psql</em>) and run the following command to create the <code>TrainingPrograms</code> table with columns such as program duration and participant's satisfaction score:</p>
-<pre><code class="language-pgsql">CREATE TABLE TrainingPrograms (
-    ProgramID INT PRIMARY KEY,
-    ProgramName VARCHAR(50),
-    Trainer VARCHAR(50),
-    Duration INT,
-    Participants INT,
-    SatisfactionScore INT
+<h1 id="implementing-access-control-with-row-level-security-in-postgresql">Implementing Access Control with Row-Level Security in PostgreSQL</h1>
+<p><img alt="Returns March 26, 2025" src="add_daysfunc.png" />
+Consider this scenario: Managers, Alice and Swati, can only see the skills of their direct reports. For example, Alice can see the skills of employees who report to her and cannot see the skills of employees who report to Swati. To implement this scenario, we'll create the users (Alice and Swati), grant privileges to both, and implement the row-level security so that each manager can only see the skills of their direct reports.</p>
+<p><img alt="Create users, grant privileges, implement the row-level security" src="diagram_rls.png" /></p>
+<h2 id="create-tables-and-add-data-to-the-tables">Create Tables and Add Data to the Tables</h2>
+<p>Create an <code>employees</code> table and a <code>skills</code> table to store the relevant data:</p>
+<pre><code class="language-pgsql">CREATE TABLE employees (
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(50),
+    manager VARCHAR(50)
+);
+
+CREATE TABLE skills (
+    id SERIAL PRIMARY KEY,
+    employee_id INT REFERENCES employees(id),
+    skill VARCHAR(50)
 );
 </code></pre>
-<p>Step 2: Add some data to the table:</p>
-<pre><code class="language-pgsql">INSERT INTO TrainingPrograms (ProgramID, ProgramName, Trainer, Duration, Participants, SatisfactionScore) VALUES
-(1, 'Leadership Skills', 'Alice', 5, 39, 8),
-(2, 'Business Analysis', 'Emily', 3, 25, 9),
-(3, 'Effective Communication', 'James', 2, 31, 6),
-(4, 'Sales Techniques', 'James', 1, 15, 8),
-(5, 'Web Development', 'Ritu', 4, 39, 9),
-(6, 'Cybersecurity', 'Ritu', 4, 22, 8),
-(7, 'Devops', 'Ritu', 2, 15, 8),
-(8, 'Data Analysis', 'Emily', 2, 18, 9),
-(9, 'Sales Strategies', 'James', 2, 11, 5);
+<p>Add data into the tables:</p>
+<pre><code class="language-pgsql">INSERT INTO employees (name, manager) VALUES
+('Rajesh', 'Alice'),
+('Neha', 'Swati'),
+('Michael', 'Alice'),
+('Emily', 'Swati'),
+('Vikram', 'Alice'),
+('Sophia', 'Swati');    
+
+INSERT INTO skills (employee_id, skill) VALUES
+(1, 'Financial Analysis'),
+(1, 'Budgeting'),
+(2, 'Marketing'),
+(2, 'Brand Management'),
+(3, 'Data Analysis'),
+(3, 'Market Research'),
+(4, 'Content Creation'),
+(4, 'SEO'),
+(5, 'Sales'),
+(5, 'Customer Relationship Management'),
+(6, 'Human Resources'),
+(6, 'Recruitment');
 </code></pre>
-<h2 id="count">Count</h2>
-<p>The <code>COUNT()</code> function returns the number of rows.</p>
-<p>For example, this gives us the number of rows where trainer is <em>James</em>:</p>
-<pre><code class="language-pgsql">SELECT COUNT(*) 
-FROM TrainingPrograms 
-WHERE Trainer = 'James';
+<h2 id="create-users">Create Users</h2>
+<p>In PostgreSQL, a user is essentially a role with the <code>LOGIN</code> attribute. Use the <code>CREATE ROLE</code> command to create the users. We want the role names to be case-sensitive and to appear exactly as we define it. For that, use double quotes around the role name:</p>
+<pre><code class="language-pgsql">CREATE ROLE “Alice” WITH LOGIN PASSWORD 'password_for_alice'; 
+CREATE ROLE “Swati” WITH LOGIN PASSWORD 'password_for_swati';
 </code></pre>
-<p>Here's the result from the SQL query:</p>
-<p><img alt="Count is 3" src="sqlfun1.png" /></p>
-<p>If a column is provided, <code>Count</code> returns the number of non-NULL values in that column. For example, when you run:</p>
-<pre><code class="language-pgsql">SELECT COUNT(ProgramID) FROM TrainingPrograms;
+<p>Ensure that you choose a strong password for each user.</p>
+<h2 id="grant-privileges">Grant Privileges</h2>
+<p>The users, Alice and Swati, won’t have access to the <code>employees</code> and <code>skills</code> tables. For example, if Alice logs in and tries to query the <code>skills</code> table, she will get a permission denied error message:</p>
+<p><img alt="" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1739965230304/e0ce9a94-13d9-4311-a111-59f70ee2dca2.png align=" title="center" /></p>
+<p>Use the <code>GRANT</code> command to assign privileges. There are different kinds of privileges such as <code>SELECT</code>, <code>INSERT</code>, <code>UPDATE</code>, and <code>DELETE</code>. To give Alice and Swati view access to the tables, we’ll grant them <code>SELECT</code> privilege:</p>
+<pre><code class="language-pgsql">GRANT SELECT ON employees TO “Alice”, “Swati”;
+GRANT SELECT ON skills TO “Alice”, “Swati”;
 </code></pre>
-<p>The output will be <code>9</code>.</p>
-<p>To find the total number of trainers:</p>
-<pre><code class="language-pgsql">SELECT COUNT(DISTINCT Trainer) AS TotalTrainers
-FROM TrainingPrograms;
+<h2 id="enable-row-level-security">Enable Row-Level Security</h2>
+<p>We don’t want the two users to access the skills of all employees. For example, because we gave her SELECT privilege, Alice can now use a select query to view all employees' skills:</p>
+<p><img alt="" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1739965753870/0685e8c3-22f9-4397-a857-8eb4e4ba6273.png align=" title="center" /></p>
+<p>We want to restrict data access on the <code>skills</code> table based on user roles. So, enable row-level security on the <code>skills</code> table:</p>
+<pre><code class="language-pgsql">ALTER TABLE skills ENABLE ROW LEVEL SECURITY;
 </code></pre>
-<p>The output will be <code>4</code>.</p>
-<p>Let's consider an interesting use case for the <code>COUNT()</code> function. Suppose we want to analyze how many training programs each trainer has conducted. This can help us understand workload distribution of trainers. Use <code>DESC</code> to order from the most programs to the least.</p>
-<pre><code class="language-pgsql">SELECT Trainer, COUNT(ProgramID) AS NumberOfPrograms
-FROM TrainingPrograms
-GROUP BY Trainer
-ORDER BY NumberOfPrograms DESC;
+<h2 id="create-a-row-level-security-policy">Create a Row-Level Security Policy</h2>
+<p>Define a policy that allows Alice and Swati to see only their employees' skills:</p>
+<pre><code class="language-pgsql">CREATE POLICY employee_skills_policy 
+ON skills 
+FOR SELECT 
+USING (employee_id IN (SELECT id FROM employees WHERE manager = current_user));
 </code></pre>
-<p><img alt="Ritu 3, James 3, Emily 2, Alice 1" src="sqlfun2.png" /></p>
-<p><code>COUNT(ProgramID)</code> counts the total number of programs, and the <code>GROUP BY</code> clause ensures that the count is calculated separately for each trainer.</p>
-<blockquote>
-<p>💡 <strong>Note:</strong> When you use aggregate functions and other columns together, every non-aggregated column must appear in the <code>GROUP BY</code> clause.</p>
-</blockquote>
-<h2 id="sum">Sum</h2>
-<p>The <code>SUM()</code> function calculates the total sum of a numeric column.</p>
-<p>For example, this gives us the total number of participants:</p>
-<pre><code class="language-pgsql">SELECT SUM(Participants) FROM TrainingPrograms;
-</code></pre>
-<p>The result will be <code>215</code>.</p>
-<p>One interesting use case could be to calculate the total duration of all training programs for each trainer. This can help us understand the overall workload and time investment each trainer has made:</p>
-<pre><code class="language-pgsql">SELECT Trainer, SUM(Duration) AS TotalDuration
-FROM TrainingPrograms
-GROUP BY Trainer;
-</code></pre>
-<p>Result of the query:</p>
-<p><img alt="Alice 5, Ritu 10, James 5, Emily 5" src="sqlfun3.png" /></p>
-<p>Let's take another user case. Calculate the total satisfaction scores given by participants for each trainer:</p>
-<pre><code class="language-pgsql">SELECT Trainer, SUM(SatisfactionScore) AS TotalSatisfactionScore
-FROM TrainingPrograms
-GROUP BY Trainer
-ORDER BY TotalSatisfactionScore DESC;
-</code></pre>
-<p>The query returns:</p>
-<p><img alt="Ritu 25, James 19, Emily 18, Alice 8" src="sqlfun4.png" /></p>
-<h2 id="maximum">Maximum</h2>
-<p>The <code>MAX()</code> function returns the maximum value within a column of a table.</p>
-<p>For example, this query returns the maximum satisfaction score:</p>
-<pre><code class="language-pgsql">SELECT MAX(SatisfactionScore) FROM TrainingPrograms;
-</code></pre>
-<p>The result will be <code>9</code>.</p>
-<p>To find the programs that achieved the maximum satisfaction score, you can use a subquery to first find the maximum satisfaction score, and then retrieve the programs that have that score:</p>
-<pre><code class="language-pgsql">SELECT ProgramName, SatisfactionScore
-FROM TrainingPrograms
-WHERE SatisfactionScore = (SELECT MAX(SatisfactionScore) FROM TrainingPrograms);
-</code></pre>
-<p>Here's the result from the query:</p>
-<p><img alt="3 programs had maximum satisfaction score of 9" src="sqlfun5.png" /></p>
-<h2 id="minimum">Minimum</h2>
-<p>The <code>MIN()</code> function returns the minimum value within a column of a table.</p>
-<p>For example, this query returns the lowest number of participants:</p>
-<pre><code class="language-pgsql">SELECT MIN(Participants) FROM TrainingPrograms;
-</code></pre>
-<p>The result is <code>11</code>.</p>
-<p>To find the lowest number of participants and then retrieve the corresponding program:</p>
-<pre><code class="language-pgsql">SELECT ProgramName, Participants
-FROM TrainingPrograms
-WHERE Participants = (SELECT MIN(Participants) FROM TrainingPrograms);
-</code></pre>
-<p>The query returns:</p>
-<p><img alt="Sales strategies program had the least" src="sqlfun6.png" /></p>
-<h2 id="average">Average</h2>
-<p>The <code>AVG()</code> function returns the average value of a numeric column.</p>
-<p>For example, this query returns the average satisfaction score:</p>
-<pre><code class="language-pgsql">SELECT ROUND(AVG(SatisfactionScore), 2) FROM TrainingPrograms;
-</code></pre>
-<p>We've used the <code>ROUND()</code> function to limit the decimal points to 2.</p>
-<p>The query result is <code>7.78</code>.</p>
-<p>This query uses a subquery to find programs with a number of participants above the average:</p>
-<pre><code class="language-pgsql">SELECT ProgramName, Participants
-FROM TrainingPrograms
-WHERE Participants &gt; (SELECT AVG(Participants) FROM TrainingPrograms);
-</code></pre>
-<p>The result shows:</p>
-<p><img alt="Shows the 4 programs that have a number of participants above the average" src="sqlfun7.png" /></p>
-<p>To summarize, we've looked into essential SQL aggregate functions: COUNT, SUM, MAX, MIN, and AVG. We applied these functions to practical scenarios, such as calculating total participants and maximum satisfaction score. Through these examples, you've seen how these functions can be used to extract valuable insights from your data.</p>
+<h2 id="log-in-and-test">Log In and Test</h2>
+<p>Users can log in, and when they access the <code>skills</code> table, they will only see the skills of their direct reports. For instance, when Alice logs in and does a select query on <code>skills</code>, she can only see the skills of her direct reports:</p>
+<p><img alt="" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1739966087383/51e198eb-eb6f-4ae2-b84c-6b0a85e1c3ca.png align=" title="center" /></p>
+<p>Swati logs in and runs a select query to see both employee names and their skills. The query displays this information only for those employees who report to her:</p>
+<p><img alt="" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1739966298119/d1b231dd-6a68-487e-92b2-0509d4e42102.png align=" title="center" /></p>
+<p>Congratulations! We’ve implemented a basic access control scenario in PostgreSQL. We started by creating user roles using the CREATE ROLE command. We then granted SELECT access to these users so that they have view access to the tables. Finally, we configured a row-level security policy to ensure each user could only access the data they were permitted to see.</p>
 
 
 

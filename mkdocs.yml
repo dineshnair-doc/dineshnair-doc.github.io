@@ -41,3 +41,6 @@ nav:
           - User-Defined Functions: mytechdocs/doc16/UDF_Functions.md
 site_dir: docs
 docs_dir: src
+theme:
+  name: material
+  custom_dir: overrides
