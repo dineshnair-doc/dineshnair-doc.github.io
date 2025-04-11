@@ -27,3 +27,4 @@ This page highlights my technical writing across various technologies, including
     - [User-Defined Functions](mytechdocs/doc16/UDF_Functions.md)
     - [Access Control](mytechdocs/doc17/Access_Control.md)
     - [Benefits of PostgreSQL Views](mytechdocs/doc18/Postgres_Views.md)
+    - [Query Faster with Indexing](mytechdocs/doc19/Table_Indexing.md)

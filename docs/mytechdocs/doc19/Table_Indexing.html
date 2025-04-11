@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc6/Postman_Obtain_Auth.html">
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc19/Table_Indexing.html">
       
       
-        <link rel="prev" href="../doc5/Postman_Intro.html">
+        <link rel="prev" href="../doc18/Postgres_Views.html">
       
-      
-        <link rel="next" href="../doc7/Sending_Requests.html">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Obtaining Authorization - Dinesh's Writings and Resume</title>
+        <title>Query Faster with Indexing - Dinesh's Writings and Resume</title>
       
     
     
@@ -66,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#postman-obtaining-authorization" class="md-skip">
+        <a href="#faster-query-in-action-indexing-a-postgresql-table" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Obtaining Authorization
+              Query Faster with Indexing
             
           </span>
         </div>
@@ -404,19 +402,17 @@
                 
   
   
-    
   
   
-  
     
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
         
           
           <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
@@ -431,7 +427,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Postman
@@ -464,31 +460,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Obtaining Authorization
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="Postman_Obtain_Auth.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../doc6/Postman_Obtain_Auth.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -498,62 +473,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#401-unauthorized-why-authorization-is-essential" class="md-nav__link">
-    <span class="md-ellipsis">
-      401 Unauthorized: Why Authorization is Essential
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#create-an-app-on-spotify" class="md-nav__link">
-    <span class="md-ellipsis">
-      Create an App on Spotify
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configure-authorization-settings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure Authorization Settings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#send-an-api-request" class="md-nav__link">
-    <span class="md-ellipsis">
-      Send an API Request
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -813,17 +732,19 @@
                 
   
   
+    
   
   
+  
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" checked>
         
           
           <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
@@ -838,7 +759,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3_5">
             <span class="md-nav__icon md-icon"></span>
             PostgreSQL
@@ -959,10 +880,31 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../doc19/Table_Indexing.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Query Faster with Indexing
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Table_Indexing.html" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -972,6 +914,71 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#create-a-table" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create a Table
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#insert-a-large-data-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insert a Large Data Set
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-a-query-without-an-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run a Query Without an Index
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-an-index" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create an Index
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-a-query-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run a Query Again
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1019,36 +1026,45 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#401-unauthorized-why-authorization-is-essential" class="md-nav__link">
+  <a href="#create-a-table" class="md-nav__link">
     <span class="md-ellipsis">
-      401 Unauthorized: Why Authorization is Essential
+      Create a Table
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-an-app-on-spotify" class="md-nav__link">
+  <a href="#insert-a-large-data-set" class="md-nav__link">
     <span class="md-ellipsis">
-      Create an App on Spotify
+      Insert a Large Data Set
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configure-authorization-settings" class="md-nav__link">
+  <a href="#run-a-query-without-an-index" class="md-nav__link">
     <span class="md-ellipsis">
-      Configure Authorization Settings
+      Run a Query Without an Index
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#send-an-api-request" class="md-nav__link">
+  <a href="#create-an-index" class="md-nav__link">
     <span class="md-ellipsis">
-      Send an API Request
+      Create an Index
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#run-a-query-again" class="md-nav__link">
+    <span class="md-ellipsis">
+      Run a Query Again
     </span>
   </a>
   
@@ -1070,60 +1086,76 @@
 
 
 
-<h1 id="postman-obtaining-authorization">Postman: Obtaining Authorization</h1>
-<p>This document explains how to use Postman to connect to the Spotify API. We'll walk through the process of obtaining authorization and making authenticated API requests to Spotify.</p>
+<h1 id="faster-query-in-action-indexing-a-postgresql-table">Faster Query in Action: Indexing a PostgreSQL Table</h1>
+<p>An index in PostgreSQL can significantly improve query performance by making data retrieval faster. Think of an index like the index of a nonfiction book. If you want to find information about a flower named <em>Blue orchid</em>, you'd flip to the index at the end of the book, look for <em>Blue orchid</em>, and find the page numbers where it's discussed. Similarly, in a database, an index helps PostgreSQL quickly locate the rows associated with the data you're searching for, instead of scanning the entire table.</p>
+<p>In this walkthrough, we'll focus on the default B-tree index to demonstrate how it improves query performance, step by step.</p>
 <hr />
-<h2 id="401-unauthorized-why-authorization-is-essential">401 Unauthorized: Why Authorization is Essential</h2>
-<p>Spotify implements the OAuth 2.0 authorization framework. With OAuth 2.0, an application first retrieves an access token for the API, then uses that token to authenticate subsequent requests.</p>
-<p><img alt="Application gets the access token and then use that token for requests" src="diagram_accesstoken.png" /></p>
-<p>Let's see what happens when we send a request to Spotify without setting up authorization.</p>
-<p>Step 1: Copy an endpoint from the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>.</p>
-<p><img alt="Endpoint URL" src="spotifydoc1.png" /></p>
-<p>Step 2: Open the Postman desktop app, paste the endpoint for GET, and click <strong>Send</strong>.</p>
-<p><img alt="Send button next to endpoint URL" src="wauth1.png" /></p>
-<p>When we click Send, we see a 401 Unauthorized error as the response. That means the request isn't authorized to use Spotify API.</p>
-<p><img alt="401 Unauthorized error message" src="wauth2.png" /></p>
-<p>Let's look at how to obtain authorization from Spotify.</p>
-<h2 id="create-an-app-on-spotify">Create an App on Spotify</h2>
-<p>Step 1: Once you've signed up for a Spotify Developer account, go to the Dashboard and click <strong>Create app</strong>.</p>
-<p>Step 2: Enter the app name and description.</p>
-<p>Step 3: Enter redirect URL. This is the URL where users can be redirected after authentication. It's also known as callback URL. As you'll see later on, we'll need to enter this URL in Postman as callback URL.</p>
-<p>I'm using the Postman desktop app, so I entered the localhost URL for callback. </p>
-<p><img alt="Create app page with app name and callback URL" src="spotifyapp1.png" /></p>
-<p>If you're using Postman online, refer to the authorization topic of the <a href="https://learning.postman.com/">Postman doc</a> to find out the callback URL you should be using.</p>
-<p>Step 4: Click <strong>Save</strong>.</p>
-<p>Step 5: After save, click <strong>Settings</strong> of the app to copy client ID and secret. We'll use this ID and secret in Postman for configuring the authorization settings.</p>
-<p><img alt="Client ID and secret" src="spotifyapp2.png" /></p>
-<h2 id="configure-authorization-settings">Configure Authorization Settings</h2>
-<p>Step 1: Open Postman. Create a new collection.</p>
-<p><img alt="Create collection" src="createauth1.png" /></p>
-<p>Step 2: Name the collection. For example, I named it <em>Spotify</em>.</p>
-<p>Step 3: Click the <strong>Authorization</strong> tab and select <em>OAuth 2.0</em> as authorization type.</p>
-<p><img alt="OAuth 2.0 as authorization type" src="createauth2.png" /></p>
-<p>Next, we'll configure the new access token in the same <strong>Authorization</strong> tab.</p>
-<p>Step 4: Leave the default value of grant type as <em>Authorization Code</em>.</p>
-<p>Step 5: Enter callback URL as the same URL you entered in the Spotify app.</p>
-<p>Step 6: Enter the Auth URL as <code>https://accounts.spotify.com/authorize</code><em>.</em> This is the authorization server's URL. You can find this URL in the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>.</p>
-<p>Step 7: Enter the access token URL as <code>https://accounts.spotify.com/api/token</code>. You can find this URL in the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>.</p>
-<p><img alt="Authorization tab with access token URL" src="createauth3.png" /></p>
-<p>Step 8: Enter your Spotify app's client ID and secret. Postman suggests using variables to store these values to keep the sensitive data secure.</p>
-<p><img alt="Set as variable option" src="createauth4.png" /></p>
-<p>Step 9: Enter the scope of values you're requesting. For example, I entered <em>playlist-read-private playlist-modify-private.</em> You can find the list of acceptable scope values in the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>.</p>
-<p>Step 10: Click <strong>Save</strong>.</p>
-<p>Step 11: Scroll to the bottom of the page and click <strong>Get New Access Token</strong>.</p>
-<p>Step 12: Spotify will ask you to sign in. After signing in, you'll see the terms and conditions. Click <strong>Agree</strong> to proceed.</p>
-<p><img alt="Agree button and terms and conditions" src="createauth5.png" /></p>
-<p>Step 13: When you click <strong>Agree</strong>, a token is automatically generated. You can change the name of the token or use the default name. Click <strong>Use Token</strong> to set this token to be used for all requests in your collection.</p>
-<p><img alt="Access token displayed with the use token button near it" src="createauth6.png" /></p>
-<h2 id="send-an-api-request">Send an API Request</h2>
-<p>Now that we’ve got the access token, let’s send a request.</p>
-<p>Step 1: Copy the endpoint of a request from the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>. For this example, we'll copy <code>https://api.spotify.com/v1/browse/new-releases</code>.</p>
-<p>Step 2: Create a new request in the Spotify collection and paste the endpoint for GET.</p>
-<p><img alt="Endpoint and send button" src="sendreq1.png" /></p>
-<p>Step 3: Click <strong>Send</strong>.</p>
-<p>Step 4: When you click Send, Postman displays the response from Spotify, indicating that the authorization setup is working.</p>
-<p><img alt="200 OK indicating a successful request and response from Spotify" src="sendreq2.png" /></p>
-<p>You did it! You've now learned how to configure authorization in Postman, and tested that your setup is working correctly.</p>
+<h2 id="create-a-table">Create a Table</h2>
+<p>Create the <code>Customers</code> table:</p>
+<pre><code class="language-pgsql">CREATE TABLE Customers (
+    ID SERIAL PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100)
+);
+</code></pre>
+<h2 id="insert-a-large-data-set">Insert a Large Data Set</h2>
+<p>Indexes are especially useful when working with large datasets because they help speed up data retrieval. To demonstrate this, we'll insert a substantial dataset into the <code>Customers</code> table.</p>
+<p>You can use a single query with the <code>generate_series()</code> function to insert multiple rows in PostgreSQL:</p>
+<pre><code class="language-pgsql">INSERT INTO Customers (FirstName, LastName, Email)
+SELECT 
+    'FirstName' || g AS FirstName, 
+    'LastName' || g AS LastName, 
+    'email' || g || '@example.com' AS Email
+FROM generate_series(1, 1000000) g;
+</code></pre>
+<p>This SQL code performs a bulk insert into the <code>Customers</code> table. It generates 1,000,000 rows using <code>generate_series(1, 1000000)</code>, where each row has a unique <code>FirstName</code>, <code>LastName</code>, and <code>Email</code> constructed by concatenating the strings <em>FirstName</em>, <em>LastName</em>, and <em>email</em> with the generated sequence number. The result is one million new customer records.</p>
+<p>For instance, this screenshot shows the first 11 records from the table after data has been inserted:</p>
+<p><img alt="First 11 records from the table with one million records" src="index1.png" /></p>
+<h2 id="run-a-query-without-an-index">Run a Query Without an Index</h2>
+<p>Run a query without creating an index to observe performance:</p>
+<pre><code class="language-pgsql">EXPLAIN ANALYZE
+SELECT * FROM Customers WHERE Email = 'email500000@example.com';
+</code></pre>
+<p>When I ran the query, I got this result:</p>
+<p><img alt="Execution Time measured at 127.725 ms" src="index2_seqscan.png" /></p>
+<p>The database performed a <strong>Parallel Sequential Scan</strong>, which examines every row to locate the matching result. While this approach is acceptable for small datasets, it becomes increasingly inefficient and time-consuming as the table size grows. Note the <strong>Execution Time</strong>, which is measured at <strong>127.725 ms</strong>, highlighting the impact of scanning the entire dataset without indexing.</p>
+<h2 id="create-an-index">Create an Index</h2>
+<p>Create an index on the <code>Email</code> column:</p>
+<pre><code class="language-pgsql">CREATE INDEX idx_email ON Customers (Email);
+</code></pre>
+<h2 id="run-a-query-again">Run a Query Again</h2>
+<p>Now that we've created the index, run a query again:</p>
+<pre><code class="language-pgsql">EXPLAIN ANALYZE
+SELECT * FROM Customers WHERE Email = 'email700000@example.com';
+</code></pre>
+<p>This time I got this result from the query:</p>
+<p><img alt="Execution Time measured at 18.885 ms" src="index3_indexscan.png" /></p>
+<p>Note the difference: Execution time has considerably reduced to <strong>18.885 ms</strong> and the query now uses an <strong>Index Scan</strong>, dramatically reducing the number of rows scanned.</p>
+<p>Rather than scanning every row in the table to locate <code>email700000@example.com</code>, as is the case with a sequential scan in a previous step, PostgreSQL now uses the index on the <code>Email</code> column to efficiently pinpoint the exact row. By using the index, it quickly jumps to the relevant entry for <code>email700000@example.com</code>, retrieves the row, and returns the result, significantly speeding up the query.</p>
+<p>Let's once again look at the comparison:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Scenario</strong></th>
+<th><strong>Scan Type</strong></th>
+<th><strong>Execution Time</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Without Index</td>
+<td>Sequential Scan</td>
+<td>127.725 ms</td>
+</tr>
+<tr>
+<td>With Index</td>
+<td>Index Scan</td>
+<td>18.885 ms</td>
+</tr>
+</tbody>
+</table>
+<p>Congratulations! We've understood the difference between a sequential scan and an index scan, and we've seen how an index can significantly speed up query performance.</p>
 
 
 
