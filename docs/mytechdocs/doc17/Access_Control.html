@@ -14,6 +14,8 @@
         <link rel="prev" href="../doc16/UDF_Functions.html">
       
       
+        <link rel="next" href="../doc18/Postgres_Views.html">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
@@ -949,6 +951,28 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc18/Postgres_Views.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benefits of PostgreSQL Views
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1063,6 +1087,7 @@
 <h1 id="implementing-access-control-with-row-level-security-in-postgresql">Implementing Access Control with Row-Level Security in PostgreSQL</h1>
 <p>Consider this scenario: Managers, Alice and Swati, can only see the skills of their direct reports. For example, Alice can see the skills of employees who report to her and cannot see the skills of employees who report to Swati. To implement this scenario, we'll create the users (Alice and Swati), grant privileges to both, and implement the row-level security so that each manager can only see the skills of their direct reports.</p>
 <p><img alt="Create users, grant privileges, implement the row-level security" src="diagram_rls.png" /></p>
+<hr />
 <h2 id="create-tables-and-add-data-to-the-tables">Create Tables and Add Data to the Tables</h2>
 <p>Create an <code>employees</code> table and a <code>skills</code> table to store the relevant data:</p>
 <pre><code class="language-pgsql">CREATE TABLE employees (

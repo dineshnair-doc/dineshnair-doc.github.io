@@ -26,3 +26,4 @@ This page highlights my technical writing across various technologies, including
     - [Aggregate Functions](mytechdocs/doc15/Aggregate_Functions.md)
     - [User-Defined Functions](mytechdocs/doc16/UDF_Functions.md)
     - [Access Control](mytechdocs/doc17/Access_Control.md)
+    - [Benefits of PostgreSQL Views](mytechdocs/doc18/Postgres_Views.md)

@@ -3,6 +3,8 @@ Consider this scenario: Managers, Alice and Swati, can only see the skills of th
 
 ![Create users, grant privileges, implement the row-level security](diagram_rls.png)
 
+---
+
 ## Create Tables and Add Data to the Tables
 Create an `employees` table and a `skills` table to store the relevant data:
 
