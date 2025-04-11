@@ -9,7 +9,7 @@
 
 Technical writer skilled in enhancing product value through clear and impactful documentation.
 
-My approach is hands-on, actively working with the product, as demonstrated by the screenshots and practical examples featured in my [recent work](my_writings.md){target="_blank"}. I translate complex tech into clear narratives that empower users and drive sales. I'm here to make your product's brilliance shine by visually demonstrating its use with practical examples, rather than simply describing it. **Seeing is Believing**.
+My approach is hands-on, actively working with the product, as demonstrated by the screenshots and practical examples featured in my [recent work](my_writings.md){target="_blank"}. I translate complex tech into clear narratives that empower users and drive sales. I am here to make your product's brilliance shine by visually demonstrating its use with practical examples, rather than simply describing it.
 
 I have a good understanding of the Docs as Code workflow, including writing documentation in Visual Studio Code, managing version control with Git, hosting on GitHub, and publishing using static site generators. For API documentation, I can demonstrate how Swagger automates the generation of accurate, up-to-date documentation directly from FastAPI or Flask-RESTx API code, enhancing developer collaboration and ensuring documentation is closely integrated with the codebase.
 
