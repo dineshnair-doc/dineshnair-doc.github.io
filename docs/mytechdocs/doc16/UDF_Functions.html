@@ -29,6 +29,14 @@
       <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
       
       
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M21%2016.5c0%20.38-.21.71-.53.88l-7.9%204.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99%200%200%201%203%2016.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9%204.44c.32.17.53.5.53.88zM12%204.15%206.04%207.5%2012%2010.85l5.96-3.35zM5%2015.91l6%203.38v-6.71L5%209.21zm14%200v-6.7l-6%203.37v6.71z%22/%3E%3C/svg%3E');}</style>
+
 
 
     
@@ -52,6 +60,7 @@
     
     
     
+  
   <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8cd990d26b8d49f7a3c96828182b8285"}'></script><!-- End Cloudflare Web Analytics -->
 
   </head>
@@ -985,6 +994,94 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Doc Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Doc Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc20/Using_Markdown.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markdown
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc21/Using_reStructuredText.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    reStructuredText
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1106,8 +1203,9 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 </code></pre>
-<p>You can call this function like this: <code>SELECT add_days('2025-03-16', 10);</code>. It will return a date 10 days after March 16, 2025:
-<img alt="Returns March 26, 2025" src="add_daysfunc.png" /></p>
+<p>You can call this function like this: <code>SELECT add_days('2025-03-16', 10);</code> 
+It will return a date 10 days after March 16, 2025:</p>
+<p><img alt="Returns March 26, 2025" src="add_daysfunc.png" /></p>
 <h2 id="example-2-function-to-calculate-grades">Example 2: Function to Calculate Grades</h2>
 <p>Next up, we'll see how conditional logic and error handling can be implemented in a function. This function takes an integer score as input and returns a corresponding grade.</p>
 <pre><code class="language-pgsql">CREATE FUNCTION calculate_grade(score INTEGER)
@@ -1155,8 +1253,8 @@ SELECT calculate_grade(71);   -- Returns 'B+'
 SELECT calculate_grade(55);   -- Returns 'C'
 SELECT calculate_grade(105);  -- Returns 'The score should not be less than 0 or greater than 100'
 </code></pre>
-<p>Take a look at the screenshot to see it in action:
-<img alt="Function returning the calculated grades" src="calcgradefunct.png" /></p>
+<p>Take a look at this screenshot to see it in action:</p>
+<p><img alt="Function returning the calculated grades" src="calcgradefunct.png" /></p>
 <h2 id="example-3-function-to-determine-campaign-priority-for-a-store">Example 3: Function to Determine Campaign Priority for a Store</h2>
 <p>In our final example, we'll create a function that uses a table. The function determines the priority level (High, Medium, or Low) for implementing a marketing campaign based on estimated total revenue.</p>
 <p>Create a table that includes the necessary columns to store the campaign name, store name, and total estimated revenue. These columns will provide the data needed for the function to determine the priority level based on the estimated revenue.</p>
@@ -1201,7 +1299,7 @@ LANGUAGE plpgsql;
 <p><strong>RETURN Query</strong>: Runs the <code>SELECT</code> query and return its result. The result of this query forms the table structure defined in the <code>RETURNS TABLE</code> clause.</p>
 </li>
 <li>
-<p><strong>SELECT Query</strong>: The result of the <code>CASE</code> expression is aliased as <code>priority_level</code>. The <code>store_name</code> is selected directly from the <code>campaign_targets</code> table.</p>
+<p><strong>SELECT Query</strong>: The result of the <code>CASE</code> expression is aliased as <code>priority_level</code>. The <code>store_name</code> is selected directly from the <code>campaign_targets</code> table.    </p>
 </li>
 </ul>
 <p>You can call the function like this:</p>
@@ -1210,8 +1308,8 @@ SELECT * FROM get_campaign_priority('Summer Clearance');
 SELECT * FROM get_campaign_priority('Golden Week Promo'); 
 SELECT * FROM get_campaign_priority('Winter Fest Sale');
 </code></pre>
-<p>The function returns the priority level based on the estimated total revenue:
-<img alt="Returns priority level, for example, for store A it is high-priority" src="calccampaignprior.png" /></p>
+<p>The function returns the priority level based on the estimated total revenue:</p>
+<p><img alt="Returns priority level, for example, for store A it is high-priority" src="calccampaignprior.png" /></p>
 <p>Congratulations! We have covered the syntax for creating a function, incorporated conditional logic using the <code>CASE</code> statement, and worked with table data. We also discussed error handling to ensure the function runs smoothly.</p>
 
 
@@ -1263,7 +1361,7 @@ SELECT * FROM get_campaign_priority('Winter Fest Sale');
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
       <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>

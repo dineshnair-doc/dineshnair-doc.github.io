@@ -36,7 +36,9 @@ END;
 $$ LANGUAGE plpgsql;
 ```
 
-You can call this function like this: `SELECT add_days('2025-03-16', 10);`. It will return a date 10 days after March 16, 2025:
+You can call this function like this: `SELECT add_days('2025-03-16', 10);` 
+It will return a date 10 days after March 16, 2025:
+
 ![Returns March 26, 2025](add_daysfunc.png)
 
 ## Example 2: Function to Calculate Grades
@@ -76,7 +78,6 @@ The function first checks if the input score is within the valid range (0-100). 
 * **ELSE default\_result**: The ELSE clause is optional. If none of the WHEN conditions are true, the ELSE result is returned. If you omit the ELSE clause and none of the WHEN conditions are true, the CASE statement will return NULL.
     
 * **END**: Concludes the CASE statement. This is *required*.
-    
 
 Finally, the function returns the calculated grade.
 
@@ -90,7 +91,8 @@ SELECT calculate_grade(55);   -- Returns 'C'
 SELECT calculate_grade(105);  -- Returns 'The score should not be less than 0 or greater than 100'
 ```
 
-Take a look at the screenshot to see it in action:
+Take a look at this screenshot to see it in action:
+
 ![Function returning the calculated grades](calcgradefunct.png)
 
 ## Example 3: Function to Determine Campaign Priority for a Store
@@ -144,8 +146,7 @@ LANGUAGE plpgsql;
 
 * **RETURN Query**: Runs the `SELECT` query and return its result. The result of this query forms the table structure defined in the `RETURNS TABLE` clause.
     
-* **SELECT Query**: The result of the `CASE` expression is aliased as `priority_level`. The `store_name` is selected directly from the `campaign_targets` table.
-    
+* **SELECT Query**: The result of the `CASE` expression is aliased as `priority_level`. The `store_name` is selected directly from the `campaign_targets` table.    
 
 You can call the function like this:
 
@@ -157,6 +158,7 @@ SELECT * FROM get_campaign_priority('Winter Fest Sale');
 ```
 
 The function returns the priority level based on the estimated total revenue:
+
 ![Returns priority level, for example, for store A it is high-priority](calccampaignprior.png)
 
 Congratulations! We have covered the syntax for creating a function, incorporated conditional logic using the `CASE` statement, and worked with table data. We also discussed error handling to ensure the function runs smoothly.

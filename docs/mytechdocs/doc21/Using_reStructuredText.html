@@ -1,0 +1,1784 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://dineshnair-doc.github.io/mytechdocs/doc21/Using_reStructuredText.html">
+      
+      
+        <link rel="prev" href="../doc20/Using_Markdown.html">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
+    
+    
+      
+        <title>reStructuredText - Dinesh's Writings and Resume</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4af4bdda.min.css">
+      
+      
+  
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20d%3D%22M21%2016.5c0%20.38-.21.71-.53.88l-7.9%204.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99%200%200%201%203%2016.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9%204.44c.32.17.53.5.53.88zM12%204.15%206.04%207.5%2012%2010.85l5.96-3.35zM5%2015.91l6%203.38v-6.71L5%209.21zm14%200v-6.7l-6%203.37v6.71z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  
+  <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "8cd990d26b8d49f7a3c96828182b8285"}'></script><!-- End Cloudflare Web Analytics -->
+
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#using-restructuredtext-with-sphinx" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="Dinesh&#39;s Writings and Resume" class="md-header__button md-logo" aria-label="Dinesh's Writings and Resume" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Dinesh's Writings and Resume
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              reStructuredText
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="Dinesh&#39;s Writings and Resume" class="md-nav__button md-logo" aria-label="Dinesh's Writings and Resume" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Dinesh's Writings and Resume
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../resumedineshnair.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Resume
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    My Tech Writing
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            My Tech Writing
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Python
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            Python
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc1/Getting_Started_with_Python.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started with Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc2/Casting_in_Python.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Casting in Python
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc3/Python_Data_Structures.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lists, Dictionaries, Tuples, and Sets
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc4/Classes_and_Objects.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Classes and Objects
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Postman
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Postman
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc5/Postman_Intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Introduction to Postman
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc6/Postman_Obtain_Auth.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obtaining Authorization
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc7/Sending_Requests.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sending Requests
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Flask
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Flask
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc8/Flask_Intro.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started with Flask
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc9/First_REST_API_Flask.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    First REST API Using Flask
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc10/Webpage_Flask_Postgres.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Web Page Using Flask and PostgreSQL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc11/Flask_Restx_Swagger.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Flask-RESTx API with Swagger Doc
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    FastAPI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            FastAPI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc12/FastAPI_Performance.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FastAPI Performance
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc13/FastAPI_Postgres_Swagger.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FastAPI with PostgreSQL and Swagger Doc
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    PostgreSQL
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            PostgreSQL
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc14/Joins_Explained.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SQL Joins
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc15/Aggregate_Functions.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Aggregate Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc16/UDF_Functions.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    User-Defined Functions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc17/Access_Control.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Access Control
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc18/Postgres_Views.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Benefits of PostgreSQL Views
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc19/Table_Indexing.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Query Faster with Indexing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Doc Formats
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Doc Formats
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../doc20/Using_Markdown.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Markdown
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    reStructuredText
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="Using_reStructuredText.html" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    reStructuredText
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-sphinx-and-initialize-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Sphinx and Initialize a Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-rst-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create .RST Files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create .RST Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#images-and-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Images and Links
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-references
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-indexrst-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update index.rst File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-the-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build the Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-the-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review the Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Review the Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headings_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lists_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#images-and-links_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Images and Links
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-examples_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-references_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-references
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#install-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Python
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-sphinx-and-initialize-a-project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Sphinx and Initialize a Project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-rst-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create .RST Files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Create .RST Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#images-and-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      Images and Links
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-references
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#update-indexrst-file" class="md-nav__link">
+    <span class="md-ellipsis">
+      Update index.rst File
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#build-the-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Build the Documentation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#review-the-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review the Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Review the Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headings_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Headings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lists_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lists
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#images-and-links_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Images and Links
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tables
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-examples_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code Examples
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-references_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cross-references
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#notes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="using-restructuredtext-with-sphinx">Using reStructuredText with Sphinx</h1>
+<p>reStructuredText is a language to format and structure documents. It has an easy-to-use syntax like Markdown.</p>
+<p>reStructuredText is commonly used with Sphinx to generate documentation. Sphinx is a tool that converts <code>.rst</code> (reStructuredText) files into various output formats, such as HTML.</p>
+<p>This document walks you through the steps to set up Sphinx on Windows, write reStructuredText in <code>.rst</code> files, and then view the output in HTML format.</p>
+<hr />
+<h2 id="install-python">Install Python</h2>
+<p>Python is needed to run Sphinx. You can download Python from here: <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a></p>
+<h2 id="install-sphinx-and-initialize-a-project">Install Sphinx and Initialize a Project</h2>
+<p>Step 1: Open Command Prompt.</p>
+<p>Step 2: Create a virtual environment:</p>
+<p><code>python -m venv .venv</code></p>
+<p>Step 3: Activate the virtual environment:</p>
+<p><code>.\.venv\Scripts\activate</code></p>
+<p>Step 4: Install Sphinx in the virtual environment:</p>
+<p><code>pip install sphinx</code></p>
+<p>Sphinx will start installing:</p>
+<p><img alt="Sphinx installing" src="RT1.png" /></p>
+<p>Step 5: Initialize a Sphinx project:</p>
+<p><code>sphinx-quickstart</code></p>
+<p>When the quickstart utility runs, it will ask you to specify various configuration options. I opted for separate source and build directories. I also entered the project name, author name, and project release, and left the language blank to select the default as English.</p>
+<p><img alt="Quickstart utility configuration options" src="RT2.png" /></p>
+<p>Quickstart will create the necessary directory structure of the project with all the essential files:</p>
+<p><img alt="Quickstart message saying directory structure has been created" src="RT3.png" /></p>
+<p>After running the quickstart utility, my project directory looks like this in Windows Explorer:</p>
+<p><img alt="Directory structure in Windows" src="RT4.png" /></p>
+<h2 id="create-rst-files">Create .RST Files</h2>
+<p><code>.rst</code> files are reStructuredText files. The <code>index.rst</code> file was already created when you ran the quickstart utility.</p>
+<p>We'll create other <code>.rst</code> files in the source directory to learn how reStructuredText formats documents. Each of these <code>.rst</code> files correspond to different content types, such as headings and lists.</p>
+<h3 id="headings">Headings</h3>
+<p>Create a file named <code>headings.rst</code> with this content:</p>
+<pre><code class="language-rst">Headings
+========
+This is the highest level of heading (Heading 1).
+
+Heading 2
+---------
+This is the second level of heading.
+
+Heading 3
+~~~~~~~~~
+This is the third level of heading.
+
+Heading 4
+^^^^^^^^^
+This is the fourth level of heading.
+</code></pre>
+<p>The <code>headings.rst</code> content shows how to format different heading levels.</p>
+<h3 id="lists">Lists</h3>
+<p>Create a file named <code>lists.rst</code> with this content:</p>
+<pre><code class="language-rst">Lists
+=====
+
+Bullet Points
+-------------
+
+- Item 1
+- Item 2
+- Item 3
+- Item 4
+
+Numbered List
+-------------
+
+1. First item
+2. Second item
+3. Third item
+4. Fourth item
+</code></pre>
+<p>The <code>lists.rst</code> content shows how to format bulleted and numbered lists.</p>
+<h3 id="images-and-links">Images and Links</h3>
+<p>Create a file named <code>imagesandlinks.rst</code> with this content:</p>
+<pre><code class="language-rst">Images and Links
+================
+
+.. image:: images/image-unsplash.jpg
+   :alt: Sample Image
+   :width: 600px
+   :align: center
+
+This is a caption for the sample image.
+
+Photo by `Daniel Peters &lt;https://unsplash.com/@danee?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash&gt;`_ on `Unsplash &lt;https://unsplash.com/photos/landscape-photography-of-brown-trees-2tvkoVK8prc?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash&gt;`_
+</code></pre>
+<p>I created the <code>images</code> directory in the source directory and added an image named <code>image-unsplash.jpg</code>.</p>
+<p>The image credit link uses backticks and an underscore like this:</p>
+<pre><code class="language-rst">`Link Text &lt;https://example.com&gt;`_
+</code></pre>
+<h3 id="tables">Tables</h3>
+<p>Create a file named <code>tables.rst</code> with this content:</p>
+<pre><code class="language-rst">Tables
+======
+
+.. _product_table:
+
+.. list-table:: Product Table
+   :header-rows: 1
+
+   * - Product ID
+     - Product Name
+   * - 101
+     - Laptop
+   * - 102
+     - Smartphone
+   * - 103
+     - Headphones
+   * - 104
+     - Monitor
+</code></pre>
+<p>This is used before the table header to create a reference label:</p>
+<pre><code class="language-rst">.. _product_table:
+</code></pre>
+<p>We'll see how the label is used for cross-reference later on.</p>
+<p>This indicates that the first row is a header row of the table:</p>
+<pre><code class="language-rst">:header-rows: 1
+</code></pre>
+<p>This indicates a new row:</p>
+<pre><code class="language-rst">* -
+</code></pre>
+<h3 id="code-examples">Code Examples</h3>
+<p>Create a file named <code>codeexamples.rst</code> with this content:</p>
+<pre><code class="language-rst">Code Examples
+=============
+
+Code that uses a simple `for` loop to initialize `i` to 1 and print the values from 1 to 5.
+
+.. code-block:: python
+
+    # Simple for loop
+    for i in range(1, 6):
+        print(i)
+</code></pre>
+<p>As shown in the example, ensure the code is properly indented under the <code>.. code-block::</code> directive.</p>
+<h3 id="cross-references">Cross-references</h3>
+<p>Create a file named <code>crossreferences.rst</code> with this content:</p>
+<pre><code class="language-rst">Cross-references
+================
+
+We offer computer-related products of different brands. 
+
+For a list of our products, refer to the :ref:`Product Table &lt;product_table&gt;` page.
+</code></pre>
+<p>We've created a cross-reference to the tables file using the format:</p>
+<pre><code class="language-rst">:ref:`Link Text &lt;reference_label&gt;`
+</code></pre>
+<h3 id="notes">Notes</h3>
+<p>Create a file named <code>notes.rst</code> with this content:</p>
+<pre><code class="language-rst">Notes
+=====
+
+.. note::
+
+   Text that provides additional information to the reader.
+
+.. warning::
+
+   Text that points the reader to something that's important to consider.
+
+.. seealso::
+
+   For more information about Sphinx, see the `Official Documentation &lt;https://www.sphinx-doc.org&gt;`_.
+</code></pre>
+<h2 id="update-indexrst-file">Update index.rst File</h2>
+<p>We'll now edit <code>index.rst</code> to add a table of contents. This file represents the home page, so we'll also give an overview of the various content types, such as headings and lists.</p>
+<p>Here's the updated content for <code>index.rst</code>:</p>
+<pre><code class="language-rst">.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   headings
+   lists
+   imagesandlinks
+   tables
+   codeexamples
+   crossreferences
+   notes
+
+Welcome!
+========
+
+This documentation demonstrates various reStructuredText features.
+
+**Headings**
+
+Refer to the *Headings* topic for examples of how to create different levels of headings.
+
+**Lists**
+
+Refer to the *Lists* topic for examples of bullet points and numbered lists.
+
+**Images and Links**
+
+Refer to the *Images and Links* topic to learn how to add images and links.
+
+**Tables**
+
+Refer to the *Tables* topic to learn how to add tables in your documentation.
+
+**Code Examples**
+
+See the *Code Examples* topic to learn how to format code examples.
+
+**Cross-references**
+
+Refer to the *Cross-references* topic to learn how to cross-reference in your documentation.
+
+**Notes**
+
+See the *Notes* topic for examples of note and warning.
+</code></pre>
+<p>Here's a breakdown of what this file will do:</p>
+<p>The <code>.. toctree::</code> directive creates a table of contents.</p>
+<p>The <code>:maxdepth: 1</code> option indicates the maximum depth of the table of contents. In this case, it will only include the first level of headings.</p>
+<p>The <code>:hidden:</code>option hides the table of contents from the main document. But Sphinx still processes it to generate the navigation pane, allowing users to easily navigate through the documentation.</p>
+<p>The list beneath (<code>headings</code>, <code>lists</code>, <code>imagesandlinks</code> and so on) represents the names of <code>.rst</code> files. These files are linked as entries in the table of contents.</p>
+<h2 id="build-the-documentation">Build the Documentation</h2>
+<p>Generate the HTML files by running the build command:</p>
+<p><code>sphinx-build -M html source/ build/</code></p>
+<p><img alt="Sphinx build running" src="RT5.png" /></p>
+<p>After the build runs, it indicates that the html files are in the <code>build\html</code> directory:</p>
+<p><img alt="Html files ready" src="RT6.png" /></p>
+<h2 id="review-the-documentation">Review the Documentation</h2>
+<p>After building your documentation, you can review the generated HTML files to ensure everything is formatted correctly. For each <code>.rst</code> file, a corresponding <code>.html</code> file is generated. The <code>.html</code> files are in the <code>build\html</code> directory. Open <code>index.html</code> in your web browser to see your documentation.</p>
+<p>This is what you'll see when you open the <code>index.html</code> file:</p>
+<p><img alt="Home page with table of contents on left pane" src="RT7.png" /></p>
+<h3 id="headings_1">Headings</h3>
+<p>Click <strong>Headings</strong> on the navigation pane to view the <code>headings.html</code> page:</p>
+<p><img alt="Headings page showing different level of headings" src="RT8.png" /></p>
+<h3 id="lists_1">Lists</h3>
+<p>Click <strong>Lists</strong> on the navigation pane to view the <code>lists.html</code> page:</p>
+<p><img alt="Lists page showing bulleted and numbered lists" src="RT9.png" /></p>
+<h3 id="images-and-links_1">Images and Links</h3>
+<p>Click <strong>Images and Links</strong> on the navigation pane to view the <code>imagesandlinks.html</code> page:</p>
+<p><img alt="Images page showing the image and links" src="RT10.png" /></p>
+<h3 id="tables_1">Tables</h3>
+<p>Click <strong>Tables</strong> on the navigation pane to view the <code>tables.html</code> page:</p>
+<p><img alt="Tables page showing the product table" src="RT11.png" /></p>
+<h3 id="code-examples_1">Code Examples</h3>
+<p>Click <strong>Code Examples</strong> on the navigation pane to view the <code>codeexamples.html</code> page:</p>
+<p><img alt="Code examples page showing the code in a code block" src="RT12.png" /></p>
+<h3 id="cross-references_1">Cross-references</h3>
+<p>Click <strong>Cross-references</strong> on the navigation pane to view the <code>crossreferences.html</code> page:</p>
+<p><img alt="Cross references page showing the link to product table" src="RT13.png" /></p>
+<p>The reader can click the <strong>Product Table</strong> link to navigate to the product table on the <code>tables.html</code> page.</p>
+<h3 id="notes_1">Notes</h3>
+<p>Click <strong>Notes</strong> on the navigation pane to view the <code>notes.html</code> page:</p>
+<p><img alt="Notes page showing the note, warning and see also text" src="RT14.png" /></p>
+<p>Congratulations! You've learned how to set up Sphinx, explored ways to format and structure documents using reStructuredText, and how to build HTML documentation from the source <code>.rst</code> files.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024-2025 Dinesh Nair
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+    
+  </body>
+</html>

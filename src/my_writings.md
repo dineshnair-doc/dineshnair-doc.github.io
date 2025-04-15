@@ -28,3 +28,7 @@ This page highlights my technical writing across various technologies, including
     - [Access Control](mytechdocs/doc17/Access_Control.md)
     - [Benefits of PostgreSQL Views](mytechdocs/doc18/Postgres_Views.md)
     - [Query Faster with Indexing](mytechdocs/doc19/Table_Indexing.md)
+
+??? info "Doc Formats"
+    - [Markdown](mytechdocs/doc20/Using_Markdown.md)
+    - [reStructuredText](mytechdocs/doc21/Using_reStructuredText.md)

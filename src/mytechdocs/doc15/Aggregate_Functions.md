@@ -75,6 +75,8 @@ GROUP BY Trainer
 ORDER BY NumberOfPrograms DESC;
 ```
 
+Here's what the query returns:
+
 ![Ritu 3, James 3, Emily 2, Alice 1](sqlfun2.png)
 
 `COUNT(ProgramID)` counts the total number of programs, and the `GROUP BY` clause ensures that the count is calculated separately for each trainer.
