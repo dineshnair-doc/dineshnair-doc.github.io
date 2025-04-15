@@ -1,5 +1,5 @@
 # Using reStructuredText with Sphinx
-reStructuredText is a language to format and structure documents. It has an easy-to-use syntax like Markdown.
+reStructuredText is a markup language for formatting and structuring documents, similar to Markdown.
 
 reStructuredText is commonly used with Sphinx to generate documentation. Sphinx is a tool that converts `.rst` (reStructuredText) files into various output formats, such as HTML.
 
