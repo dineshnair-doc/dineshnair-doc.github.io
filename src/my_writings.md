@@ -32,3 +32,6 @@ This page highlights my technical writing across various technologies, including
 ??? info "Doc Formats"
     - [Markdown](mytechdocs/doc20/Using_Markdown.md)
     - [reStructuredText](mytechdocs/doc21/Using_reStructuredText.md)
+
+??? info "Vale"
+    - [Creating Your First Style Check](mytechdocs/doc22/Vale_First_Check.md)

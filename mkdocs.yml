@@ -46,5 +46,7 @@ nav:
       - Doc Formats:
           - Markdown: mytechdocs/doc20/Using_Markdown.md
           - reStructuredText: mytechdocs/doc21/Using_reStructuredText.md
+      - Vale:
+          - First Style Check: mytechdocs/doc22/Vale_First_Check.md
 site_dir: docs
 docs_dir: src
