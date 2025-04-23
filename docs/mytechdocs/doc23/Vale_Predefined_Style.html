@@ -1249,6 +1249,9 @@
 
 <h1 id="configuring-vale-using-a-standard-style-guide-and-extending-it">Configuring Vale: Using a Standard Style Guide and Extending It</h1>
 <p>This document explains how to configure Vale with the Microsoft Style Guide. Then, we'll enhance the style guide by defining a couple of custom rules.</p>
+<blockquote>
+<p>💡 <strong>Note:</strong> The document uses a community-maintained Vale package based on the Microsoft Writing Style Guide: <a href="https://github.com/errata-ai/Microsoft" target="_blank">https://github.com/errata-ai/Microsoft</a>. The package is not officially supported or published by Microsoft.</p>
+</blockquote>
 <hr />
 <h2 id="configure-vale-to-use-the-microsoft-style-guide">Configure Vale to Use the Microsoft Style Guide</h2>
 <p>Step 1: In your project directory, create a <code>.vale.ini</code> file with the following content:</p>
@@ -1263,7 +1266,7 @@ BasedOnStyles = Microsoft
 <ul>
 <li><code>StylesPath = styles</code> defines the directory where Vale looks for style rule definitions.</li>
 <li><code>MinAlertLevel = suggestion</code> configures Vale to display all alerts, including suggestions, warnings, and errors.</li>
-<li><code>Packages = Microsoft</code> directs Vale to include the Microsoft package, a pre-built style guide provided by Vale.</li>
+<li><code>Packages = Microsoft</code> directs Vale to include the Microsoft package.</li>
 <li><code>[*.md]</code> ensures that Vale applies style rules only to Markdown <code>(.md)</code> files.</li>
 <li><code>BasedOnStyles = Microsoft</code> instructs Vale to base its checking on the Microsoft style guidelines.</li>
 </ul>
@@ -1369,8 +1372,9 @@ Packages = Microsoft
 [*.md]
 BasedOnStyles = Microsoft, Custom
 </code></pre>
-<p>In summary, this configuration tells Vale to look for styles in the <em>styles</em> folder, report all alert levels including suggestions, use the Microsoft style package, and apply the Microsoft and Custom styles to the markdown files in the project.</p>
-<p>Step 5: Run Vale on the document: <code>vale sample.md</code> It should display alerts from both the Microsoft style guide and the customized styles we set up.</p>
+<p>In summary, this configuration tells Vale to look for styles in the <em>styles</em> folder, report all alert levels including suggestions, use the Microsoft style package, and apply the Microsoft and Custom styles to the Markdown files in the project.</p>
+<p>Step 5: Run Vale on the document: <code>vale sample.md</code> </p>
+<p>It should display alerts from both the Microsoft style guide and the customized styles we set up.</p>
 <p><img alt="Vale flagged 6 errors and 1 suggestion during the check" src="valems4.png" /></p>
 <p>Nicely done! You've successfully configured the Microsoft Style Guide and created your own custom rules. Your documents are now set to stay clear, consistent, and professional, adapted to your needs.</p>
 

@@ -1,7 +1,10 @@
 # Configuring Vale: Using a Standard Style Guide and Extending It
 This document explains how to configure Vale with the Microsoft Style Guide. Then, we'll enhance the style guide by defining a couple of custom rules.
 
+> 💡 **Note:** The document uses a community-maintained Vale package based on the Microsoft Writing Style Guide: [https://github.com/errata-ai/Microsoft](https://github.com/errata-ai/Microsoft){target="_blank"}. The package is not officially supported or published by Microsoft.
+
 ---
+
 ## Configure Vale to Use the Microsoft Style Guide
 Step 1: In your project directory, create a `.vale.ini` file with the following content:
 
@@ -17,7 +20,7 @@ BasedOnStyles = Microsoft
 
 - `StylesPath = styles` defines the directory where Vale looks for style rule definitions.
 - `MinAlertLevel = suggestion` configures Vale to display all alerts, including suggestions, warnings, and errors.
-- `Packages = Microsoft` directs Vale to include the Microsoft package, a pre-built style guide provided by Vale.
+- `Packages = Microsoft` directs Vale to include the Microsoft package.
 - `[*.md]` ensures that Vale applies style rules only to Markdown `(.md)` files.
 - `BasedOnStyles = Microsoft` instructs Vale to base its checking on the Microsoft style guidelines.
 
@@ -125,9 +128,11 @@ Packages = Microsoft
 BasedOnStyles = Microsoft, Custom
 ```
 
-In summary, this configuration tells Vale to look for styles in the *styles* folder, report all alert levels including suggestions, use the Microsoft style package, and apply the Microsoft and Custom styles to the markdown files in the project.
+In summary, this configuration tells Vale to look for styles in the *styles* folder, report all alert levels including suggestions, use the Microsoft style package, and apply the Microsoft and Custom styles to the Markdown files in the project.
 
-Step 5: Run Vale on the document: `vale sample.md` It should display alerts from both the Microsoft style guide and the customized styles we set up.
+Step 5: Run Vale on the document: `vale sample.md` 
+
+It should display alerts from both the Microsoft style guide and the customized styles we set up.
 
 ![Vale flagged 6 errors and 1 suggestion during the check](valems4.png)
 
