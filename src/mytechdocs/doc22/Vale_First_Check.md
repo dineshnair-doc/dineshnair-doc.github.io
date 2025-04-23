@@ -15,7 +15,7 @@ BasedOnStyles = CustomRules
 
 - `StylesPath = styles` defines the directory where Vale looks for style rule definitions.
 - `[*]` applies rules to all file types by default. If you want different rules for Markdown or AsciiDoc, you can specify them under `[md]` or `[adoc]`.
-- `BasedOnStyles = CustomRules` tells Vale to use the `CustomRules` style guide, and you'll create a *CustomRules* directory inside the *styles* folder to hold your custom checks.
+- `BasedOnStyles = CustomRules` tells Vale to use the `CustomRules` style guide, and you'll create a *CustomRules* directory inside the *styles* directory to store your custom checks.
 
 ## Create the Styles Directory
 Step 1: Create a *styles* directory inside your working directory. 

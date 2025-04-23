@@ -48,5 +48,6 @@ nav:
           - reStructuredText: mytechdocs/doc21/Using_reStructuredText.md
       - Vale:
           - First Style Check: mytechdocs/doc22/Vale_First_Check.md
+          - Using and Extending a Standard Style: mytechdocs/doc23/Vale_Predefined_Style.md
 site_dir: docs
 docs_dir: src

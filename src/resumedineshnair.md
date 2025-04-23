@@ -18,7 +18,7 @@ Looking for a remote work opportunity in India or an in-office role in Hyderabad
 ---
 
 ## Skills
-Technical Documentation, REST API Documentation, Training Content, UX Writing, DITA, Markdown, Swagger, Postman, Git and GitHub, Oxygen XML Author, Confluence, Visual Studio Code, HTML, Python (Intermediate), SQL (Intermediate)
+Technical Documentation, REST API Documentation, Training Content, UX Writing, DITA, Markdown, Swagger, Postman, Git and GitHub, Oxygen XML Author, Confluence, Visual Studio Code, Vale, HTML, Python (Intermediate), SQL (Intermediate)
 
 ---
 
