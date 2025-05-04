@@ -36,3 +36,4 @@ This page highlights my technical writing across various technologies, including
 ??? info "Vale"
     - [Creating Your First Style Check](mytechdocs/doc22/Vale_First_Check.md)
     - [Using and Extending a Standard Style](mytechdocs/doc23/Vale_Predefined_Style.md)
+    - [Enhancing Spell Checks with Custom Lists](mytechdocs/doc24/Vale_Spell_Check.md)
