@@ -11,23 +11,43 @@ Technical writer skilled in enhancing product value through clear and impactful 
 
 My approach is hands-on, actively working with the product, as demonstrated by the screenshots and practical examples featured in my [recent work](my_writings.md){target="_blank"}. I translate complex tech into clear narratives that empower users and drive sales. I am here to make your product's brilliance shine by visually demonstrating its use with practical examples, rather than simply describing it.
 
-I have a good understanding of the Docs as Code workflow, including writing documentation in Visual Studio Code, managing version control with Git, hosting on GitHub, and publishing using static site generators. For API documentation, I can demonstrate how Swagger automates the generation of accurate, up-to-date documentation directly from FastAPI or Flask-RESTx API code, enhancing developer collaboration and ensuring documentation is closely integrated with the codebase.
+I have a good understanding of the Docs as Code workflow, including writing documentation in Visual Studio Code, managing version control with Git, hosting on GitHub, and publishing using a static site generator. 
+
+For API documentation, I can demonstrate how Swagger automates the generation of accurate, up-to-date documentation directly from FastAPI or Flask-RESTx API code, enhancing developer collaboration and ensuring documentation is closely integrated with the codebase.
 
 Looking for a remote work opportunity in India or an in-office role in Hyderabad, India. Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/dineshn1/){target="_blank"} or reach out to me through email at [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com).
 
 ---
 
 ## Skills
-Technical Documentation, REST API Documentation, Training Content, UX Writing, DITA, Markdown, Swagger, Postman, Git and GitHub, Oxygen XML Author, Confluence, Visual Studio Code, Vale, HTML, Python (Intermediate), SQL (Intermediate)
+**Documentation & Authoring:**  
+Oxygen XML Author, DITA, Markdown, Confluence, Vale, HTML
+
+**API Documentation & Development Tools:**  
+Swagger (OpenAPI), Postman, REST APIs, FastAPI, Flask-RESTx
+
+**Docs as Code & Publishing:**  
+Visual Studio Code, Git, GitHub, MkDocs
+
+**Programming & Databases:**  
+Python (Intermediate), SQL (Intermediate)
+
+**Additional Skills:**  
+UX Writing, Training Content Development
 
 ---
 
 ## Experience
 
-### **Technical Content Development and Knowledge Sharing**
-*Oct 2024 - Present*
+### **Technical Content Creator**
+*dineshnair-doc.github.io   | Oct 2024 - Present*
 
-Authored a diverse range of technical content on [this website](my_writings.md){target="_blank"}, covering topics such as Python, Postman, Flask, and REST API.
+- Authored a diverse range of technical content on [dineshnair-doc.github.io](my_writings.md){target="_blank"}, covering topics such as Python, Postman, Flask, and REST API.  
+- Creating clear, structured guides to simplify complex concepts for learners.  
+- Using **MkDocs**, **Git**, and **GitHub** to author, manage version control, and deploy the site.  
+- Actively learning and sharing practical, hands-on insights into technologies with others.
+
+### **Documentation Insights**
 
 My explanatory articles on Medium about DITA (Darwin Information Typing Architecture) and Diataxis:
 
@@ -37,9 +57,9 @@ My explanatory articles on Medium about DITA (Darwin Information Typing Architec
 ### **Principal Technical Writer**  
 *Oracle, India   | Jan 2004 - Oct 2024*
 
-- Worked in various areas of user assistance, such as guides, UI labels and messages, release 
-notes, and REST documentation.
+- Worked across various aspects of user assistance, including user guides, UI text, release notes, and REST API documentation.
 - Created training content for both instructor-led classes and online learning.
+- Collaborated with product managers, developers, and UX designers to refine user-facing materials.
 
 ---
 
