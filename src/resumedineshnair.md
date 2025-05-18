@@ -7,7 +7,7 @@
 
 ## About Me
 
-Technical writer skilled in enhancing product value through clear and impactful documentation.
+Technical writer focused on enhancing product value through clear, actionable documentation that drives user action and understanding.
 
 My approach is hands-on, actively working with the product, as demonstrated by the screenshots and practical examples featured in my [recent work](my_writings.md){target="_blank"}. I translate complex tech into clear narratives that empower users and drive sales. I am here to make your product's brilliance shine by visually demonstrating its use with practical examples, rather than simply describing it.
 
