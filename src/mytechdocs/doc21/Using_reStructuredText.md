@@ -11,17 +11,17 @@ This document walks you through the steps to set up Sphinx on Windows, write reS
 Python is needed to run Sphinx. You can download Python from here: [https://www.python.org/downloads/](https://www.python.org/downloads/){target="_blank"}
 
 ## Install Sphinx and Initialize a Project
-Step 1: Open Command Prompt.
+<span class="step-number">1</span> Open Command Prompt.
 
-Step 2: Create a virtual environment:
+<span class="step-number">2</span> Create a virtual environment:
 
 `python -m venv .venv`
 
-Step 3: Activate the virtual environment:
+<span class="step-number">3</span> Activate the virtual environment:
 
 `.\.venv\Scripts\activate`
 
-Step 4: Install Sphinx in the virtual environment:
+<span class="step-number">4</span> Install Sphinx in the virtual environment:
 
 `pip install sphinx`
 
@@ -29,7 +29,7 @@ Sphinx will start installing:
 
 ![Sphinx installing](RT1.png)
 
-Step 5: Initialize a Sphinx project:
+<span class="step-number">5</span> Initialize a Sphinx project:
 
 `sphinx-quickstart`
 

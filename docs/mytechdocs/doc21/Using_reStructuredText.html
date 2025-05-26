@@ -53,6 +53,8 @@
       
     
     
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -1619,16 +1621,16 @@
 <h2 id="install-python">Install Python</h2>
 <p>Python is needed to run Sphinx. You can download Python from here: <a href="https://www.python.org/downloads/" target="_blank">https://www.python.org/downloads/</a></p>
 <h2 id="install-sphinx-and-initialize-a-project">Install Sphinx and Initialize a Project</h2>
-<p>Step 1: Open Command Prompt.</p>
-<p>Step 2: Create a virtual environment:</p>
+<p><span class="step-number">1</span> Open Command Prompt.</p>
+<p><span class="step-number">2</span> Create a virtual environment:</p>
 <p><code>python -m venv .venv</code></p>
-<p>Step 3: Activate the virtual environment:</p>
+<p><span class="step-number">3</span> Activate the virtual environment:</p>
 <p><code>.\.venv\Scripts\activate</code></p>
-<p>Step 4: Install Sphinx in the virtual environment:</p>
+<p><span class="step-number">4</span> Install Sphinx in the virtual environment:</p>
 <p><code>pip install sphinx</code></p>
 <p>Sphinx will start installing:</p>
 <p><img alt="Sphinx installing" src="RT1.png" /></p>
-<p>Step 5: Initialize a Sphinx project:</p>
+<p><span class="step-number">5</span> Initialize a Sphinx project:</p>
 <p><code>sphinx-quickstart</code></p>
 <p>When the quickstart utility runs, it will ask you to specify various configuration options. I opted for separate source and build directories. I also entered the project name, author name, and project release, and left the language blank to select the default as English.</p>
 <p><img alt="Quickstart utility configuration options" src="RT2.png" /></p>

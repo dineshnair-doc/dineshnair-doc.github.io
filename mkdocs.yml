@@ -53,3 +53,5 @@ nav:
           - Enhancing Spell Checks with Custom Lists: mytechdocs/doc24/Vale_Spell_Check.md
 site_dir: docs
 docs_dir: src
+extra_css:
+  - stylesheets/extra.css
