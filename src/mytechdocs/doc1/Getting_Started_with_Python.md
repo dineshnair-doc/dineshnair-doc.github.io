@@ -5,22 +5,21 @@ In this document, we'll go over the basics of Python. We'll cover how to set up 
 
 ## How to Set Up the Windows Environment
 
-To being developing with Python on Windows, you'll need to install:
+To begin developing with Python on Windows, you'll need to install:
 
-1. Python: [https://www.python.org/downloads/](https://www.python.org/downloads/)
-    
-2. Visual Studio Code (VS Code): [https://code.visualstudio.com/](https://code.visualstudio.com/)
-    
-3. VS Code Extension for Python: [https://marketplace.visualstudio.com/items?itemName=ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-    
+<span class="step-number">1</span> [Python](https://www.python.org/downloads/)
 
+<span class="step-number">2</span> [Visual Studio Code (VS Code)](https://code.visualstudio.com/)
+
+<span class="step-number">3</span> [VS Code Extension for Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+    
 ## Create and Run Your First Python File
 
-Step 1: Open VS Code. Create a new Python file:
+<span class="step-number">1</span> Open VS Code. Create a new Python file:
 
 ![Create Python file](create_file.png)
 
-Step 2: Copy and paste this code into the file:
+<span class="step-number">2</span> Copy and paste this code into the file:
 
 ```python
 print ("Hello world")
@@ -37,7 +36,7 @@ This code is using:
 
 > 💡 **Tip:** Variables are case sensitive. <code>Item</code> and <code>item</code> are two different variables.
 
-Step 3: Click **Run**:
+<span class="step-number">3</span> Click **Run**:
 
 ![Run Python file](run_button.png)
 
@@ -49,14 +48,14 @@ Here's what you'll see when you run the file:
 
 Add comments to clarify your code. Python will not execute the comments. You can add a comment by adding *#* at the start of the line.
 
-Step 1: Replace the previous content of your file with this code:
+<span class="step-number">1</span> Replace the previous content of your file with this code:
 
 ```python
 # Greet the user
 print("Hi there!")
 ```
 
-Step 2: Click **Run**.
+<span class="step-number">2</span> Click **Run**.
 
 Here's what you'll see:
 
@@ -66,7 +65,7 @@ Here's what you'll see:
 
 Earlier, we used two variables `Item` and `item` to store string values. Let's now use variables to store numbers and numeric calculations.
 
-Step 1: Replace the previous content of your file with this code:
+<span class="step-number">1</span> Replace the previous content of your file with this code:
 
 ```python
 a = 20
@@ -83,7 +82,7 @@ print (division)
 
 The code is using variables `a` and `b` to store numbers and then variables `addition`, `subtraction`, `multiply`, and `division` to store the calculations.
 
-Step 2: Click **Run**.
+<span class="step-number">2</span> Click **Run**.
 
 Here's what you'll see:
 
@@ -93,7 +92,7 @@ Here's what you'll see:
 
 Use *If Else* for defining conditions and then executing the code based on the conditions.
 
-Step 1: Replace the previous content of your file with this code:
+<span class="step-number">1</span> Replace the previous content of your file with this code:
 
 ```python
 item_available = True
@@ -110,7 +109,7 @@ else:
 
 The code is using Boolean variables. A Boolean variable can contain a value of `True` or `False`.
 
-Step 2: Click **Run**.
+<span class="step-number">2</span> Click **Run**.
 
 Here's what you'll see:
 
@@ -120,7 +119,7 @@ Here's what you'll see:
 
 `elif` lets you handle multiple conditions. `elif` stands for else if.
 
-Step 1: Replace the previous content of your file with this code:
+<span class="step-number">1</span> Replace the previous content of your file with this code:
 
 ```python
 selected_color = "yellow"
@@ -136,7 +135,7 @@ else:
 
 `else` catches any condition that's not caught by `if` and `elif`.
 
-Step 2: Click **Run**.
+<span class="step-number">2</span> Click **Run**.
 
 Here's what you'll see:
 
@@ -146,7 +145,7 @@ Here's what you'll see:
 
 *For* loop repeats actions for each item in a sequence.
 
-Step 1: Replace the previous content of your file with this code:
+<span class="step-number">1</span> Replace the previous content of your file with this code:
 
 ```python
 sport_list = ["hockey", "soccer", "basketball"]
@@ -156,7 +155,7 @@ for sport in sport_list:
 
 The code is looping through the list items using a *for* loop.
 
-Step 2: Click **Run**.
+<span class="step-number">2</span> Click **Run**.
 
 Here's what you'll see:
 
@@ -166,7 +165,7 @@ Here's what you'll see:
 
 *While* loop repeats actions as long as the condition is true. Once the condition is false, it stops.
 
-Step 1: Replace the previous content of your file with this code:
+<span class="step-number">1</span> Replace the previous content of your file with this code:
 
 ```python
 b = 10
@@ -177,7 +176,7 @@ while b < 15:
 
 The code initializes `b` to 10 and enters a *while* loop that continues as long as `b` is less than 15. During each loop iteration, `b` is incremented by 1, and the new value of `b` is printed.
 
-Step 2: Click **Run**.
+<span class="step-number">2</span> Click **Run**.
 
 Here's what you'll see:
 
@@ -187,7 +186,7 @@ Here's what you'll see:
 
 Function is the block of code that runs when it’s called. Define it by using the `def` keyword. A function can have one or more parameters or none.
 
-Step 1: Replace the previous content of your file with this code:
+<span class="step-number">1</span> Replace the previous content of your file with this code:
 
 ```python
 def guess_fruit():
@@ -205,17 +204,17 @@ The last line calls the function. The function keeps prompting the user to enter
 
 The code uses the `break` keyword to break out of the *while* loop.
 
-Step 2: Click **Run**.
+<span class="step-number">2</span> Click **Run**.
 
 Here's what you'll see:
 
 ![Function asking user input](result_function1.png)
 
-Step 3: Enter *orange*. The program will prompt you to try again until the correct answer is entered:
+<span class="step-number">3</span> Enter *orange*. The program will prompt you to try again until the correct answer is entered:
 
 ![Function asking user input again](result_function2.png)
 
-Step 4: This time enter *apple*. The program will respond with *That’s correct!*:
+<span class="step-number">4</span> This time enter *apple*. The program will respond with *That’s correct!*:
 
 ![Function responding to correct user input](result_function3.png)
 

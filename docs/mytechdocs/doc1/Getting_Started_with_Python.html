@@ -1395,22 +1395,14 @@
 <p>In this document, we'll go over the basics of Python. We'll cover how to set up your Windows environment, run your first Python file, and learn important concepts like comments, variables, conditional statements (if else and else if), loops (for and while), and functions. Let's get started!</p>
 <hr />
 <h2 id="how-to-set-up-the-windows-environment">How to Set Up the Windows Environment</h2>
-<p>To being developing with Python on Windows, you'll need to install:</p>
-<ol>
-<li>
-<p>Python: <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a></p>
-</li>
-<li>
-<p>Visual Studio Code (VS Code): <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
-</li>
-<li>
-<p>VS Code Extension for Python: <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">https://marketplace.visualstudio.com/items?itemName=ms-python.python</a></p>
-</li>
-</ol>
+<p>To begin developing with Python on Windows, you'll need to install:</p>
+<p><span class="step-number">1</span> <a href="https://www.python.org/downloads/">Python</a></p>
+<p><span class="step-number">2</span> <a href="https://code.visualstudio.com/">Visual Studio Code (VS Code)</a></p>
+<p><span class="step-number">3</span> <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">VS Code Extension for Python</a></p>
 <h2 id="create-and-run-your-first-python-file">Create and Run Your First Python File</h2>
-<p>Step 1: Open VS Code. Create a new Python file:</p>
+<p><span class="step-number">1</span> Open VS Code. Create a new Python file:</p>
 <p><img alt="Create Python file" src="create_file.png" /></p>
-<p>Step 2: Copy and paste this code into the file:</p>
+<p><span class="step-number">2</span> Copy and paste this code into the file:</p>
 <pre><code class="language-python">print (&quot;Hello world&quot;)
 Item = &quot;Rain&quot;
 item = &quot;Thunder&quot;
@@ -1424,22 +1416,22 @@ print (item + ' ' + Item)
 <blockquote>
 <p>💡 <strong>Tip:</strong> Variables are case sensitive. <code>Item</code> and <code>item</code> are two different variables.</p>
 </blockquote>
-<p>Step 3: Click <strong>Run</strong>:</p>
+<p><span class="step-number">3</span> Click <strong>Run</strong>:</p>
 <p><img alt="Run Python file" src="run_button.png" /></p>
 <p>Here's what you'll see when you run the file:</p>
 <p><img alt="Run result" src="result_first_step.png" /></p>
 <h2 id="comments">Comments</h2>
 <p>Add comments to clarify your code. Python will not execute the comments. You can add a comment by adding <em>#</em> at the start of the line.</p>
-<p>Step 1: Replace the previous content of your file with this code:</p>
+<p><span class="step-number">1</span> Replace the previous content of your file with this code:</p>
 <pre><code class="language-python"># Greet the user
 print(&quot;Hi there!&quot;)
 </code></pre>
-<p>Step 2: Click <strong>Run</strong>.</p>
+<p><span class="step-number">2</span> Click <strong>Run</strong>.</p>
 <p>Here's what you'll see:</p>
 <p><img alt="Comment is not displayed" src="result_comment.png" /></p>
 <h2 id="variables">Variables</h2>
 <p>Earlier, we used two variables <code>Item</code> and <code>item</code> to store string values. Let's now use variables to store numbers and numeric calculations.</p>
-<p>Step 1: Replace the previous content of your file with this code:</p>
+<p><span class="step-number">1</span> Replace the previous content of your file with this code:</p>
 <pre><code class="language-python">a = 20
 b = 5
 addition = a + b
@@ -1452,12 +1444,12 @@ print (multiply)
 print (division)
 </code></pre>
 <p>The code is using variables <code>a</code> and <code>b</code> to store numbers and then variables <code>addition</code>, <code>subtraction</code>, <code>multiply</code>, and <code>division</code> to store the calculations.</p>
-<p>Step 2: Click <strong>Run</strong>.</p>
+<p><span class="step-number">2</span> Click <strong>Run</strong>.</p>
 <p>Here's what you'll see:</p>
 <p><img alt="Variable values displayed" src="result_variable.png" /></p>
 <h2 id="if-else">If Else</h2>
 <p>Use <em>If Else</em> for defining conditions and then executing the code based on the conditions.</p>
-<p>Step 1: Replace the previous content of your file with this code:</p>
+<p><span class="step-number">1</span> Replace the previous content of your file with this code:</p>
 <pre><code class="language-python">item_available = True
 if item_available is False:
     print (&quot;The item isn't available&quot;)
@@ -1470,12 +1462,12 @@ else:
     print (&quot;The college is closed&quot;)
 </code></pre>
 <p>The code is using Boolean variables. A Boolean variable can contain a value of <code>True</code> or <code>False</code>.</p>
-<p>Step 2: Click <strong>Run</strong>.</p>
+<p><span class="step-number">2</span> Click <strong>Run</strong>.</p>
 <p>Here's what you'll see:</p>
 <p><img alt="If else values displayed" src="result_ifelse.png" /></p>
 <h2 id="else-if">Else If</h2>
 <p><code>elif</code> lets you handle multiple conditions. <code>elif</code> stands for else if.</p>
-<p>Step 1: Replace the previous content of your file with this code:</p>
+<p><span class="step-number">1</span> Replace the previous content of your file with this code:</p>
 <pre><code class="language-python">selected_color = &quot;yellow&quot;
 if selected_color == &quot;blue&quot;:
     print(&quot;Blue means calmness.&quot;)
@@ -1487,35 +1479,35 @@ else:
     print(&quot;That's a nice color!&quot;)
 </code></pre>
 <p><code>else</code> catches any condition that's not caught by <code>if</code> and <code>elif</code>.</p>
-<p>Step 2: Click <strong>Run</strong>.</p>
+<p><span class="step-number">2</span> Click <strong>Run</strong>.</p>
 <p>Here's what you'll see:</p>
 <p><img alt="Else if values displayed" src="result_elseif.png" /></p>
 <h2 id="for-loop">For Loop</h2>
 <p><em>For</em> loop repeats actions for each item in a sequence.</p>
-<p>Step 1: Replace the previous content of your file with this code:</p>
+<p><span class="step-number">1</span> Replace the previous content of your file with this code:</p>
 <pre><code class="language-python">sport_list = [&quot;hockey&quot;, &quot;soccer&quot;, &quot;basketball&quot;]
 for sport in sport_list:
     print (sport)
 </code></pre>
 <p>The code is looping through the list items using a <em>for</em> loop.</p>
-<p>Step 2: Click <strong>Run</strong>.</p>
+<p><span class="step-number">2</span> Click <strong>Run</strong>.</p>
 <p>Here's what you'll see:</p>
 <p><img alt="For loop values displayed" src="result_forloop.png" /></p>
 <h2 id="while-loop">While Loop</h2>
 <p><em>While</em> loop repeats actions as long as the condition is true. Once the condition is false, it stops.</p>
-<p>Step 1: Replace the previous content of your file with this code:</p>
+<p><span class="step-number">1</span> Replace the previous content of your file with this code:</p>
 <pre><code class="language-python">b = 10
 while b &lt; 15:
     b = b + 1
     print (b)
 </code></pre>
 <p>The code initializes <code>b</code> to 10 and enters a <em>while</em> loop that continues as long as <code>b</code> is less than 15. During each loop iteration, <code>b</code> is incremented by 1, and the new value of <code>b</code> is printed.</p>
-<p>Step 2: Click <strong>Run</strong>.</p>
+<p><span class="step-number">2</span> Click <strong>Run</strong>.</p>
 <p>Here's what you'll see:</p>
 <p><img alt="While loop values displayed" src="result_whileloop.png" /></p>
 <h2 id="functions">Functions</h2>
 <p>Function is the block of code that runs when it’s called. Define it by using the <code>def</code> keyword. A function can have one or more parameters or none.</p>
-<p>Step 1: Replace the previous content of your file with this code:</p>
+<p><span class="step-number">1</span> Replace the previous content of your file with this code:</p>
 <pre><code class="language-python">def guess_fruit():
     while True:
         user_value = input(&quot;Enter the fruit I like most: &quot;)
@@ -1528,12 +1520,12 @@ guess_fruit()
 </code></pre>
 <p>The last line calls the function. The function keeps prompting the user to enter the correct value until the guess is correct.</p>
 <p>The code uses the <code>break</code> keyword to break out of the <em>while</em> loop.</p>
-<p>Step 2: Click <strong>Run</strong>.</p>
+<p><span class="step-number">2</span> Click <strong>Run</strong>.</p>
 <p>Here's what you'll see:</p>
 <p><img alt="Function asking user input" src="result_function1.png" /></p>
-<p>Step 3: Enter <em>orange</em>. The program will prompt you to try again until the correct answer is entered:</p>
+<p><span class="step-number">3</span> Enter <em>orange</em>. The program will prompt you to try again until the correct answer is entered:</p>
 <p><img alt="Function asking user input again" src="result_function2.png" /></p>
-<p>Step 4: This time enter <em>apple</em>. The program will respond with <em>That’s correct!</em>:</p>
+<p><span class="step-number">4</span> This time enter <em>apple</em>. The program will respond with <em>That’s correct!</em>:</p>
 <p><img alt="Function responding to correct user input" src="result_function3.png" /></p>
 <p>Now that you know the basics like variables, loops, and functions, you're ready to dive deeper into the world of Python. Happy coding!</p>
 <hr />
