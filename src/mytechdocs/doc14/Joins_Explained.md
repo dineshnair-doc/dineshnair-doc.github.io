@@ -6,13 +6,13 @@ This document explores the world of PostgreSQL joins, covering inner, left, righ
 ## Setting Up Tables with Data
 When you start psql and connect to your PostgreSQL server, you're generally connecting to an existing database, usually the *postgres* database with the *postgres* username by default. To work through the examples, we'll create a separate database.
 
-Step 1: Create the database:
+<span class="step-number">1</span> Create the database:
 
 ```pgsql
 CREATE DATABASE dinesh_sql_guide;
 ```
 
-Step 2: Connect to the new database:
+<span class="step-number">2</span> Connect to the new database:
 
 ```pgsql
 \c dinesh_sql_guide
@@ -22,7 +22,7 @@ Here's my psql window where I am creating and connecting to the new database:
 
 ![psql window showing database is created and connected to](advsql1.png)
 
-Step 3: Create the tables to store skills and training programs:
+<span class="step-number">3</span> Create the tables to store skills and training programs:
 
 ```pgsql
 CREATE TABLE Skills (
@@ -38,7 +38,7 @@ CREATE TABLE TrainingPrograms (
 );
 ```
 
-Step 4: Add the data to the tables:
+<span class="step-number">4</span> Add the data to the tables:
 
 ```pgsql
 -- Inserting Skills into the Skills table

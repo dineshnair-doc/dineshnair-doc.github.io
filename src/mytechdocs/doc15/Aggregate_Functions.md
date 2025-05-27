@@ -6,7 +6,7 @@ This write-up covers five key aggregate functions: COUNT, SUM, MAX, MIN, and AVG
 ## Setting Up a Table with Data
 Before we look at the examples, let's set up our environment. We'll create a sample table in PostgreSQL on a Windows system and add data to it. 
 
-Step 1: Open your PostgreSQL command line interface (*psql*) and run the following command to create the `TrainingPrograms` table with columns such as program duration and participant's satisfaction score:
+<span class="step-number">1</span> Open your PostgreSQL command line interface (*psql*) and run the following command to create the `TrainingPrograms` table with columns such as program duration and participant's satisfaction score:
 
 ```pgsql
 CREATE TABLE TrainingPrograms (
@@ -19,7 +19,7 @@ CREATE TABLE TrainingPrograms (
 );
 ```
 
-Step 2: Add some data to the table:
+<span class="step-number">2</span> Add some data to the table:
 
 ```pgsql
 INSERT INTO TrainingPrograms (ProgramID, ProgramName, Trainer, Duration, Participants, SatisfactionScore) VALUES

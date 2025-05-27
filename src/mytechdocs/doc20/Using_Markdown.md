@@ -8,13 +8,13 @@ There are various tools that support markdown. For this document, we'll use Visu
 ## Install the VS Code Extension
 I installed the Markdown All in One extension for this tutorial. Here's how I did that:
 
-Step 1: Open VS Code.
+<span class="step-number">1</span> Open VS Code.
 
-Step 2: Click the Extensions icon on the side of the VS Code window or press *Ctrl+Shift+X*.
+<span class="step-number">2</span> Click the Extensions icon on the side of the VS Code window or press *Ctrl+Shift+X*.
 
 ![Extensions icon](mark0.png)
 
-Step 3: In the Extensions view, search for the extension *Markdown All in One* and install it.
+<span class="step-number">3</span> In the Extensions view, search for the extension *Markdown All in One* and install it.
 
 ## Create a File
 Create a markdown file with the extension of `.md`, for example, `markdown_example.md`.
@@ -114,13 +114,13 @@ Or you can simply use the *Markdown All in One* commands to format text as code 
 Access these commands from the VS Code Command Palette. Press *Ctrl+Shift+P* to open the Command Palette.
 
 ## Print HTML
-Step 1: Open the markdown file:
+<span class="step-number">1</span> Open the markdown file:
 
 ![Markdown file with a table](mark14.png)
 
-Step 2: Open the Command Palette.
+<span class="step-number">2</span> Open the Command Palette.
 
-Step 3: Select *Markdown All in One: Print current document to HTML* from the Command Palette.
+<span class="step-number">3</span> Select *Markdown All in One: Print current document to HTML* from the Command Palette.
 
 The HTML file is automatically saved in the same folder as the markdown file:
 

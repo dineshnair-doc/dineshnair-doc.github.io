@@ -1352,22 +1352,22 @@
 <p>Now that we have set up the table and data, let's understand the benefits of views.</p>
 <h2 id="simplifying-complex-data-and-restricting-access-to-specific-data">Simplifying Complex Data and Restricting Access to Specific Data</h2>
 <p>Suppose Janet is a training manager who wants to see a list of employees and the training programs they have attended. You don't need to give Janet access to the <code>employees</code> base table that has confidential information like date of birth and performance rating. You can create a view that hides the complex join as well as prevents access to the confidential fields.</p>
-<p>Step 1: Create the view:</p>
+<p><span class="step-number">1</span> Create the view:</p>
 <pre><code class="language-pgsql">CREATE VIEW employee_training AS
 SELECT e.employee_id, e.name, e.job_title, t.program_name, t.program_date, t.duration_days
 FROM employees e
 JOIN training_programs t ON e.employee_id = t.employee_id;
 </code></pre>
-<p>Step 2: Create user (role) <em>Janet</em>.</p>
+<p><span class="step-number">2</span> Create user (role) <em>Janet</em>.</p>
 <pre><code class="language-pgsql">CREATE ROLE “Janet” WITH LOGIN PASSWORD 'password_for_janet';
 </code></pre>
-<p>Step 3: Grant Janet access to the <code>employee_training</code> view:</p>
+<p><span class="step-number">3</span> Grant Janet access to the <code>employee_training</code> view:</p>
 <pre><code class="language-pgsql">GRANT SELECT ON employee_training TO “Janet”;
 </code></pre>
-<p>Step 4: Ensure Janet doesn't have access to the base tables by explicitly revoking any access:</p>
+<p><span class="step-number">4</span> Ensure Janet doesn't have access to the base tables by explicitly revoking any access:</p>
 <pre><code class="language-pgsql">REVOKE ALL ON employees, training_programs FROM “Janet”;
 </code></pre>
-<p>Step 5: Janet logs in to PostgreSQL. She can query the <code>employee_training</code> view to see the list of employees and the training they have attended:</p>
+<p><span class="step-number">5</span> Janet logs in to PostgreSQL. She can query the <code>employee_training</code> view to see the list of employees and the training they have attended:</p>
 <p><img alt="Using a simple select query to access the data" src="seeview1.png" /></p>
 <p>If she attempts to query the <code>employees</code> table, she will see the permission denied error message:</p>
 <p><img alt="Permission denied for Janet" src="seeview2.png" /></p>

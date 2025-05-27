@@ -14,11 +14,11 @@ The API will cover the following operations:
 ---
 
 ## Set Up the FastAPI Environment in Windows
-Step 1: Install and activate the virtual environment using the Visual Studio Code (VS Code) terminal, then install FastAPI and Uvicorn.
+<span class="step-number">1</span> Install and activate the virtual environment using the Visual Studio Code (VS Code) terminal, then install FastAPI and Uvicorn.
 
 For more information on this step, see the *Set Up the FastAPI Environment in Windows* section in [FastAPI Performance: Comparing Sync and Async Endpoints](../doc12/FastAPI_Performance.md){target="_blank"}.
 
-Step 2: Install `asyncpg` using the command: `pip install asyncpg`
+<span class="step-number">2</span> Install `asyncpg` using the command: `pip install asyncpg`
 
 ![pip install asyncpg](fadb1.png)
 
@@ -26,7 +26,7 @@ Step 2: Install `asyncpg` using the command: `pip install asyncpg`
 
 ## Prepare Your PostgreSQL Database and Environment
 
-Step 1: Connect to the PostgreSQL database and create a table for storing the employee reviews. To create the table, you can use this command in the SQL shell:
+<span class="step-number">1</span> Connect to the PostgreSQL database and create a table for storing the employee reviews. To create the table, you can use this command in the SQL shell:
 
 ```pgsql
 CREATE TABLE employee_reviews (
@@ -48,7 +48,7 @@ When you create the table, you should see the response as *CREATE TABLE*:
 
 ![Response as CREATE TABLE](fadb2.png)
 
-Step 2: There are several ways to store sensitive information. For now, we'll store the database username and password in an environment variable and access it from the application.
+<span class="step-number">2</span> There are several ways to store sensitive information. For now, we'll store the database username and password in an environment variable and access it from the application.
 
 Type this command in the VS Code terminal (PowerShell):
 
@@ -62,9 +62,9 @@ Note that the environment variable set using this command is temporary and will 
 
 ## Create the FastAPI Application
 
-Step 1: Create a file named `employee_reviews.py`.
+<span class="step-number">1</span> Create a file named `employee_reviews.py`.
 
-Step 2: Import necessary components:
+<span class="step-number">2</span> Import necessary components:
 
 ```python
 import os
@@ -82,7 +82,7 @@ from pydantic import BaseModel
 * `from pydantic import BaseModel`: To define the structure of the data we expect in requests and responses.
     
 
-Step 3: Initialize the FastAPI application:
+<span class="step-number">3</span> Initialize the FastAPI application:
 
 ```python
 app = FastAPI(
@@ -100,7 +100,7 @@ This initializes the FastAPI application with metadata such as title, version, d
 
 > 💡 **Note:** The auto-generated Swagger documentation will display this metadata to the users.
 
-Step 4: Define a data model for employee reviews using Pydantic. Each field has a type, ensuring data validation.
+<span class="step-number">4</span> Define a data model for employee reviews using Pydantic. Each field has a type, ensuring data validation.
 
 ```python
 class EmployeeReview(BaseModel):
@@ -127,7 +127,7 @@ For example:
 
 This ensures that only valid data is accepted, which helps maintain data integrity and prevents errors.
 
-Step 5: Create the database connection:
+<span class="step-number">5</span> Create the database connection:
 
 ```python
 DATABASE_URL = os.getenv("DATABASE_URL")
@@ -141,7 +141,7 @@ async def connect_to_db():
 * `connect_to_db()`: Asynchronous function that connects to the PostgreSQL database using `asyncpg`.
     
 
-Step 6: Define the endpoint for creating an employee review:
+<span class="step-number">6</span> Define the endpoint for creating an employee review:
 
 ```python
 @app.post("/employee_reviews/", response_model=EmployeeReview)
@@ -179,7 +179,7 @@ The code connects to the database, runs an SQL `INSERT` command, and returns the
 * **Docstring**: Provides a detailed description of the endpoint and the fields expected in the request body. FastAPI uses the docstring in the auto-generated Swagger documentation.
     
 
-Step 7: Define the endpoint for retrieving employee reviews:
+<span class="step-number">7</span> Define the endpoint for retrieving employee reviews:
 
 ```python
 @app.get("/employee_reviews/", response_model=list[EmployeeReview])
@@ -203,7 +203,7 @@ The code:
 * Converts these records into a list of `EmployeeReview` objects and returns it as a response.
     
 
-Step 8: Define the endpoint for updating an employee review:
+<span class="step-number">8</span> Define the endpoint for updating an employee review:
 
 ```python
 @app.put("/employee_reviews/{employee_id}", response_model=EmployeeReview)
@@ -230,7 +230,7 @@ The code:
 * Returns the updated `employee_review` object as a response.
     
 
-Step 9: Define the endpoint for deleting an employee review:
+<span class="step-number">9</span> Define the endpoint for deleting an employee review:
 
 ```python
 @app.delete("/employee_reviews/{employee_id}")
@@ -253,7 +253,7 @@ The code:
 * Returns a success message indicating that the review was deleted.
     
 
-Step 10: Run the FastAPI application using the Uvicorn server:
+<span class="step-number">10</span> Run the FastAPI application using the Uvicorn server:
 
 ```python
 if __name__ == "__main__":
@@ -277,19 +277,19 @@ The doc shows all the available endpoints. You can interact with the API directl
 
 ### Creating an Employee Review
 
-Step 1: Expand POST in the doc. You can see the docstring explaining the endpoint and its fields:
+<span class="step-number">1</span> Expand POST in the doc. You can see the docstring explaining the endpoint and its fields:
 
 ![Endpoint description and its fields](fadb5.png)
 
-Step 2: Click **Try it out**.
+<span class="step-number">2</span> Click **Try it out**.
 
-Step 3: Enter the request body:
+<span class="step-number">3</span> Enter the request body:
 
 ![Request body such as employee name and performance rating](fadb6_clickexcafterthis.png)
 
-Step 4: Click **Execute** to send the request to the API.
+<span class="step-number">4</span> Click **Execute** to send the request to the API.
 
-Step 5: You will see a 200 response if all goes well:
+<span class="step-number">5</span> You will see a 200 response if all goes well:
 
 ![200 response from server](fadb7_postresponse.png)
 
@@ -320,13 +320,13 @@ We'll create a couple more records:
 
 ### Retrieving Employee Reviews
 
-Step 1: Expand GET in the doc. You can see the docstring explaining the endpoint and its fields:
+<span class="step-number">1</span> Expand GET in the doc. You can see the docstring explaining the endpoint and its fields:
 
 ![Get section in the doc with descriptions](fadb8_getstart.png)
 
-Step 2: Click **Try it out**.
+<span class="step-number">2</span> Click **Try it out**.
 
-Step 3: Click **Execute**.
+<span class="step-number">3</span> Click **Execute**.
 
 The API will process the request and retrieve all the employee reviews from the database. The response section displays the retrieved records:
 
@@ -334,17 +334,17 @@ The API will process the request and retrieve all the employee reviews from the 
 
 ### Updating an Employee Review
 
-Step 1: Expand PUT in the doc. You can see the docstring explaining the endpoint and its fields.
+<span class="step-number">1</span> Expand PUT in the doc. You can see the docstring explaining the endpoint and its fields.
 
-Step 2: Click **Try it out**.
+<span class="step-number">2</span> Click **Try it out**.
 
-Step 3: Enter the employee ID, for example, `12932`, which we used earlier with the POST endpoint.
+<span class="step-number">3</span> Enter the employee ID, for example, `12932`, which we used earlier with the POST endpoint.
 
-Step 4: Enter the request body. For example, change `“evaluation_period": "Q4 2024"` to `"evaluation_period": "Q3 2024"` while keeping the other text unchanged:
+<span class="step-number">4</span> Enter the request body. For example, change `“evaluation_period": "Q4 2024"` to `"evaluation_period": "Q3 2024"` while keeping the other text unchanged:
 
 ![JSON request body with the changed value for evaluation_period](fadb10put.png)
 
-Step 5: Click **Execute** to send the updated data to the API.
+<span class="step-number">5</span> Click **Execute** to send the updated data to the API.
 
 If successful, the updated employee review will be displayed with a response code **200:**
 
@@ -352,17 +352,17 @@ If successful, the updated employee review will be displayed with a response cod
 
 ### Deleting an Employee Review
 
-Step 1: Expand DELETE.
+<span class="step-number">1</span> Expand DELETE.
 
-Step 2: Click **Try it out**.
+<span class="step-number">2</span> Click **Try it out**.
 
-Step 3: Enter employee ID for the record you want to delete. For example, enter `12932`:
+<span class="step-number">3</span> Enter employee ID for the record you want to delete. For example, enter `12932`:
 
 ![Employee ID entered in delete section of doc](fadb12.png)
 
-Step 4: Click **Execute**.
+<span class="step-number">4</span> Click **Execute**.
 
-You will see a response indicating that the employee review has been deleted:
+You'll see a response indicating that the employee review has been deleted:
 
 ![Response body showing employee review is deleted](fadb13.png)
 

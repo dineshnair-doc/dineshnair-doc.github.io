@@ -16,7 +16,7 @@ BasedOnStyles = Vale
 This enables spell checking for all `.md` files using Vale’s built-in dictionary.
 
 ## Create the Markdown Document and Spell Check
-Step 1: We'll create a document with intentional spelling mistakes:  
+<span class="step-number">1</span> We'll create a document with intentional spelling mistakes:  
 
 ```md
 Java Script is a programming languge.
@@ -30,7 +30,7 @@ We use HTTPs protocol for secure communication.
 We used React to develop the frontend of Superapplicationexample.
 ```
 
-Step 2: Run the sample.md file using Vale: 
+<span class="step-number">2</span> Run the sample.md file using Vale: 
 `vale sample.md`
 
 The detected spelling mistakes are displayed:

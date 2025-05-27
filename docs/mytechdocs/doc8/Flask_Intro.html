@@ -1305,14 +1305,14 @@
 <p>Flask is a Python framework to create web applications. In this guide, we will explore how to build a dynamic web page using Flask.</p>
 <hr />
 <h2 id="set-up-the-flask-environment-in-windows">Set Up the Flask Environment in Windows</h2>
-<p>Step 1: Open the terminal in Visual Studio Code and type: <code>python -m venv venv</code></p>
+<p><span class="step-number">1</span> Open the terminal in Visual Studio Code and type: <code>python -m venv venv</code></p>
 <p>This creates a virtual environment. Using virtual environments ensures that the dependencies for one project don't interfere with the dependencies of other projects.</p>
-<p>Step 2: Activate the virtual environment: <code>venv\Scripts\activate</code></p>
-<p>Step 3: Install Flask: <code>pip install Flask</code></p>
+<p><span class="step-number">2</span> Activate the virtual environment: <code>venv\Scripts\activate</code></p>
+<p><span class="step-number">3</span> Install Flask: <code>pip install Flask</code></p>
 <h2 id="create-the-flask-application">Create the Flask Application</h2>
 <p>To illustrate how to make a web page dynamic, we'll create a Flask application that will collect teacher and course names from users and display these names. The application stores this information in a JSON file.</p>
-<p>Step 1: Create a file named <code>teachers.py</code>.</p>
-<p>Step 2: Import necessary components and create an instance of the Flask class:</p>
+<p><span class="step-number">1</span> Create a file named <code>teachers.py</code>.</p>
+<p><span class="step-number">2</span> Import necessary components and create an instance of the Flask class:</p>
 <pre><code class="language-python">import json
 from flask import Flask, render_template, request
 
@@ -1320,7 +1320,7 @@ app = Flask(__name__)
 </code></pre>
 <ul>
 <li>
-<p>We’ve imported Python's built-in <code>json</code> module, which is used for working with JSON (JavaScript Object Notation) data. JSON is a common data format used for transmitting data, especially in web applications. We’re also importing the Flask class that’s used to create a Flask application.</p>
+<p>We've imported Python's built-in <code>json</code> module, which is used for working with JSON (JavaScript Object Notation) data. JSON is a common data format used for transmitting data, especially in web applications. We're also importing the Flask class that's used to create a Flask application.</p>
 </li>
 <li>
 <p><code>render_template</code> is a Flask function for working with HTML templates. Flask allows you to use templates (usually <code>.html</code> files) to dynamically generate HTML by passing data to them.</p>
@@ -1332,7 +1332,7 @@ app = Flask(__name__)
 <p><code>app = Flask(__name__)</code>: Initializes the Flask application.</p>
 </li>
 </ul>
-<p>Step 3: Define the load and save functions for teacher names and their corresponding courses:</p>
+<p><span class="step-number">3</span> Define the load and save functions for teacher names and their corresponding courses:</p>
 <pre><code class="language-python"># Function to load teacher and course names from a JSON file
 def load_teachers():
     try:
@@ -1358,7 +1358,7 @@ teachers_dict = load_teachers()
 <p>When a user submits the form (POST request), the <code>save_teachers(teachers_dict)</code> function is called to save the updated data to the <code>teachers.json</code> file. If the JSON file doesn't exist, the function creates it.</p>
 </li>
 </ul>
-<p>Step 4: Define the route and handle the HTML form submission:</p>
+<p><span class="step-number">4</span> Define the route and handle the HTML form submission:</p>
 <pre><code class="language-python">@app.route('/', methods=['GET', 'POST'])
 def home():
     if request.method == 'POST':
@@ -1379,7 +1379,7 @@ def home():
 <p>The <code>render_template('home.html', teachers=teachers_dict)</code> function displays the HTML page that the user sees when accessing the root URL (GET request). The function populates the <code>teachers</code> variable in the HTML template with the dictionary data from <code>teachers_dict</code>. <code>teachers_dict</code> contains the data that the <code>load_teachers()</code> function retrieves from the JSON file.</p>
 </li>
 </ul>
-<p>Step 5: Run the application when the <code>teachers.py</code> file is run:</p>
+<p><span class="step-number">5</span> Run the application when the <code>teachers.py</code> file is run:</p>
 <pre><code class="language-python">if __name__ == '__main__':
     app.run(debug=True)
 </code></pre>
@@ -1428,13 +1428,14 @@ def home():
 <p>Take a look at the directory structure in the Explorer pane. This is what the files look like, with the HTML file located in the <code>templates</code> folder:</p>
 <p><img alt="Directory structure in the Explorer pane" src="webapp1.png" /></p>
 <p>Now, let's run the application.</p>
-<p>Step 1: Click <strong>Run</strong> for <code>teachers.py</code>.</p>
-<p>Step 2: Your application should now be running on <code>http://127.0.0.1:5000/</code>.</p>
+<p><span class="step-number">1</span> Click <strong>Run</strong> for <code>teachers.py</code>.</p>
+<p><span class="step-number">2</span> Your application should now be running on <code>http://127.0.0.1:5000/</code>.</p>
 <p>In the terminal, press <code>Ctrl</code> and click the link to open the web page:</p>
 <p><img alt="Link in the Visual Studio Code terminal" src="webapp2.png" /></p>
-<p>Step 3: Enter the teacher's name and the corresponding course. Once you fill in both fields, click <strong>Add</strong>.</p>
+<p><span class="step-number">3</span> Enter the teacher's name and the corresponding course. </p>
+<p>Once you fill in both fields, click <strong>Add</strong>.</p>
 <p><img alt="Web page with fields and add button" src="webapp3.png" /></p>
-<p>Step 4: Keep adding more records. As you add them, the records will appear on the page:</p>
+<p><span class="step-number">4</span> Keep adding more records. As you add them, the records will appear on the page:</p>
 <p><img alt="Web page with the entered records" src="webapp4.png" /></p>
 <p>Even if you stop the server and run the Python file again to start the server, the previously added records will still be displayed on the page. This is because we're storing them in the JSON file that was created and updated by the <code>save_teachers</code> function. You can check the JSON file by clicking on it in the Explorer pane:</p>
 <p><img alt="Stored records in JSON file" src="webapp5.png" /></p>

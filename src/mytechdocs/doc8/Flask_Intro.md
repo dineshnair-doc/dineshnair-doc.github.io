@@ -5,21 +5,21 @@ Flask is a Python framework to create web applications. In this guide, we will e
 
 ## Set Up the Flask Environment in Windows
 
-Step 1: Open the terminal in Visual Studio Code and type: `python -m venv venv`
+<span class="step-number">1</span> Open the terminal in Visual Studio Code and type: `python -m venv venv`
 
 This creates a virtual environment. Using virtual environments ensures that the dependencies for one project don't interfere with the dependencies of other projects.
 
-Step 2: Activate the virtual environment: `venv\Scripts\activate`
+<span class="step-number">2</span> Activate the virtual environment: `venv\Scripts\activate`
 
-Step 3: Install Flask: `pip install Flask`
+<span class="step-number">3</span> Install Flask: `pip install Flask`
 
 ## Create the Flask Application
 
 To illustrate how to make a web page dynamic, we'll create a Flask application that will collect teacher and course names from users and display these names. The application stores this information in a JSON file.
 
-Step 1: Create a file named `teachers.py`.
+<span class="step-number">1</span> Create a file named `teachers.py`.
 
-Step 2: Import necessary components and create an instance of the Flask class:
+<span class="step-number">2</span> Import necessary components and create an instance of the Flask class:
 
 ```python
 import json
@@ -28,7 +28,7 @@ from flask import Flask, render_template, request
 app = Flask(__name__)
 ```
 
-* We’ve imported Python's built-in `json` module, which is used for working with JSON (JavaScript Object Notation) data. JSON is a common data format used for transmitting data, especially in web applications. We’re also importing the Flask class that’s used to create a Flask application.
+* We've imported Python's built-in `json` module, which is used for working with JSON (JavaScript Object Notation) data. JSON is a common data format used for transmitting data, especially in web applications. We're also importing the Flask class that's used to create a Flask application.
     
 * `render_template` is a Flask function for working with HTML templates. Flask allows you to use templates (usually `.html` files) to dynamically generate HTML by passing data to them.
     
@@ -37,7 +37,7 @@ app = Flask(__name__)
 * `app = Flask(__name__)`: Initializes the Flask application.
     
 
-Step 3: Define the load and save functions for teacher names and their corresponding courses:
+<span class="step-number">3</span> Define the load and save functions for teacher names and their corresponding courses:
 
 ```python
 # Function to load teacher and course names from a JSON file
@@ -63,7 +63,7 @@ teachers_dict = load_teachers()
 * When a user submits the form (POST request), the `save_teachers(teachers_dict)` function is called to save the updated data to the `teachers.json` file. If the JSON file doesn't exist, the function creates it.
     
 
-Step 4: Define the route and handle the HTML form submission:
+<span class="step-number">4</span> Define the route and handle the HTML form submission:
 
 ```python
 @app.route('/', methods=['GET', 'POST'])
@@ -82,7 +82,7 @@ def home():
     
 * The `render_template('home.html', teachers=teachers_dict)` function displays the HTML page that the user sees when accessing the root URL (GET request). The function populates the `teachers` variable in the HTML template with the dictionary data from `teachers_dict`. `teachers_dict` contains the data that the `load_teachers()` function retrieves from the JSON file.
 
-Step 5: Run the application when the `teachers.py` file is run:
+<span class="step-number">5</span> Run the application when the `teachers.py` file is run:
 
 ```python
 if __name__ == '__main__':
@@ -139,19 +139,21 @@ Take a look at the directory structure in the Explorer pane. This is what the fi
 
 Now, let's run the application.
 
-Step 1: Click **Run** for `teachers.py`.
+<span class="step-number">1</span> Click **Run** for `teachers.py`.
 
-Step 2: Your application should now be running on `http://127.0.0.1:5000/`.
+<span class="step-number">2</span> Your application should now be running on `http://127.0.0.1:5000/`.
 
 In the terminal, press `Ctrl` and click the link to open the web page:
 
 ![Link in the Visual Studio Code terminal](webapp2.png)
 
-Step 3: Enter the teacher's name and the corresponding course. Once you fill in both fields, click **Add**.
+<span class="step-number">3</span> Enter the teacher's name and the corresponding course. 
+
+Once you fill in both fields, click **Add**.
 
 ![Web page with fields and add button](webapp3.png)
 
-Step 4: Keep adding more records. As you add them, the records will appear on the page:
+<span class="step-number">4</span> Keep adding more records. As you add them, the records will appear on the page:
 
 ![Web page with the entered records](webapp4.png)
 

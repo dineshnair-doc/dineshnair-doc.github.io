@@ -23,9 +23,9 @@ If the virtual environment isn't activated, activate it and install Flask-RESTx 
 
 ## Create the Flask Application
 
-Step 1: Create a file named `contacts.py`.
+<span class="step-number">1</span> Create a file named `contacts.py`.
 
-Step 2: Import necessary components and create an instance of the Flask class:
+<span class="step-number">2</span> Import necessary components and create an instance of the Flask class:
 
 ```python
 from flask import Flask, request
@@ -34,13 +34,13 @@ from flask_restx import Api, Resource, fields
 app = Flask(__name__)
 ```
 
-Step 3: Initialize the Flask-RESTx API:
+<span class="step-number">3</span> Initialize the Flask-RESTx API:
 
 ```python
 api = Api(app, version='1.0', title="Dinesh's Contact Management API", description='Add, see, update, and remove your contacts.')
 ```
 
-Step 4: Define a namespace for the API:
+<span class="step-number">4</span> Define a namespace for the API:
 
 ```python
 ns = api.namespace('contacts', description='Contact operations')
@@ -52,7 +52,7 @@ ns = api.namespace('contacts', description='Contact operations')
     
 A namespace helps organize your API endpoints under a common group, making it easier to manage and document them. Additionally, namespaces improve the auto-generated Swagger documentation by categorizing endpoints.
 
-Step 5: Define the contact model:
+<span class="step-number">5</span> Define the contact model:
 
 ```python
 contact_model = api.model('Contact', {
@@ -65,13 +65,13 @@ contact_model = api.model('Contact', {
 
 When you define this model in Flask-RESTx, it automatically includes this model in the Swagger documentation, making it clear what kind of data your endpoints expect.
 
-Step 6: Create an empty list to store contacts temporarily:
+<span class="step-number">6</span> Create an empty list to store contacts temporarily:
 
 ```python
 contacts = []
 ```
 
-Step 7: Define the `ContactList` resource and its endpoints:
+<span class="step-number">7</span> Define the `ContactList` resource and its endpoints:
 
 ```python
 @ns.route('/')
@@ -100,7 +100,7 @@ class ContactList(Resource):
 * `ns.expect` specifies that the request body must follow the `contact_model`, ensuring that the incoming data matches the defined schema.
     
 
-Step 8: Define the `Contact` resource and its endpoints:
+<span class="step-number">8</span> Define the `Contact` resource and its endpoints:
 
 ```python
 @ns.route('/<int:id>')
@@ -135,13 +135,13 @@ class Contact(Resource):
 
 This resource has three main methods: `get` (retrieves the contact information by contact ID), `delete` (deletes the contact by contact ID), and `put` (updates the contact information by contact ID).
 
-Step 9: Add the namespace to the API to ensure that endpoints, such as `GET /contacts`, can be accessed through the API:
+<span class="step-number">9</span> Add the namespace to the API to ensure that endpoints, such as `GET /contacts`, can be accessed through the API:
 
 ```python
 api.add_namespace(ns)
 ```
 
-Step 10: Ensure that the Flask application will start running with debug mode enabled when you run the `contacts.py` file:
+<span class="step-number">10</span> Ensure that the Flask application will start running with debug mode enabled when you run the `contacts.py` file:
 
 ```python
 if __name__ == '__main__':
@@ -180,29 +180,29 @@ You can also see the example response:
 
 You can use the *Try it out* feature in the Swagger documentation for all operations. This feature allows you to interact with the API directly from the documentation interface. Let's add a contact:
 
-Step 1: Click **Try it out** for the post operation. You'll see fields where you can enter data.
+<span class="step-number">1</span> Click **Try it out** for the post operation. You'll see fields where you can enter data.
 
-Step 2: Add the contact details in the Payload field:
+<span class="step-number">2</span> Add the contact details in the Payload field:
 
 ![Contact details in the Payload field](swaggercontacts6.png)
 
-Step 3: Click **Execute**.
+<span class="step-number">3</span> Click **Execute**.
 
 If successful, you'll get a 201 status code along with the details of the newly created contact:
 
 ![Server response](swaggercontacts7.png)
 
-Step 4: We'll add another contact for this example:
+<span class="step-number">4</span> Add another contact by repeating steps 1 to 3, entering the new contact's details in the Payload field, and executing the request again:
 
 ![Post another contact](swaggercontacts8.png)
 
-Step 5: Expand the **GET /contacts** endpoint:
+<span class="step-number">5</span> Expand the **GET /contacts** endpoint:
 
 ![GET contacts endpoint](swaggercontacts9.png)
 
-Step 6: Click **Try it out** for the get operation.
+<span class="step-number">6</span> Click **Try it out** for the get operation.
 
-Step 7: Click **Execute** to send a request to the endpoint.
+<span class="step-number">7</span> Click **Execute** to send a request to the endpoint.
 
 The response body will display the data retrieved by the `GET /contacts` operation, showing the information for both added contacts and indicating a `200` status code:
 
@@ -210,19 +210,19 @@ The response body will display the data retrieved by the `GET /contacts` operati
 
 The `200` status indicates that the request was successful, and the server has returned the requested data.
 
-Step 8: Let's say you want to update email from `Emma@example.com` to `Emma.Miller@example.com`. Expand the **PUT /contacts/{id}** endpoint.
+<span class="step-number">8</span> Let's say you want to update email from `Emma@example.com` to `Emma.Miller@example.com`. Expand the **PUT /contacts/{id}** endpoint.
 
-Step 9: Click **Try it out**.
+<span class="step-number">9</span> Click **Try it out**.
 
-Step 10: Enter the ID of the contact whose email you want to change:
+<span class="step-number">10</span> Enter the ID of the contact whose email you want to change:
 
 ![ID field](swaggercontacts11.png)
 
-Step 11: In the request body, enter the new email address along with any other details you want to keep unchanged:
+<span class="step-number">11</span> In the request body, enter the new email address along with any other details you want to keep unchanged:
 
 ![Updated email in the request body](swaggercontacts12.png)
 
-Step 12: Click **Execute**.
+<span class="step-number">12</span> Click **Execute**.
 
 The response body will show the updated contact information, and you'll receive a `200` status code indicating that the update is successful:
 

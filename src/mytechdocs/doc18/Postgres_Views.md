@@ -65,7 +65,7 @@ Now that we have set up the table and data, let's understand the benefits of vie
 ## Simplifying Complex Data and Restricting Access to Specific Data
 Suppose Janet is a training manager who wants to see a list of employees and the training programs they have attended. You don't need to give Janet access to the `employees` base table that has confidential information like date of birth and performance rating. You can create a view that hides the complex join as well as prevents access to the confidential fields.
 
-Step 1: Create the view:
+<span class="step-number">1</span> Create the view:
 
 ```pgsql
 CREATE VIEW employee_training AS
@@ -74,25 +74,25 @@ FROM employees e
 JOIN training_programs t ON e.employee_id = t.employee_id;
 ```
 
-Step 2: Create user (role) *Janet*.
+<span class="step-number">2</span> Create user (role) *Janet*.
 
 ```pgsql
 CREATE ROLE “Janet” WITH LOGIN PASSWORD 'password_for_janet';
 ```
 
-Step 3: Grant Janet access to the `employee_training` view:
+<span class="step-number">3</span> Grant Janet access to the `employee_training` view:
 
 ```pgsql
 GRANT SELECT ON employee_training TO “Janet”;
 ```
 
-Step 4: Ensure Janet doesn't have access to the base tables by explicitly revoking any access:
+<span class="step-number">4</span> Ensure Janet doesn't have access to the base tables by explicitly revoking any access:
 
 ```pgsql
 REVOKE ALL ON employees, training_programs FROM “Janet”;
 ```
 
-Step 5: Janet logs in to PostgreSQL. She can query the `employee_training` view to see the list of employees and the training they have attended:
+<span class="step-number">5</span> Janet logs in to PostgreSQL. She can query the `employee_training` view to see the list of employees and the training they have attended:
 
 ![Using a simple select query to access the data](seeview1.png)
 

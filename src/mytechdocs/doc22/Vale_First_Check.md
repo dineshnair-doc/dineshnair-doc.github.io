@@ -18,9 +18,9 @@ BasedOnStyles = CustomRules
 - `BasedOnStyles = CustomRules` tells Vale to use the `CustomRules` style guide, and you'll create a *CustomRules* directory inside the *styles* directory to store your custom checks.
 
 ## Create the Styles Directory
-Step 1: Create a *styles* directory inside your working directory. 
+<span class="step-number">1</span> Create a *styles* directory inside your working directory. 
 
-Step 2: Inside the *styles* directory, create the *CustomRules* directory.
+<span class="step-number">2</span> Inside the *styles* directory, create the *CustomRules* directory.
 
 ![Creating folders for vale](valebasic1.png)
 
@@ -44,16 +44,16 @@ tokens:
 ```
 
 ## Test Vale Against a Sample File
-Step 1: Create a sample file (for example, `sample.txt`) in the working directory.
+<span class="step-number">1</span> Create a sample file (for example, `sample.txt`) in the working directory.
 
-Step 2: Add some sentences with UI elements to the sample file: 
+<span class="step-number">2</span> Add some sentences with UI elements to the sample file: 
 
 ```text
 Click the button to submit.
 Select the checkbox to enable dark mode.
 ```
 
-Step 3: Run Vale to check the file:
+<span class="step-number">3</span> Run Vale to check the file:
 
 `vale sample.txt`
 

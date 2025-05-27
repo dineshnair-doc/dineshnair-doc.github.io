@@ -1,12 +1,12 @@
 .step-number {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background: #1976d2;
   color: #fff;
   border-radius: 50%;
-  width: 1.4em;
-  height: 1.4em;
-  text-align: center;
-  line-height: 1.4em;
+  width: 2em;        /* Large enough for two digits */
+  height: 2em;
   font-weight: bold;
   margin-right: 0.5em;
   font-size: 1em;

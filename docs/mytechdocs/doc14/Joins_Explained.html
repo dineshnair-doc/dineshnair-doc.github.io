@@ -1324,15 +1324,15 @@
 <hr />
 <h2 id="setting-up-tables-with-data">Setting Up Tables with Data</h2>
 <p>When you start psql and connect to your PostgreSQL server, you're generally connecting to an existing database, usually the <em>postgres</em> database with the <em>postgres</em> username by default. To work through the examples, we'll create a separate database.</p>
-<p>Step 1: Create the database:</p>
+<p><span class="step-number">1</span> Create the database:</p>
 <pre><code class="language-pgsql">CREATE DATABASE dinesh_sql_guide;
 </code></pre>
-<p>Step 2: Connect to the new database:</p>
+<p><span class="step-number">2</span> Connect to the new database:</p>
 <pre><code class="language-pgsql">\c dinesh_sql_guide
 </code></pre>
 <p>Here's my psql window where I am creating and connecting to the new database:</p>
 <p><img alt="psql window showing database is created and connected to" src="advsql1.png" /></p>
-<p>Step 3: Create the tables to store skills and training programs:</p>
+<p><span class="step-number">3</span> Create the tables to store skills and training programs:</p>
 <pre><code class="language-pgsql">CREATE TABLE Skills (
     SkillID SERIAL PRIMARY KEY,
     SkillName VARCHAR(255) NOT NULL
@@ -1345,7 +1345,7 @@ CREATE TABLE TrainingPrograms (
     FOREIGN KEY (SkillID) REFERENCES Skills(SkillID)
 );
 </code></pre>
-<p>Step 4: Add the data to the tables:</p>
+<p><span class="step-number">4</span> Add the data to the tables:</p>
 <pre><code class="language-pgsql">-- Inserting Skills into the Skills table
 INSERT INTO Skills (SkillName) VALUES 
     ('Business'),

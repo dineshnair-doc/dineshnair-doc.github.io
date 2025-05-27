@@ -1422,13 +1422,13 @@
 <p>By following along, we'll discover the fundamental techniques for creating an API using Flask, including handling HTTP requests and responses, and creating endpoints.</p>
 <hr />
 <h2 id="set-up-the-flask-environment-in-windows">Set Up the Flask Environment in Windows</h2>
-<p>Step 1: Open the terminal in Visual Studio Code and type: <code>python -m venv venv</code></p>
+<p><span class="step-number">1</span> Open the terminal in Visual Studio Code and type: <code>python -m venv venv</code></p>
 <p>This creates a virtual environment. Using virtual environments ensures that the dependencies for one project don't interfere with the dependencies of other projects.</p>
-<p>Step 2: Activate the virtual environment: <code>venv\Scripts\activate</code></p>
-<p>Step 3: Install Flask: <code>pip install Flask</code></p>
+<p><span class="step-number">2</span> Activate the virtual environment: <code>venv\Scripts\activate</code></p>
+<p><span class="step-number">3</span> Install Flask: <code>pip install Flask</code></p>
 <h2 id="create-the-flask-application">Create the Flask Application</h2>
-<p>Step 1: Create a file named <code>employees.py</code>.</p>
-<p>Step 2: Import necessary components and create an instance of the Flask class:</p>
+<p><span class="step-number">1</span> Create a file named <code>employees.py</code>.</p>
+<p><span class="step-number">2</span> Import necessary components and create an instance of the Flask class:</p>
 <pre><code class="language-python">from flask import Flask, request, jsonify
 
 app = Flask(__name__)
@@ -1445,14 +1445,14 @@ app = Flask(__name__)
 </li>
 </ul>
 <p><code>app = Flask(__name__)</code> creates an instance of the Flask class, initializing a new Flask application.</p>
-<p>Step 3: Define the data structure for storing employee data:</p>
+<p><span class="step-number">3</span> Define the data structure for storing employee data:</p>
 <pre><code class="language-python">employees = [
     {'id': 1, 'name': 'James Smith', 'role': 'Business Analyst'},
     {'id': 2, 'name': 'Ananya Patel', 'role': 'Operations Manager'}
 ]
 </code></pre>
 <p>Here, we define a list of dictionaries, where each dictionary represents an employee.</p>
-<p>Step 4: Create an API endpoint for adding a new employee (POST):</p>
+<p><span class="step-number">4</span> Create an API endpoint for adding a new employee (POST):</p>
 <pre><code class="language-python">@app.route('/employees', methods=['POST'])
 def add_employee():
     new_employee = request.json
@@ -1460,13 +1460,13 @@ def add_employee():
     return jsonify(new_employee), 201
 </code></pre>
 <p>The <code>def add_employee()</code> function is run when a POST request is made to the <code>/employees</code> endpoint. The function takes the new employee data from the request, adds it to the <code>employees</code> list, and returns the new employee data in JSON format with a <code>201 Created</code> status code.</p>
-<p>Step 5: Create an API endpoint for getting all employee (GET):</p>
+<p><span class="step-number">5</span> Create an API endpoint for getting all employees (GET):</p>
 <pre><code class="language-python">@app.route('/employees', methods=['GET'])
 def get_employees():
     return jsonify(employees)
 </code></pre>
 <p>The function returns the list of all employees.</p>
-<p>Step 6: Create an API endpoint for getting a specific employee (GET):</p>
+<p><span class="step-number">6</span> Create an API endpoint for getting a specific employee (GET):</p>
 <pre><code class="language-python">@app.route('/employees/&lt;int:id&gt;', methods=['GET'])
 def get_employee(id):
     for employee in employees:
@@ -1477,7 +1477,7 @@ def get_employee(id):
 <p>The <code>&lt;int:id&gt;</code> part of the route means that the endpoint expects an integer as part of the URL. The integer represents the employee's ID.</p>
 <p>Flask extracts the <code>id</code> value from the URL and passes it to the <code>get_employee(id)</code> function. For example, if the endpoint is <a href="http://localhost:5000/employees/2"><code>http://localhost:5000/employees/2</code></a>, Flask assigns <code>2</code> to the variable <code>id</code> and calls the function with <code>id</code> set to <code>2</code>.</p>
 <p>The function uses a <em>for</em> loop to check if an <code>id</code> matches the <code>id</code> provided through the URL. If a match is found, the function returns the employee's data in JSON format using <code>jsonify(employee)</code>. If no matching employee is found, the function returns a JSON response with an error message and a <code>404 Not Found</code> status.</p>
-<p>Step 7: Create an API endpoint for updating a specific employee (PUT):</p>
+<p><span class="step-number">7</span> Create an API endpoint for updating a specific employee (PUT):</p>
 <pre><code class="language-python">@app.route('/employees/&lt;int:id&gt;', methods=['PUT'])
 def update_employee(id):
     updated_data = request.json
@@ -1489,7 +1489,7 @@ def update_employee(id):
 </code></pre>
 <p>Flask extracts the <code>id</code> value from the URL and passes it to the <code>update_employee(id)</code> function.</p>
 <p>The function uses a for loop to check if an <code>id</code> matches the <code>id</code> provided through the URL. If a match is found, the function updates the employee data and returns the updated data in JSON format using <code>jsonify(employee)</code>. If no matching employee is found, the function returns a JSON response with an error message and a <code>404 Not Found</code> status.</p>
-<p>Step 8: Create an API endpoint for deleting a specific employee (DELETE):</p>
+<p><span class="step-number">8</span> Create an API endpoint for deleting a specific employee (DELETE):</p>
 <pre><code class="language-python">@app.route('/employees/&lt;int:id&gt;', methods=['DELETE'])
 def delete_employee(id):
     employee = next((emp for emp in employees if emp['id'] == id), None)
@@ -1503,7 +1503,7 @@ def delete_employee(id):
 <p>This line <code>employee = next((emp for emp in employees if emp['id'] == id), None)</code> uses a generator expression to find the first employee in the <code>employees</code> list whose <code>id</code> matches the given <code>id</code>. If a matching employee is found, it's assigned to the <code>employee</code> variable. If no match is found, <code>employee</code> is set to <code>None</code>.</p>
 <p>If a matching employee is found, it's removed from the <code>employees</code> list using the <code>remove</code> method.</p>
 <p>The function then returns an empty response body with a <code>204 No Content</code> status code, indicating that the deletion was successful.</p>
-<p>Step 9: Run the application when the <code>employees.py</code> file is run:</p>
+<p><span class="step-number">9</span> Run the application when the <code>employees.py</code> file is run:</p>
 <pre><code class="language-python">if __name__ == '__main__':
     app.run(debug=True)
 </code></pre>
@@ -1515,46 +1515,46 @@ def delete_employee(id):
 <p>Once the server is up and running, you can use tools like Postman, cURL, or any other API testing tool to test the endpoints for adding, retrieving, updating, and deleting employee data.</p>
 <p>We'll use Postman for this walkthrough.</p>
 <h3 id="sending-a-post-request-to-add-a-new-employee">Sending a POST Request to Add a New Employee</h3>
-<p>Step 1: In Postman, create a new request. You can group all your requests in a collection. For example, I created a collection specific for the Employees API called <em>Dinesh Testing Employees API</em>:</p>
+<p><span class="step-number">1</span> In Postman, create a new request. You can group all your requests in a collection. For example, I created a collection specific for the Employees API called <em>Dinesh Testing Employees API</em>:</p>
 <p><img alt="Postman collection for Employees API" src="postmanempl1.png" /></p>
-<p>Step 2: Select the POST method from the dropdown menu.</p>
-<p>Step 3: Enter the endpoint URL. For example, <code>http://127.0.0.1:5000/employees</code>.</p>
-<p>Step 4: Click on the <strong>Body</strong> tab.</p>
-<p>Step 5: Select the <strong>raw</strong> radio button.</p>
-<p>Step 6: Choose <strong>JSON</strong> from the dropdown menu next to the <strong>raw</strong> radio button.</p>
-<p>Step 7: Enter the request body in JSON format. Here's an example of what the body might look like:</p>
+<p><span class="step-number">2</span> Select the POST method from the dropdown menu.</p>
+<p><span class="step-number">3</span> Enter the endpoint URL. For example, <code>http://127.0.0.1:5000/employees</code>.</p>
+<p><span class="step-number">4</span> Click on the <strong>Body</strong> tab.</p>
+<p><span class="step-number">5</span> Select the <strong>raw</strong> radio button.</p>
+<p><span class="step-number">6</span> Choose <strong>JSON</strong> from the dropdown menu next to the <strong>raw</strong> radio button.</p>
+<p><span class="step-number">7</span> Enter the request body in JSON format. Here's an example of what the body might look like:</p>
 <pre><code class="language-json">{
     &quot;id&quot;: 3,
     &quot;name&quot;: &quot;David Williams&quot;,
     &quot;role&quot;: &quot;Business Analyst&quot;
 }
 </code></pre>
-<p>Step 8: Click <strong>Send</strong> to submit the request:</p>
+<p><span class="step-number">8</span> Click <strong>Send</strong> to submit the request:</p>
 <p><img alt="Send button next to endpoint for add employee" src="postmanempl2.png" /></p>
 <p>You will get a response in the response pane, showing the newly added employee's data and a <code>201 Created</code> status code:</p>
 <p><img alt="201 Created status code as response" src="postmanempl3.png" /></p>
 <h3 id="sending-a-get-request-to-retrieve-all-employees">Sending a GET Request to Retrieve All Employees</h3>
-<p>Step 1: Create a new request.</p>
-<p>Step 2: Select the GET method from the dropdown menu.</p>
-<p>Step 3: Enter the endpoint URL. For example, <code>http://127.0.0.1:5000/employees</code>.</p>
-<p>Step 4: Click <strong>Send</strong>.</p>
+<p><span class="step-number">1</span> Create a new request.</p>
+<p><span class="step-number">2</span> Select the GET method from the dropdown menu.</p>
+<p><span class="step-number">3</span> Enter the endpoint URL. For example, <code>http://127.0.0.1:5000/employees</code>.</p>
+<p><span class="step-number">4</span> Click <strong>Send</strong>.</p>
 <p>You will get a response showing the data of all the employees and a <code>200 OK</code> status code:</p>
 <p><img alt="200 OK status code and data of all employees as response" src="postmanempl4.png" /></p>
 <h3 id="sending-a-get-request-to-retrieve-a-specific-employee">Sending a GET Request to Retrieve a Specific Employee</h3>
-<p>Step 1: Create a new request.</p>
-<p>Step 2: Select the GET method from the dropdown menu.</p>
-<p>Step 3: Enter the endpoint URL. In this case, we'll enter an endpoint URL with a specific employee ID. For example, <code>http://127.0.0.1:5000/employees/2</code>.</p>
-<p>Step 4: Click <strong>Send</strong>.</p>
+<p><span class="step-number">1</span> Create a new request.</p>
+<p><span class="step-number">2</span> Select the GET method from the dropdown menu.</p>
+<p><span class="step-number">3</span> Enter the endpoint URL. In this case, we'll enter an endpoint URL with a specific employee ID. For example, <code>http://127.0.0.1:5000/employees/2</code>.</p>
+<p><span class="step-number">4</span> Click <strong>Send</strong>.</p>
 <p>You will get a response showing the data of the employee who has an ID of 2 and a <code>200 OK</code> status code:</p>
 <p><img alt="200 OK status code and data of the employee" src="postmanempl5.png" /></p>
 <h3 id="sending-a-put-request-to-update-an-employees-information">Sending a PUT Request to Update an Employee's Information</h3>
-<p>Step 1: Create a new request.</p>
-<p>Step 2: Select the PUT method from the dropdown menu.</p>
-<p>Step 3: Enter the endpoint URL. In this case, we'll enter an endpoint URL with a specific employee ID. For example, <code>http://127.0.0.1:5000/employees/3</code>.</p>
-<p>Step 4: Click on the <strong>Body</strong> tab.</p>
-<p>Step 5: Select the <strong>raw</strong> radio button.</p>
-<p>Step 6: Choose <strong>JSON</strong> from the dropdown menu next to the <strong>raw</strong> radio button.</p>
-<p>Step 7: Enter the request body in JSON format. Here's an example of what the body might look like:</p>
+<p><span class="step-number">1</span> Create a new request.</p>
+<p><span class="step-number">2</span> Select the PUT method from the dropdown menu.</p>
+<p><span class="step-number">3</span> Enter the endpoint URL. In this case, we'll enter an endpoint URL with a specific employee ID. For example, <code>http://127.0.0.1:5000/employees/3</code>.</p>
+<p><span class="step-number">4</span> Click on the <strong>Body</strong> tab.</p>
+<p><span class="step-number">5</span> Select the <strong>raw</strong> radio button.</p>
+<p><span class="step-number">6</span> Choose <strong>JSON</strong> from the dropdown menu next to the <strong>raw</strong> radio button.</p>
+<p><span class="step-number">7</span> Enter the request body in JSON format. Here's an example of what the body might look like:</p>
 <pre><code class="language-json">{
   &quot;id&quot;: 3,
   &quot;name&quot;: &quot;David Williams&quot;,
@@ -1562,14 +1562,14 @@ def delete_employee(id):
 }
 </code></pre>
 <p>We're changing the role from <em>Business Analyst</em> to <em>Senior Business Analyst.</em></p>
-<p>Step 8: Click <strong>Send</strong>.</p>
+<p><span class="step-number">8</span> Click <strong>Send</strong>.</p>
 <p>You should receive a response with the updated employee data and a <code>200 OK</code> response code:</p>
 <p><img alt="Updated employee data and a 200 OK response" src="postmanempl6.png" /></p>
 <h3 id="sending-a-delete-request-to-remove-an-employee">Sending a DELETE Request to Remove an Employee</h3>
-<p>Step 1: Create a new request.</p>
-<p>Step 2: Select the DELETE method from the dropdown menu.</p>
-<p>Step 3: Enter the endpoint URL. In this case, we'll enter an endpoint URL with a specific employee ID. For example, <code>http://127.0.0.1:5000/employees/3</code>.</p>
-<p>Step 4: Click <strong>Send</strong>.</p>
+<p><span class="step-number">1</span> Create a new request.</p>
+<p><span class="step-number">2</span> Select the DELETE method from the dropdown menu.</p>
+<p><span class="step-number">3</span> Enter the endpoint URL. In this case, we'll enter an endpoint URL with a specific employee ID. For example, <code>http://127.0.0.1:5000/employees/3</code>.</p>
+<p><span class="step-number">4</span> Click <strong>Send</strong>.</p>
 <p>Upon deletion, you should receive a response with no content and a <code>204 No Content</code> status code:</p>
 <p><img alt="Response with no content upon deletion" src="postmanempl7.png" /></p>
 <p>Congratulations! By following this walkthrough, we successfully created an Employees API using Flask. By handling GET, POST, PUT, and DELETE requests, this API adheres to the principles of RESTful web services.</p>

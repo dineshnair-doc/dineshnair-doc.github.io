@@ -24,15 +24,15 @@ If everything goes well, you should see the `CREATE TABLE` message like this:
 ![CREATE TABLE message](dbwebapp1.png)
 
 ## Set Up the PostgreSQL Connection
-Step 1: Activate the virtual environment in the Visual Studio Code (VS Code) terminal by typing the command: `venv\Scripts\activate`
+<span class="step-number">1</span> Activate the virtual environment in the Visual Studio Code (VS Code) terminal by typing the command: `venv\Scripts\activate`
 
-Step 2: Use the `pip` command to install *psycopg2* to connect to your PostgreSQL database from Flask: `pip install psycopg2-binary`
+<span class="step-number">2</span> Use the `pip` command to install *psycopg2* to connect to your PostgreSQL database from Flask: `pip install psycopg2-binary`
 
 ![Pip command to install PostgreSQL database adapter for Python](dbwebapp2a.png)
 
 Psycopg2 is a popular PostgreSQL database connector for Python.
 
-Step 3: There are several ways to store sensitive information. For now, we will store the database username and password in environment variables and access them from the application.
+<span class="step-number">3</span> There are several ways to store sensitive information. For now, we will store the database username and password in environment variables and access them from the application.
 
 Type the following commands in the VS Code terminal (PowerShell):
 

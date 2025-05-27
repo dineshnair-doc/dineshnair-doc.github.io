@@ -6,7 +6,7 @@ This document explains how to configure Vale with the Microsoft Style Guide. The
 ---
 
 ## Configure Vale to Use the Microsoft Style Guide
-Step 1: In your project directory, create a `.vale.ini` file with the following content:
+<span class="step-number">1</span> In your project directory, create a `.vale.ini` file with the following content:
 
 ```ini
 StylesPath = styles
@@ -24,9 +24,9 @@ BasedOnStyles = Microsoft
 - `[*.md]` ensures that Vale applies style rules only to Markdown `(.md)` files.
 - `BasedOnStyles = Microsoft` instructs Vale to base its checking on the Microsoft style guidelines.
 
-Step 2: Create a *styles* directory in the project directory.
+<span class="step-number">2</span> Create a *styles* directory in the project directory.
 
-Step 3: Download the Microsoft Style Guide rules. Run the following command in your project directory: `vale sync`
+<span class="step-number">3</span> Download the Microsoft Style Guide rules. Run the following command in your project directory: `vale sync`
 
 ![Vale sync showing download of the style rules](valems1.png)
 
@@ -34,7 +34,7 @@ This automatically downloads all the YML files into the *styles/Microsoft* direc
 
 ![YML files, such as Avoid.yml and Acronyms.yml, in the folder](valems2.png)
 
-Step 4: Let's test our setup.
+<span class="step-number">4</span> Let's test our setup.
 
 Create a Markdown file (for example, `sample.md`) in the working directory and add the following content:
 
@@ -90,9 +90,9 @@ We will use *existence* here because we want to flag the word "his" or "her" as 
 
 The term "utilize" is a strong case for *substitution*, because "use" is always a clearer, simpler alternative.
 
-Step 1: Create a *Custom* directory in the *styles* directory.
+<span class="step-number">1</span> Create a *Custom* directory in the *styles* directory.
 
-Step 2: In the *Custom* directory, create a new file named `bias-check.yml` to define an existence rule for gendered terms. Add the following settings to the file:
+<span class="step-number">2</span> In the *Custom* directory, create a new file named `bias-check.yml` to define an existence rule for gendered terms. Add the following settings to the file:
 
 ```yml
 extends: existence
@@ -103,7 +103,7 @@ tokens:
   - her
 ```
 
-Step 3: In the *Custom* directory, create another new file named `word-fixes.yml` to define a substitution rule enforcing the replacement of "utilize" with "use". Add the following settings to the file:
+<span class="step-number">3</span> In the *Custom* directory, create another new file named `word-fixes.yml` to define a substitution rule enforcing the replacement of "utilize" with "use". Add the following settings to the file:
 
 ```yml
 extends: substitution
@@ -116,7 +116,7 @@ swap:
   "utilizing": using
 ```
 
-Step 4: Ensure both rules are enabled in `vale.ini` by adding the *Custom* directory to the configuration:
+<span class="step-number">4</span> Ensure both rules are enabled in `vale.ini` by adding the *Custom* directory to the configuration:
 
 ```ini
 StylesPath = styles
@@ -130,7 +130,7 @@ BasedOnStyles = Microsoft, Custom
 
 In summary, this configuration tells Vale to look for styles in the *styles* folder, report all alert levels including suggestions, use the Microsoft style package, and apply the Microsoft and Custom styles to the Markdown files in the project.
 
-Step 5: Run Vale on the document: `vale sample.md` 
+<span class="step-number">5</span> Run Vale on the document: `vale sample.md` 
 
 It should display alerts from both the Microsoft style guide and the customized styles we set up.
 

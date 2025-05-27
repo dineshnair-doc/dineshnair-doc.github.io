@@ -1335,8 +1335,8 @@ BasedOnStyles = CustomRules
 <li><code>BasedOnStyles = CustomRules</code> tells Vale to use the <code>CustomRules</code> style guide, and you'll create a <em>CustomRules</em> directory inside the <em>styles</em> directory to store your custom checks.</li>
 </ul>
 <h2 id="create-the-styles-directory">Create the Styles Directory</h2>
-<p>Step 1: Create a <em>styles</em> directory inside your working directory. </p>
-<p>Step 2: Inside the <em>styles</em> directory, create the <em>CustomRules</em> directory.</p>
+<p><span class="step-number">1</span> Create a <em>styles</em> directory inside your working directory. </p>
+<p><span class="step-number">2</span> Inside the <em>styles</em> directory, create the <em>CustomRules</em> directory.</p>
 <p><img alt="Creating folders for vale" src="valebasic1.png" /></p>
 <h2 id="create-the-customrules-file">Create the CustomRules File</h2>
 <p>Now that you've set up the <em>CustomRules</em> directory, it's time to define a custom style rule.</p>
@@ -1353,12 +1353,12 @@ tokens:
   - &quot;button&quot;
 </code></pre>
 <h2 id="test-vale-against-a-sample-file">Test Vale Against a Sample File</h2>
-<p>Step 1: Create a sample file (for example, <code>sample.txt</code>) in the working directory.</p>
-<p>Step 2: Add some sentences with UI elements to the sample file: </p>
+<p><span class="step-number">1</span> Create a sample file (for example, <code>sample.txt</code>) in the working directory.</p>
+<p><span class="step-number">2</span> Add some sentences with UI elements to the sample file: </p>
 <pre><code class="language-text">Click the button to submit.
 Select the checkbox to enable dark mode.
 </code></pre>
-<p>Step 3: Run Vale to check the file:</p>
+<p><span class="step-number">3</span> Run Vale to check the file:</p>
 <p><code>vale sample.txt</code></p>
 <p>When you run the command, Vale will alert you that two sentences contain UI-related terms:</p>
 <p><img alt="Vale warning that sentences contain UI terms" src="valebasic2.png" /></p>

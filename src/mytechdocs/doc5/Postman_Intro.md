@@ -1,10 +1,10 @@
 # Introduction to Postman
 
-## What’s Postman?
+## What's Postman?
 
 Postman is a tool for creating, testing, and using APIs.
 
-## What’s API?
+## What's API?
 
 API (Application Programming Interface) enables different applications to talk to each other. This happens through a request and response mechanism.
 
@@ -26,30 +26,30 @@ A GET request is how one application asks another application for information. F
 
 Let's now send a GET request to the Reqres API to retrieve information about users.
 
-Step 1: Open Postman and click the + sign to select a new request.
+<span class="step-number">1</span> Open Postman and click the + sign to select a new request.
 
-Step 2: In the text box adjacent to GET, enter the Reqres endpoint URL `https://reqres.in/api/users?page=1`.
+<span class="step-number">2</span> In the text box adjacent to GET, enter the Reqres endpoint URL: `https://reqres.in/api/users?page=1`.
 
 ![Postman with the endpoint URL and page parameter displayed is 1](postmanintro3.png)
 
 Note the page parameter is *1*. When handling APIs that return large sets of data, pagination helps break down the data into manageable chunks. Many APIs provide query parameters to go through pages, like `?page=1`, `?page=2`.
 
-Step 3: Click **Send**.
+<span class="step-number">3</span> Click **Send**.
 
-Step 4: When you click **Send**, Postman responds with a 200 OK status and displays the response from the Reqres API. The response contains details of users such as first name and last name of users.
+<span class="step-number">4</span> When you click **Send**, Postman responds with a 200 OK status and displays the response from the Reqres API. The response contains details of users such as first name and last name of users.
 
 ![Response containing details of users](postmanintro4.png)
 
-Step 5: To save this request to a collection, click **Save**. In Postman we can group requests into collections.
+<span class="step-number">5</span> To save this request to a collection, click **Save**. In Postman we can group requests into collections.
 
 ![Save button on the UI](postmanintro5.png)
 
-Step 6: Name the request.
+<span class="step-number">6</span> Name the request.
 
-Step 7: Save the request in an existing collection or create a new collection.
+<span class="step-number">7</span> Save the request in an existing collection or create a new collection.
 
-Step 8: After saving the request, it appears in the collection for easy access and future use.
+<span class="step-number">8</span> After saving the request, it appears in the collection for easy access and future use.
 
 ![Get request saved in a collection](postmanintro6.png)
 
-Congrats! You’ve learned the basics of Postman: what it is, sending GET requests, and creating collections.
+Congrats! You've learned the basics of Postman: what it is, sending GET requests, and creating collections.

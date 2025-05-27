@@ -1353,19 +1353,19 @@
 <p>FastAPI is a Python-based framework designed to build APIs. We'll install FastAPI and explore the benefits of asynchronous programming, which allows tasks to be handled concurrently, leading to more efficient response times. By creating both synchronous and asynchronous endpoints, we'll test and compare their performance.</p>
 <hr />
 <h2 id="set-up-the-fastapi-environment-in-windows">Set Up the FastAPI Environment in Windows</h2>
-<p>Step 1: Open the terminal in Visual Studio Code and type: <code>python -m venv venv</code></p>
+<p><span class="step-number">1</span> Open the terminal in Visual Studio Code and type: <code>python -m venv venv</code></p>
 <p>This creates a virtual environment. Using virtual environments ensures that the dependencies for one project don't interfere with the dependencies of other projects.</p>
-<p>Step 2: Activate the virtual environment: <code>venv\Scripts\activate</code></p>
-<p>Step 3: Once the virtual environment is activated, you can install FastAPI using this command: <code>pip install fastapi</code></p>
+<p><span class="step-number">2</span> Activate the virtual environment: <code>venv\Scripts\activate</code></p>
+<p><span class="step-number">3</span> Once the virtual environment is activated, you can install FastAPI using this command: <code>pip install fastapi</code></p>
 <p><img alt="pip install Fastapi on the terminal" src="install1.png" /></p>
-<p>Step 4: FastAPI requires an ASGI server to run, such as Uvicorn. You can install it with: <code>pip install "uvicorn[standard]"</code></p>
+<p><span class="step-number">4</span> FastAPI requires an ASGI server to run, such as Uvicorn. You can install it with: <code>pip install "uvicorn[standard]"</code></p>
 <p><img alt="pip install Uvicorn on the terminal" src="install2.png" /></p>
 <p>ASGI (Asynchronous Server Gateway Interface) is a specification for building and running web applications in Python that support asynchronous programming. It allows for handling multiple tasks concurrently, making it ideal for high-performance applications.</p>
-<p>Step 5: To install the necessary libraries for our synchronous and asynchronous scripts, use the following command: <code>pip install requests httpx</code></p>
+<p><span class="step-number">5</span> To install the necessary libraries for our synchronous and asynchronous scripts, use the following command: <code>pip install requests httpx</code></p>
 <p><img alt="pip install requests httpx libraries" src="install3.png" /></p>
 <h2 id="create-a-synchronous-endpoint-with-fastapi">Create a Synchronous Endpoint with FastAPI</h2>
-<p>Step 1: Create a file named <code>sync.py</code>.</p>
-<p>Step 2: Import the necessary components:</p>
+<p><span class="step-number">1</span> Create a file named <code>sync.py</code>.</p>
+<p><span class="step-number">2</span> Import the necessary components:</p>
 <pre><code class="language-python">from fastapi import FastAPI
 import requests
 import time
@@ -1381,16 +1381,16 @@ import time
 <p><code>time</code>: For measuring the duration of processing.</p>
 </li>
 </ul>
-<p>Step 3: Create the FastAPI instance:</p>
+<p><span class="step-number">3</span> Create the FastAPI instance:</p>
 <pre><code class="language-python">app = FastAPI()
 </code></pre>
-<p>Step 4: Define the <code>fetch_data</code> function:</p>
+<p><span class="step-number">4</span> Define the <code>fetch_data</code> function:</p>
 <pre><code class="language-python">def fetch_data(url):
     response = requests.get(url)
     return response.json()
 </code></pre>
 <p><code>fetch_data(url)</code>: Makes an HTTP GET request to the specified URL and returns the JSON response.</p>
-<p>Step 5: Create the synchronous endpoint:</p>
+<p><span class="step-number">5</span> Create the synchronous endpoint:</p>
 <pre><code class="language-python">@app.get(&quot;/multiple-sync/&quot;)
 def multiple_sync():
     urls = [
@@ -1435,14 +1435,14 @@ def multiple_sync():
 </ul>
 <p>The <code>fetch_data</code> function performs the requests one at a time in a blocking manner. This means each request is completed before the next one starts. The line <code>results = [fetch_data(url) for url in urls]</code> calls <code>fetch_data</code> in each iteration of the loop, gets the JSON response for each request, stores it in <code>results</code>, then moves to the next request.</p>
 <p><strong>JSONPlaceholder</strong> is a free online REST API that you can use for testing and prototyping. These URLs in our code are endpoints provided by JSONPlaceholder, each returning a JSON object representing a to-do item.</p>
-<p>Step 6: Run the FastAPI application:</p>
+<p><span class="step-number">6</span> Run the FastAPI application:</p>
 <pre><code class="language-python">if __name__ == &quot;__main__&quot;:
     import uvicorn
     uvicorn.run(app, host=&quot;127.0.0.1&quot;, port=8000)
 </code></pre>
 <h2 id="create-an-asynchronous-endpoint-with-fastapi">Create an Asynchronous Endpoint with FastAPI</h2>
-<p>Step 1: Create a file named <code>async.py</code>.</p>
-<p>Step 2: Import the necessary components:</p>
+<p><span class="step-number">1</span> Create a file named <code>async.py</code>.</p>
+<p><span class="step-number">2</span> Import the necessary components:</p>
 <pre><code class="language-python">from fastapi import FastAPI
 import httpx
 import asyncio
@@ -1462,10 +1462,10 @@ import time
 <p><strong>time</strong>: For measuring the duration of processing.</p>
 </li>
 </ul>
-<p>Step 3: Create the FastAPI instance:</p>
+<p><span class="step-number">3</span> Create the FastAPI instance:</p>
 <pre><code class="language-python">app = FastAPI()
 </code></pre>
-<p>Step 4: Define the asynchronous data fetching function:</p>
+<p><span class="step-number">4</span> Define the asynchronous data fetching function:</p>
 <pre><code class="language-python">async def fetch_data(client, url):
     response = await client.get(url)
     return response.json()
@@ -1479,7 +1479,7 @@ import time
 <p><code>client.get(url)</code> sends an HTTP GET request to the specified URL. The <code>await</code> keyword allows the function to pause and wait for the response while other tasks continue to execute concurrently. For example, while one <code>fetch_data</code> call is waiting for a response from an HTTP GET request, another <code>fetch_data</code> call can send another HTTP request.</p>
 </li>
 </ul>
-<p>Step 5: Create the asynchronous endpoint:</p>
+<p><span class="step-number">5</span> Create the asynchronous endpoint:</p>
 <pre><code class="language-python">@app.get(&quot;/multiple-async/&quot;)
 async def multiple_async():
     urls = [
@@ -1542,7 +1542,7 @@ async def multiple_async():
 </li>
 </ol>
 <p>These components work together to make your application handle multiple HTTP requests concurrently.</p>
-<p>Step 6: Run the FastAPI application:</p>
+<p><span class="step-number">6</span> Run the FastAPI application:</p>
 <pre><code class="language-python">if __name__ == &quot;__main__&quot;:
     import uvicorn
     uvicorn.run(app, host=&quot;127.0.0.1&quot;, port=8001)
@@ -1550,19 +1550,19 @@ async def multiple_async():
 <h2 id="test-the-synchronous-and-asynchronous-endpoints">Test the Synchronous and Asynchronous Endpoints</h2>
 <p>We'll test the endpoints using Postman.</p>
 <h3 id="testing-the-synchronous-endpoint">Testing the Synchronous Endpoint</h3>
-<p>Step 1: Run <code>sync.py</code>.</p>
+<p><span class="step-number">1</span> Run <code>sync.py</code>.</p>
 <p><img alt="Synchronous application running" src="sync1.png" /></p>
-<p>Step 2: In Postman, add a new GET request. I created a collection <em>Dinesh_FastAPI_Syn_Asyn</em> and added a new request. Enter the URL for your synchronous endpoint: <code>http://127.0.0.1:8000/multiple-sync/</code></p>
+<p><span class="step-number">2</span> In Postman, add a new GET request. I created a collection <em>Dinesh_FastAPI_Syn_Asyn</em> and added a new request. Enter the URL for your synchronous endpoint: <code>http://127.0.0.1:8000/multiple-sync/</code></p>
 <p><img alt="Synchronous endpoint in Postman" src="sync3.png" /></p>
-<p>Step 3: Click <strong>Send</strong>. You can find the response time in milliseconds (ms) just below the response body:</p>
+<p><span class="step-number">3</span> Click <strong>Send</strong>. You can find the response time in milliseconds (ms) just below the response body:</p>
 <p><img alt="Response time in milliseconds from synchronous endpoint" src="sync4.png" /></p>
 <p>For me, the total time taken was <strong>5.53 seconds</strong>.</p>
 <h3 id="testing-the-asynchronous-endpoint">Testing the Asynchronous Endpoint</h3>
-<p>Step 1: Run <code>async.py</code>.</p>
+<p><span class="step-number">1</span> Run <code>async.py</code>.</p>
 <p><img alt="Asynchronous application running" src="async1.png" /></p>
-<p>Step 2: In Postman, add a new GET request. Enter the URL for your asynchronous endpoint: <code>http://127.0.0.1:8001/multiple-async/</code></p>
+<p><span class="step-number">2</span> In Postman, add a new GET request. Enter the URL for your asynchronous endpoint: <code>http://127.0.0.1:8001/multiple-async/</code></p>
 <p><img alt="Asynchronous endpoint in Postman" src="async2.png" /></p>
-<p>Step 3: Click <strong>Send</strong>. You can find the response time in milliseconds (ms) just below the response body:</p>
+<p><span class="step-number">3</span> Click <strong>Send</strong>. You can find the response time in milliseconds (ms) just below the response body:</p>
 <p><img alt="Response time in milliseconds from asynchronous endpoint" src="async3.png" /></p>
 <p>For me, the total time taken was <strong>1.71 seconds</strong>.</p>
 <p>Comparing both:</p>

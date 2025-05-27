@@ -1342,7 +1342,7 @@
 <hr />
 <h2 id="setting-up-a-table-with-data">Setting Up a Table with Data</h2>
 <p>Before we look at the examples, let's set up our environment. We'll create a sample table in PostgreSQL on a Windows system and add data to it. </p>
-<p>Step 1: Open your PostgreSQL command line interface (<em>psql</em>) and run the following command to create the <code>TrainingPrograms</code> table with columns such as program duration and participant's satisfaction score:</p>
+<p><span class="step-number">1</span> Open your PostgreSQL command line interface (<em>psql</em>) and run the following command to create the <code>TrainingPrograms</code> table with columns such as program duration and participant's satisfaction score:</p>
 <pre><code class="language-pgsql">CREATE TABLE TrainingPrograms (
     ProgramID INT PRIMARY KEY,
     ProgramName VARCHAR(50),
@@ -1352,7 +1352,7 @@
     SatisfactionScore INT
 );
 </code></pre>
-<p>Step 2: Add some data to the table:</p>
+<p><span class="step-number">2</span> Add some data to the table:</p>
 <pre><code class="language-pgsql">INSERT INTO TrainingPrograms (ProgramID, ProgramName, Trainer, Duration, Participants, SatisfactionScore) VALUES
 (1, 'Leadership Skills', 'Alice', 5, 39, 8),
 (2, 'Business Analysis', 'Emily', 3, 25, 9),

@@ -1288,63 +1288,63 @@
 <hr />
 <h2 id="send-a-post-request">Send a POST Request</h2>
 <p>Let's start with sending a POST request to create a playlist.</p>
-<p>Step 1: In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Create Playlist topic and copy the endpoint URL.</p>
-<p>Step 2: Open the Postman desktop app. We already created the <em>Spotify</em> collection in the previous tutorial. In the Spotify collection, add a new request.</p>
+<p><span class="step-number">1</span> In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Create Playlist topic and copy the endpoint URL.</p>
+<p><span class="step-number">2</span> Open the Postman desktop app. We already created the <em>Spotify</em> collection in the previous tutorial. In the Spotify collection, add a new request.</p>
 <p><img alt="Add a new request option" src="post1.png" /></p>
-<p>Step 3: Give a name to the request. For instance, <em>Create my playlist</em>.</p>
-<p>Step 4: Select POST and paste the endpoint URL you copied from the Spotify doc. You’ll need to replace <code>{user_id}</code> with the username from Spotify.</p>
+<p><span class="step-number">3</span> Give a name to the request. For instance, <em>Create my playlist</em>.</p>
+<p><span class="step-number">4</span> Select POST and paste the endpoint URL you copied from the Spotify doc. You’ll need to replace <code>{user_id}</code> with the username from Spotify.</p>
 <p><img alt="Endpoint URL that mentions user ID" src="post2.png" /></p>
-<p>Step 5: Go to your account in the <a href="https://open.spotify.com/">Spotify Web Player</a>, then click <strong>Edit profile</strong>, and copy the username value.</p>
+<p><span class="step-number">5</span> Go to your account in the <a href="https://open.spotify.com/">Spotify Web Player</a>, then click <strong>Edit profile</strong>, and copy the username value.</p>
 <p><img alt="username value" src="post3.png" /></p>
-<p>Step 6: In Postman, replace the <code>{user_id}</code> value of the URL with the copied username. We can use a variable to store that username. Select the pasted username, then click <strong>Set as variable</strong>, and choose <strong>Set as new variable</strong>. Name the variable, for example, <em>username,</em> and set the scope of the variable as <em>Collection.</em> Finally, click <strong>Set variable</strong>. The endpoint will now have the variable in place of <code>{user_id}</code>.</p>
+<p><span class="step-number">6</span> In Postman, replace the <code>{user_id}</code> value of the URL with the copied username. We can use a variable to store that username. Select the pasted username, then click <strong>Set as variable</strong>, and choose <strong>Set as new variable</strong>. Name the variable, for example, <em>username,</em> and set the scope of the variable as <em>Collection.</em> Finally, click <strong>Set variable</strong>. The endpoint will now have the variable in place of <code>{user_id}</code>.</p>
 <p><img alt="Username variable in the URL" src="post4.png" /></p>
-<p>Step 7: The body of the POST request should contain the data to be created. In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Create Playlist topic, copy the request body. Note that in request body <em>false</em> means the playlist will be private.</p>
+<p><span class="step-number">7</span> The body of the POST request should contain the data to be created. In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Create Playlist topic, copy the request body. Note that in request body <em>false</em> means the playlist will be private.</p>
 <p><img alt="Doc request body" src="post5.png" /></p>
-<p>Step 8: In Postman, click <strong>Body</strong>, and then <strong>raw</strong>. Paste the request body. I edited the copied request body to give a name to the playlist and a description.</p>
+<p><span class="step-number">8</span> In Postman, click <strong>Body</strong>, and then <strong>raw</strong>. Paste the request body. I edited the copied request body to give a name to the playlist and a description.</p>
 <p><img alt="Post request body with playlist name" src="post6.png" /></p>
-<p>Step 9: Click <strong>Send</strong>.</p>
+<p><span class="step-number">9</span> Click <strong>Send</strong>.</p>
 <p>When you click send, you'll see <em>Status 201</em> appear. This status means the playlist was successfully created. Go ahead and copy the playlist ID from the response - we'll need it for the next step.</p>
 <p><img alt="Playlist ID in the response" src="post8.png" /></p>
 <p>You should now see your new playlist in your Spotify account as well.</p>
 <p><img alt="New playlist in Spotify account UI" src="post9.png" /></p>
 <p>Next, we'll add a couple of songs to the playlist.</p>
-<p>Step 1: In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Add Items to Playlist topic and copy the endpoint URL.</p>
-<p>Step 2: In the <em>Spotify</em> collection of Postman, add a new request. Name the request. For instance, <em>Add songs to my playlist</em>.</p>
-<p>Step 3: Select POST and paste the endpoint URL you copied from the Spotify doc.</p>
-<p>Step 4: In the endpoint URL, replace <code>{playlist_id}</code> with the ID of the playlist you just created. We'll use a variable like we used earlier for the username. Select the pasted playlist ID, then click <strong>Set as variable</strong>, followed by <strong>Set as new variable</strong>. Give the variable a name, for example, <em>playlistID</em>. Set the scope of the variable as <em>Collection</em> and click <strong>Set variable</strong>. The endpoint will now have the variable in place of <code>{playlist_id}</code>.</p>
+<p><span class="step-number">1</span> In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Add Items to Playlist topic and copy the endpoint URL.</p>
+<p><span class="step-number">2</span> In the <em>Spotify</em> collection of Postman, add a new request. Name the request. For instance, <em>Add songs to my playlist</em>.</p>
+<p><span class="step-number">3</span> Select POST and paste the endpoint URL you copied from the Spotify doc.</p>
+<p><span class="step-number">4</span> In the endpoint URL, replace <code>{playlist_id}</code> with the ID of the playlist you just created. We'll use a variable like we used earlier for the username. Select the pasted playlist ID, then click <strong>Set as variable</strong>, followed by <strong>Set as new variable</strong>. Give the variable a name, for example, <em>playlistID</em>. Set the scope of the variable as <em>Collection</em> and click <strong>Set variable</strong>. The endpoint will now have the variable in place of <code>{playlist_id}</code>.</p>
 <p><img alt="playlistID in the endpoint URL" src="post10.png" /></p>
-<p>Step 5: In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Add Items to Playlist topic and copy the example of the request body.</p>
+<p><span class="step-number">5</span> In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Add Items to Playlist topic and copy the example of the request body.</p>
 <p><img alt="Doc example of request body" src="post11.png" /></p>
-<p>Step 6: In Postman, click <strong>Body</strong> and then <strong>raw</strong>. Then, paste the request body. I edited the copied request body to add two songs of my choice to the playlist.</p>
+<p><span class="step-number">6</span> In Postman, click <strong>Body</strong> and then <strong>raw</strong>. Then, paste the request body. I edited the copied request body to add two songs of my choice to the playlist.</p>
 <p><img alt="Request body with the two items to be added" src="post12.png" /></p>
 <p>You can find the track ID within the URL of the song on Spotify. For example, if the URL is <code>https://open.spotify.com/track/2va1fTXhffQcr6TfPGf16y</code>, the track ID would be <code>2va1fTXhffQcr6TfPGf16y</code>.</p>
-<p>Step 7: Click <strong>Send</strong>.</p>
+<p><span class="step-number">7</span> Click <strong>Send</strong>.</p>
 <p>When you click send, you’ll see <em>Status 201</em> appear. This status means the songs were successfully added to the playlist. Spotify returns the snapshot ID of the playlist's current state.</p>
 <p><img alt="Snapshot ID of the playlist" src="post13.png" /></p>
 <p>You should now see the songs added to your playlist in your Spotify account as well.</p>
 <h2 id="send-a-put-request">Send a PUT Request</h2>
 <p>We'll now use the PUT request to replace the two existing songs in the playlist with two new songs.</p>
-<p>Step 1: In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Update Playlist Items topic and copy the endpoint URL.</p>
-<p>Step 2: In the <em>Spotify</em> collection of Postman, add a new request. Give a name to the request. For instance, <em>Update my playlist</em>.</p>
-<p>Step 3: Select PUT and paste the endpoint URL you copied from the Spotify doc.</p>
-<p>Step 4: In the endpoint URL, replace <code>{playlist_id}</code> with the actual ID of the playlist. As we did previously for adding songs, we'll use the variable <code>playlistID</code>.</p>
-<p>Step 5: Copy the example of the URI array request body from the Spotify doc.</p>
-<p>Step 6: In Postman, click <strong>Body</strong>, and then <strong>raw</strong>. Then, paste the request body. I edited the request body to add the two songs of my choice to the playlist.</p>
+<p><span class="step-number">1</span> In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Update Playlist Items topic and copy the endpoint URL.</p>
+<p><span class="step-number">2</span> In the <em>Spotify</em> collection of Postman, add a new request. Give a name to the request. For instance, <em>Update my playlist</em>.</p>
+<p><span class="step-number">3</span> Select PUT and paste the endpoint URL you copied from the Spotify doc.</p>
+<p><span class="step-number">4</span> In the endpoint URL, replace <code>{playlist_id}</code> with the actual ID of the playlist. As we did previously for adding songs, we'll use the variable <code>playlistID</code>.</p>
+<p><span class="step-number">5</span> Copy the example of the URI array request body from the Spotify doc.</p>
+<p><span class="step-number">6</span> In Postman, click <strong>Body</strong>, and then <strong>raw</strong>. Then, paste the request body. I edited the request body to add the two songs of my choice to the playlist.</p>
 <p><img alt="Request body of the update endpoint" src="put1.png" /></p>
-<p>Step 7: Click <strong>Send</strong>.</p>
+<p><span class="step-number">7</span> Click <strong>Send</strong>.</p>
 <p>When you click send, you'll see <em>Status 200</em> appear. This status means the songs were successfully added to the playlist, replacing the earlier songs. Spotify returns the snapshot ID of the playlist's current state.</p>
 <p><img alt="Status 200 with snapshot ID of the playlist" src="put2.png" /></p>
 <p>You should now see your updated playlist in your Spotify account as well.</p>
 <h2 id="send-a-delete-request">Send a DELETE Request</h2>
 <p>Let's now use the DELETE request to delete a song from the playlist.</p>
-<p>Step 1: In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Remove Playlist Items topic and copy the endpoint URL.</p>
-<p>Step 2: In the <em>Spotify</em> collection of Postman, add a new request. Give a name to the request. For instance, <em>Delete from my playlist</em>.</p>
-<p>Step 3: Select DELETE and paste the endpoint URL you copied from the Spotify doc.</p>
-<p>Step 4: In the endpoint URL, replace <code>{playlist_id}</code> with the actual ID of the playlist. As we did previously for adding songs, we'll use the variable <code>playlistID</code>.</p>
-<p>Step 5: Copy the example of the URI array request body from the Spotify doc.</p>
-<p>Step 6: In Postman, click <strong>Body</strong>, and then <strong>raw</strong>. Then, paste the request body. I edited the request body to specify the one song that will be deleted from the playlist.</p>
+<p><span class="step-number">1</span> In the <a href="https://developer.spotify.com/documentation/web-api">Spotify doc</a>, go to the Remove Playlist Items topic and copy the endpoint URL.</p>
+<p><span class="step-number">2</span> In the <em>Spotify</em> collection of Postman, add a new request. Give a name to the request. For instance, <em>Delete from my playlist</em>.</p>
+<p><span class="step-number">3</span> Select DELETE and paste the endpoint URL you copied from the Spotify doc.</p>
+<p><span class="step-number">4</span> In the endpoint URL, replace <code>{playlist_id}</code> with the actual ID of the playlist. As we did previously for adding songs, we'll use the variable <code>playlistID</code>.</p>
+<p><span class="step-number">5</span> Copy the example of the URI array request body from the Spotify doc.</p>
+<p><span class="step-number">6</span> In Postman, click <strong>Body</strong>, and then <strong>raw</strong>. Then, paste the request body. I edited the request body to specify the one song that will be deleted from the playlist.</p>
 <p><img alt="Request body of delete endpoint" src="del1.png" /></p>
-<p>Step 7: Click <strong>Send</strong>.</p>
+<p><span class="step-number">7</span> Click <strong>Send</strong>.</p>
 <p>When you click send, you'll see <em>Status 200</em> appear. This status means the song was successfully deleted from the playlist. Spotify returns the snapshot ID of the playlist's current state.</p>
 <p><img alt="Status 200 that indicates successful deletion" src="del2.png" /></p>
 <p>You should now see your updated playlist in your Spotify account as well. The playlist will no longer include the song we just deleted.</p>

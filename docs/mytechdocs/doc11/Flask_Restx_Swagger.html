@@ -1354,17 +1354,17 @@
 <p>If the virtual environment isn't activated, activate it and install Flask-RESTx by typing the command: <code>pip install flask-restx</code></p>
 <p><img alt="pip install flask-restx" src="pipinstallrestx.png" /></p>
 <h2 id="create-the-flask-application">Create the Flask Application</h2>
-<p>Step 1: Create a file named <code>contacts.py</code>.</p>
-<p>Step 2: Import necessary components and create an instance of the Flask class:</p>
+<p><span class="step-number">1</span> Create a file named <code>contacts.py</code>.</p>
+<p><span class="step-number">2</span> Import necessary components and create an instance of the Flask class:</p>
 <pre><code class="language-python">from flask import Flask, request
 from flask_restx import Api, Resource, fields
 
 app = Flask(__name__)
 </code></pre>
-<p>Step 3: Initialize the Flask-RESTx API:</p>
+<p><span class="step-number">3</span> Initialize the Flask-RESTx API:</p>
 <pre><code class="language-python">api = Api(app, version='1.0', title=&quot;Dinesh's Contact Management API&quot;, description='Add, see, update, and remove your contacts.')
 </code></pre>
-<p>Step 4: Define a namespace for the API:</p>
+<p><span class="step-number">4</span> Define a namespace for the API:</p>
 <pre><code class="language-python">ns = api.namespace('contacts', description='Contact operations')
 </code></pre>
 <ul>
@@ -1376,7 +1376,7 @@ app = Flask(__name__)
 </li>
 </ul>
 <p>A namespace helps organize your API endpoints under a common group, making it easier to manage and document them. Additionally, namespaces improve the auto-generated Swagger documentation by categorizing endpoints.</p>
-<p>Step 5: Define the contact model:</p>
+<p><span class="step-number">5</span> Define the contact model:</p>
 <pre><code class="language-python">contact_model = api.model('Contact', {
     'id': fields.Integer(readOnly=True, description='The contact unique identifier.'),
     'name': fields.String(required=True, description='The contact name.'),
@@ -1385,10 +1385,10 @@ app = Flask(__name__)
 })
 </code></pre>
 <p>When you define this model in Flask-RESTx, it automatically includes this model in the Swagger documentation, making it clear what kind of data your endpoints expect.</p>
-<p>Step 6: Create an empty list to store contacts temporarily:</p>
+<p><span class="step-number">6</span> Create an empty list to store contacts temporarily:</p>
 <pre><code class="language-python">contacts = []
 </code></pre>
-<p>Step 7: Define the <code>ContactList</code> resource and its endpoints:</p>
+<p><span class="step-number">7</span> Define the <code>ContactList</code> resource and its endpoints:</p>
 <pre><code class="language-python">@ns.route('/')
 class ContactList(Resource):
     @ns.doc('list_contacts', description='Retrieves a list of all contacts.')
@@ -1419,7 +1419,7 @@ class ContactList(Resource):
 <p><code>ns.expect</code> specifies that the request body must follow the <code>contact_model</code>, ensuring that the incoming data matches the defined schema.</p>
 </li>
 </ul>
-<p>Step 8: Define the <code>Contact</code> resource and its endpoints:</p>
+<p><span class="step-number">8</span> Define the <code>Contact</code> resource and its endpoints:</p>
 <pre><code class="language-python">@ns.route('/&lt;int:id&gt;')
 @ns.response(404, 'Contact not found')
 @ns.param('id', 'The contact identifier')
@@ -1450,10 +1450,10 @@ class Contact(Resource):
         api.abort(404)
 </code></pre>
 <p>This resource has three main methods: <code>get</code> (retrieves the contact information by contact ID), <code>delete</code> (deletes the contact by contact ID), and <code>put</code> (updates the contact information by contact ID).</p>
-<p>Step 9: Add the namespace to the API to ensure that endpoints, such as <code>GET /contacts</code>, can be accessed through the API:</p>
+<p><span class="step-number">9</span> Add the namespace to the API to ensure that endpoints, such as <code>GET /contacts</code>, can be accessed through the API:</p>
 <pre><code class="language-python">api.add_namespace(ns)
 </code></pre>
-<p>Step 10: Ensure that the Flask application will start running with debug mode enabled when you run the <code>contacts.py</code> file:</p>
+<p><span class="step-number">10</span> Ensure that the Flask application will start running with debug mode enabled when you run the <code>contacts.py</code> file:</p>
 <pre><code class="language-python">if __name__ == '__main__':
     app.run(debug=True)
 </code></pre>
@@ -1473,28 +1473,28 @@ class Contact(Resource):
 <p><img alt="Example response" src="swaggercontacts5.png" /></p>
 <h3 id="try-it-out">Try it Out</h3>
 <p>You can use the <em>Try it out</em> feature in the Swagger documentation for all operations. This feature allows you to interact with the API directly from the documentation interface. Let's add a contact:</p>
-<p>Step 1: Click <strong>Try it out</strong> for the post operation. You'll see fields where you can enter data.</p>
-<p>Step 2: Add the contact details in the Payload field:</p>
+<p><span class="step-number">1</span> Click <strong>Try it out</strong> for the post operation. You'll see fields where you can enter data.</p>
+<p><span class="step-number">2</span> Add the contact details in the Payload field:</p>
 <p><img alt="Contact details in the Payload field" src="swaggercontacts6.png" /></p>
-<p>Step 3: Click <strong>Execute</strong>.</p>
+<p><span class="step-number">3</span> Click <strong>Execute</strong>.</p>
 <p>If successful, you'll get a 201 status code along with the details of the newly created contact:</p>
 <p><img alt="Server response" src="swaggercontacts7.png" /></p>
-<p>Step 4: We'll add another contact for this example:</p>
+<p><span class="step-number">4</span> Add another contact by repeating steps 1 to 3, entering the new contact's details in the Payload field, and executing the request again:</p>
 <p><img alt="Post another contact" src="swaggercontacts8.png" /></p>
-<p>Step 5: Expand the <strong>GET /contacts</strong> endpoint:</p>
+<p><span class="step-number">5</span> Expand the <strong>GET /contacts</strong> endpoint:</p>
 <p><img alt="GET contacts endpoint" src="swaggercontacts9.png" /></p>
-<p>Step 6: Click <strong>Try it out</strong> for the get operation.</p>
-<p>Step 7: Click <strong>Execute</strong> to send a request to the endpoint.</p>
+<p><span class="step-number">6</span> Click <strong>Try it out</strong> for the get operation.</p>
+<p><span class="step-number">7</span> Click <strong>Execute</strong> to send a request to the endpoint.</p>
 <p>The response body will display the data retrieved by the <code>GET /contacts</code> operation, showing the information for both added contacts and indicating a <code>200</code> status code:</p>
 <p><img alt="Response body shows the retrieved information for both contacts" src="swaggercontacts10.png" /></p>
 <p>The <code>200</code> status indicates that the request was successful, and the server has returned the requested data.</p>
-<p>Step 8: Let's say you want to update email from <code>Emma@example.com</code> to <code>Emma.Miller@example.com</code>. Expand the <strong>PUT /contacts/{id}</strong> endpoint.</p>
-<p>Step 9: Click <strong>Try it out</strong>.</p>
-<p>Step 10: Enter the ID of the contact whose email you want to change:</p>
+<p><span class="step-number">8</span> Let's say you want to update email from <code>Emma@example.com</code> to <code>Emma.Miller@example.com</code>. Expand the <strong>PUT /contacts/{id}</strong> endpoint.</p>
+<p><span class="step-number">9</span> Click <strong>Try it out</strong>.</p>
+<p><span class="step-number">10</span> Enter the ID of the contact whose email you want to change:</p>
 <p><img alt="ID field" src="swaggercontacts11.png" /></p>
-<p>Step 11: In the request body, enter the new email address along with any other details you want to keep unchanged:</p>
+<p><span class="step-number">11</span> In the request body, enter the new email address along with any other details you want to keep unchanged:</p>
 <p><img alt="Updated email in the request body" src="swaggercontacts12.png" /></p>
-<p>Step 12: Click <strong>Execute</strong>.</p>
+<p><span class="step-number">12</span> Click <strong>Execute</strong>.</p>
 <p>The response body will show the updated contact information, and you'll receive a <code>200</code> status code indicating that the update is successful:</p>
 <p><img alt="Server response with the updated email" src="swaggercontacts13.png" /></p>
 <p>Nicely done! By using this document, we successfully created a Contact Management API using Flask-RESTx that handles GET, POST, PUT, and DELETE requests. We also auto-generated Swagger documentation that provides information about the API and allows users to interact with the API.</p>
