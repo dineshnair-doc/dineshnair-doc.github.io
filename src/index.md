@@ -1,8 +1,10 @@
 # Learn by Doing: Tutorials with Dinesh Nair
 
-Hi, I'm Dinesh. I create **practical, example-driven tutorials** on REST APIs, Flask, PostgreSQL, and beyond.
+Hi, I'm Dinesh, a technical writer focused on creating clear, useful content that drives user action and understanding. 
 
----  
+---
+
+I create **practical, example-driven tutorials** on REST APIs, Flask, PostgreSQL, and a wide range of technical subjects.
 
 🚀 Click any category to expand and explore related tutorials:
 
