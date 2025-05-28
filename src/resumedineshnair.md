@@ -9,7 +9,7 @@
 
 Technical writer focused on enhancing product value through clear, actionable documentation that drives user action and understanding.
 
-My approach is hands-on, actively working with the product, as demonstrated by the screenshots and practical examples featured in my [recent work](my_writings.md){target="_blank"}. I translate complex tech into clear narratives that empower users and drive sales. I am here to make your product's brilliance shine by visually demonstrating its use with practical examples, rather than simply describing it.
+My approach is hands-on, actively working with the product, as demonstrated by the screenshots and practical examples featured in my [recent work](index.md){target="_blank"}. I translate complex tech into clear narratives that empower users and drive sales. I am here to make your product's brilliance shine by visually demonstrating its use with practical examples, rather than simply describing it.
 
 I have a good understanding of the Docs as Code workflow, including writing documentation in Visual Studio Code, managing version control with Git, hosting on GitHub, and publishing using a static site generator. 
 
