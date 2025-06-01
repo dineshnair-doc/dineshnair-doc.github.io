@@ -1,7 +1,9 @@
-# Defining a REST API and Previewing the Doc in Swagger
-Swagger is a tool that helps developers design and document REST APIs. It follows the OpenAPI Specification, which acts like a plan for how an API should work.
+# Using Swagger Editor to Design and Document REST APIs
+Swagger Editor is a tool that helps developers design and document REST APIs using the OpenAPI Specification. The OpenAPI Specification acts as a blueprint for how an API should work, including its endpoints, request and response formats, and other details.
 
 This document covers how to use Swagger Editor to define a basic medical appointments API in YAML format and preview the API documentation. By defining the API specification first in Swagger, we are following a design-first approach, ensuring we design the API in YAML before writing any code. Note that API specifications can also be written in JSON, but here, we'll use YAML.
+
+As you define your API, Swagger Editor provides real-time validation and a live preview of your documentation, making it easy to visualize your API structure.
 
 ---
 
