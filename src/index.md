@@ -70,6 +70,6 @@ I create **practical, example-driven tutorials** on REST APIs, Flask, PostgreSQL
 
 ---
 
-> _"Technology empowers us, but only clear communication unlocks its true potential."_
+> _"Technology empowers us, but only clear communication reveals its full potential."_
 > 
 > — Unknown
