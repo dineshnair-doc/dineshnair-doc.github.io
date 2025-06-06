@@ -90,9 +90,12 @@ if __name__ == '__main__':
     app.run(debug=True)
 ```
 
-You can download the complete Flask application code from here:
-[Download FlaskApp.py](FlaskApp.py)
+---
 
+> **⬇️ Download the complete Flask application code:**  
+> [FlaskApp.py](FlaskApp.py)
+
+---
 
 ## Create the HTML Template
 Create a `templates` folder in your Flask project directory and place the `index.html` file inside it. This file is used by Flask to render the UI.
@@ -130,8 +133,12 @@ Part 3: **The "Clear History" Link**: Lets the user clear the chat history.
 {% endif %}
 ```
 
-You can download the index.html file from here:
-[Download index.html as a zip file](htmlcode.zip)
+---
+
+> **⬇️ Download index.html as a zip file:**  
+> [htmlcode.zip](htmlcode.zip)
+
+---
 
 ## Run the Application
 Start the Flask application: `python FlaskApp.py`
@@ -155,7 +162,7 @@ Continue asking questions, and all previous questions and responses will remain 
 
 ![Flask app showing all questions and answers above input box](flaskcgem5.png)
 
-Click **Clear History** to remove all previous questions and answers, resetting the conversation.
+Click **Clear previous Q&A history** to remove all previous questions and answers, resetting the conversation.
 
 ---
 

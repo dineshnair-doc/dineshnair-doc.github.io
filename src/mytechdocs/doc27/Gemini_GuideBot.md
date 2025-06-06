@@ -1,8 +1,8 @@
 # Building a User Guide Chatbot With Flask and Gemini AI
 This tutorial will show you how to build a Flask web application that can answer user questions by referencing a sample user guide written in Markdown. The application will use Google's Gemini language model to search the guide and provide accurate answers.
 
-You can download the sample user guide from here:
-[Download Sample User Guide](sample_user_guide.zip)
+> **⬇️ Download the sample user guide as a zip file:**  
+> [sample_user_guide.zip](sample_user_guide.zip)
 
 ---
 
@@ -72,7 +72,12 @@ if __name__ == "__main__":
     app.run(debug=True)
 ```
 
-You can download the complete Flask application code from here: [Download flask_gemini_guide.py](flask_gemini_guide.py)
+---
+
+> **⬇️ Download the complete Flask application code:**  
+> [flask_gemini_guide.py](flask_gemini_guide.py)
+
+---
 
 ## Create the HTML Template
 Create a `templates` folder in your Flask project directory and place the HTML file inside it. This file is used by Flask to render the UI.
@@ -109,8 +114,12 @@ The template uses Jinja2 syntax:
 - `{{ ... }}` is used to insert variables (like question and answer) into the HTML dynamically when Flask renders the page.
 - `{% ... %}` is used for logic, such as `{% if answer %}` to conditionally display the answer block.
 
-You can download the HTML file from here:
-[Download HTML as a zip file](htmlcode.zip)
+---
+
+> **⬇️ Download askguide.html as a zip file:**  
+> [htmlcode.zip](htmlcode.zip)
+
+---
 
 ## Run the Application
 Start the Flask application: `python flask_gemini_guide.py`
@@ -152,7 +161,3 @@ The chatbot will let you know the information isn't available in the guide and w
 ---
 
 Well done! You've learned how to build a basic Flask chatbot that answers questions from a user guide. The chatbot uses Gemini AI to provide instant, relevant answers from your documentation. This project demonstrates how AI can enhance user support.
-
-
-
-

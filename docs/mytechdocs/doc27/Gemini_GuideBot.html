@@ -1544,8 +1544,10 @@
 
 <h1 id="building-a-user-guide-chatbot-with-flask-and-gemini-ai">Building a User Guide Chatbot With Flask and Gemini AI</h1>
 <p>This tutorial will show you how to build a Flask web application that can answer user questions by referencing a sample user guide written in Markdown. The application will use Google's Gemini language model to search the guide and provide accurate answers.</p>
-<p>You can download the sample user guide from here:
-<a href="sample_user_guide.zip">Download Sample User Guide</a></p>
+<blockquote>
+<p><strong>⬇️ Download the sample user guide as a zip file:</strong><br />
+<a href="sample_user_guide.zip">sample_user_guide.zip</a></p>
+</blockquote>
 <hr />
 <h2 id="set-up-the-flask-environment-and-api-key-on-windows">Set Up the Flask Environment and API Key on Windows</h2>
 <p>See the <a href="../doc26/Flask_Connect_GeminiAI.html" target="_blank">previous tutorial</a> for instructions on obtaining your Google Gemini API key, setting up the Flask environment, and configuring the API key.</p>
@@ -1588,7 +1590,12 @@ def index():
 <pre><code class="language-python">if __name__ == &quot;__main__&quot;:
     app.run(debug=True)
 </code></pre>
-<p>You can download the complete Flask application code from here: <a href="flask_gemini_guide.py">Download flask_gemini_guide.py</a></p>
+<hr />
+<blockquote>
+<p><strong>⬇️ Download the complete Flask application code:</strong><br />
+<a href="flask_gemini_guide.py">flask_gemini_guide.py</a></p>
+</blockquote>
+<hr />
 <h2 id="create-the-html-template">Create the HTML Template</h2>
 <p>Create a <code>templates</code> folder in your Flask project directory and place the HTML file inside it. This file is used by Flask to render the UI.</p>
 <h3 id="user-question-form">User Question Form</h3>
@@ -1615,8 +1622,12 @@ def index():
 <li><code>{{ ... }}</code> is used to insert variables (like question and answer) into the HTML dynamically when Flask renders the page.</li>
 <li><code>{% ... %}</code> is used for logic, such as <code>{% if answer %}</code> to conditionally display the answer block.</li>
 </ul>
-<p>You can download the HTML file from here:
-<a href="htmlcode.zip">Download HTML as a zip file</a></p>
+<hr />
+<blockquote>
+<p><strong>⬇️ Download askguide.html as a zip file:</strong><br />
+<a href="htmlcode.zip">htmlcode.zip</a></p>
+</blockquote>
+<hr />
 <h2 id="run-the-application">Run the Application</h2>
 <p>Start the Flask application: <code>python flask_gemini_guide.py</code></p>
 <p>Your application should now be running on <code>http://127.0.0.1:5000/</code>.</p>
