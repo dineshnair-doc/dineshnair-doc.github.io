@@ -50,6 +50,7 @@ I create **practical, example-driven tutorials** on REST APIs, Flask, PostgreSQL
 
 ??? info "AI"
     - [Introductory Flask AI Application](mytechdocs/doc26/Flask_Connect_GeminiAI.md)
+    - [AI-Driven User Guide Chatbot](mytechdocs/doc27/Gemini_GuideBot.md)
 
 ---
 
@@ -66,7 +67,8 @@ I create **practical, example-driven tutorials** on REST APIs, Flask, PostgreSQL
 - 📌 [First REST API Using Flask](mytechdocs/doc9/First_REST_API_Flask.md)  
 - 📌 [FastAPI with PostgreSQL and Swagger Doc](mytechdocs/doc13/FastAPI_Postgres_Swagger.md)  
 - 📌 [Benefits of PostgreSQL Views](mytechdocs/doc18/Postgres_Views.md)  
-- 📌 [Introductory Flask AI Application](mytechdocs/doc26/Flask_Connect_GeminiAI.md)  
+- 📌 [Introductory Flask AI Application](mytechdocs/doc26/Flask_Connect_GeminiAI.md)
+- 📌 [AI-Driven User Guide Chatbot](mytechdocs/doc27/Gemini_GuideBot.md)
 
 ---
 
