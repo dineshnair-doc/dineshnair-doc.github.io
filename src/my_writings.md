@@ -13,8 +13,4 @@ This page highlights my technical writing across various technologies, including
 - 📌 [Introductory Flask AI Application](mytechdocs/doc26/Flask_Connect_GeminiAI.md)
 - 📌 [AI-Driven User Guide Chatbot](mytechdocs/doc27/Gemini_GuideBot.md)
 
-Explore more of my technical content in the left navigation pane.
-
----
-
-📝 I'm also open to **technical writing opportunities**. For more about my experience, check out my **[resume](resumedineshnair.md)**. Feel free to get in touch.
+Explore more of my technical content in the [tutorials](mytechdocs/index.md) section.

@@ -2,122 +2,130 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dineshnair-doc.github.io/index.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/my_writings.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/resumedineshnair.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://dineshnair-doc.github.io/appnotes/notes1/semantic_search_demo.html</loc>
+         <lastmod>2025-06-13</lastmod>
+    </url>
+    <url>
+         <loc>https://dineshnair-doc.github.io/mytechdocs/index.html</loc>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc1/Getting_Started_with_Python.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc10/Webpage_Flask_Postgres.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc11/Flask_Restx_Swagger.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc12/FastAPI_Performance.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc13/FastAPI_Postgres_Swagger.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc14/Joins_Explained.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc15/Aggregate_Functions.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc16/UDF_Functions.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc17/Access_Control.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc18/Postgres_Views.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc19/Table_Indexing.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc2/Casting_in_Python.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc20/Using_Markdown.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc21/Using_reStructuredText.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc22/Vale_First_Check.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc23/Vale_Predefined_Style.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc24/Vale_Spell_Check.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc25/Swagger_Generated_Doc.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc26/Flask_Connect_GeminiAI.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc27/Gemini_GuideBot.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc3/Python_Data_Structures.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc4/Classes_and_Objects.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc5/Postman_Intro.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc6/Postman_Obtain_Auth.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc7/Sending_Requests.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc8/Flask_Intro.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
     <url>
          <loc>https://dineshnair-doc.github.io/mytechdocs/doc9/First_REST_API_Flask.html</loc>
-         <lastmod>2025-06-06</lastmod>
+         <lastmod>2025-06-13</lastmod>
     </url>
 </urlset>

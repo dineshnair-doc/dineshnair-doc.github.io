@@ -1,61 +1,73 @@
-site_name: Tech Tutorials by Dinesh Nair
+site_name: Tech Tutorials and AI Notes by Dinesh Nair
 site_url: https://dineshnair-doc.github.io/
-site_description: Hands-on, example-driven tutorials in Python, REST APIs, and more by Dinesh Nair.
+site_description: Hands-on, example-driven tutorials in Python, REST APIs, and more by Dinesh Nair. Also includes his AI Notes.
 site_author: Dinesh Nair
 use_directory_urls: false
+
 theme:
   name: material
   features:
     - content.code.copy
+    - navigation.tabs
+    - navigation.tabs.sticky
   custom_dir: overrides
   icon:
     admonition:
       info: material/cube-outline
+
 markdown_extensions:
   - attr_list  # Enables adding attributes to Markdown elements
   - md_in_html # Enables Markdown inside HTML tags
   - admonition
   - pymdownx.details
+
 copyright: Copyright &copy; 2024-2025 Dinesh Nair
+
 nav:
   - Home: index.md
   - About Me: resumedineshnair.md
-  - Python:
-      - Getting Started with Python: mytechdocs/doc1/Getting_Started_with_Python.md
-      - Casting in Python: mytechdocs/doc2/Casting_in_Python.md
-      - Lists, Dictionaries, Tuples, and Sets: mytechdocs/doc3/Python_Data_Structures.md
-      - Classes and Objects: mytechdocs/doc4/Classes_and_Objects.md
-  - Postman:
-      - Introduction to Postman: mytechdocs/doc5/Postman_Intro.md
-      - Obtaining Authorization: mytechdocs/doc6/Postman_Obtain_Auth.md
-      - Sending Requests: mytechdocs/doc7/Sending_Requests.md
-  - Flask:
-      - Getting Started with Flask: mytechdocs/doc8/Flask_Intro.md
-      - First REST API Using Flask: mytechdocs/doc9/First_REST_API_Flask.md
-      - Web Page Using Flask and PostgreSQL: mytechdocs/doc10/Webpage_Flask_Postgres.md
-      - Flask-RESTx API with Swagger Doc: mytechdocs/doc11/Flask_Restx_Swagger.md
-  - FastAPI:
-      - FastAPI Performance: mytechdocs/doc12/FastAPI_Performance.md
-      - FastAPI with PostgreSQL and Swagger Doc: mytechdocs/doc13/FastAPI_Postgres_Swagger.md
-  - PostgreSQL:
-      - SQL Joins: mytechdocs/doc14/Joins_Explained.md
-      - Aggregate Functions: mytechdocs/doc15/Aggregate_Functions.md
-      - User-Defined Functions: mytechdocs/doc16/UDF_Functions.md
-      - Access Control: mytechdocs/doc17/Access_Control.md
-      - Benefits of PostgreSQL Views: mytechdocs/doc18/Postgres_Views.md
-      - Query Faster with Indexing: mytechdocs/doc19/Table_Indexing.md
-  - Doc Formats:
-      - Markdown: mytechdocs/doc20/Using_Markdown.md
-      - reStructuredText: mytechdocs/doc21/Using_reStructuredText.md
-      - Swagger API Design and Doc: mytechdocs/doc25/Swagger_Generated_Doc.md
-  - Vale:
-      - First Style Check: mytechdocs/doc22/Vale_First_Check.md
-      - Using and Extending a Standard Style: mytechdocs/doc23/Vale_Predefined_Style.md
-      - Enhancing Spell Checks with Custom Lists: mytechdocs/doc24/Vale_Spell_Check.md
-  - AI:
-      - Introductory Flask AI App: mytechdocs/doc26/Flask_Connect_GeminiAI.md
-      - AI-Driven User Guide Chatbot: mytechdocs/doc27/Gemini_GuideBot.md
+  - Tutorials:
+      - Tutorials Overview: mytechdocs/index.md
+      - Python:
+          - Getting Started with Python: mytechdocs/doc1/Getting_Started_with_Python.md
+          - Casting in Python: mytechdocs/doc2/Casting_in_Python.md
+          - Lists, Dictionaries, Tuples, and Sets: mytechdocs/doc3/Python_Data_Structures.md
+          - Classes and Objects: mytechdocs/doc4/Classes_and_Objects.md
+      - Postman:
+          - Introduction to Postman: mytechdocs/doc5/Postman_Intro.md
+          - Obtaining Authorization: mytechdocs/doc6/Postman_Obtain_Auth.md
+          - Sending Requests: mytechdocs/doc7/Sending_Requests.md
+      - Flask:
+          - Getting Started with Flask: mytechdocs/doc8/Flask_Intro.md
+          - First REST API Using Flask: mytechdocs/doc9/First_REST_API_Flask.md
+          - Web Page Using Flask and PostgreSQL: mytechdocs/doc10/Webpage_Flask_Postgres.md
+          - Flask-RESTx API with Swagger Doc: mytechdocs/doc11/Flask_Restx_Swagger.md
+      - FastAPI:
+          - FastAPI Performance: mytechdocs/doc12/FastAPI_Performance.md
+          - FastAPI with PostgreSQL and Swagger Doc: mytechdocs/doc13/FastAPI_Postgres_Swagger.md
+      - PostgreSQL:
+          - SQL Joins: mytechdocs/doc14/Joins_Explained.md
+          - Aggregate Functions: mytechdocs/doc15/Aggregate_Functions.md
+          - User-Defined Functions: mytechdocs/doc16/UDF_Functions.md
+          - Access Control: mytechdocs/doc17/Access_Control.md
+          - Benefits of PostgreSQL Views: mytechdocs/doc18/Postgres_Views.md
+          - Query Faster with Indexing: mytechdocs/doc19/Table_Indexing.md
+      - Doc Formats:
+          - Markdown: mytechdocs/doc20/Using_Markdown.md
+          - reStructuredText: mytechdocs/doc21/Using_reStructuredText.md
+          - Swagger API Design and Doc: mytechdocs/doc25/Swagger_Generated_Doc.md
+      - Vale:
+          - First Style Check: mytechdocs/doc22/Vale_First_Check.md
+          - Using and Extending a Standard Style: mytechdocs/doc23/Vale_Predefined_Style.md
+          - Enhancing Spell Checks with Custom Lists: mytechdocs/doc24/Vale_Spell_Check.md
+      - AI:
+          - Introductory Flask AI App: mytechdocs/doc26/Flask_Connect_GeminiAI.md
+          - AI-Driven User Guide Chatbot: mytechdocs/doc27/Gemini_GuideBot.md
+  - AI Notes:
+      - Semantic Search App: appnotes/notes1/semantic_search_demo.md
+
 site_dir: docs
 docs_dir: src
+
 extra_css:
   - stylesheets/extra.css
