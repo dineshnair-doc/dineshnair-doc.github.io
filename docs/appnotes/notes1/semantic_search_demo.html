@@ -18,13 +18,15 @@
         <link rel="prev" href="../../mytechdocs/doc27/Gemini_GuideBot.html">
       
       
+        <link rel="next" href="../notes2/RAG_guide_demo.html">
+      
       
       <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.9">
     
     
       
-        <title>Semantic Search App - Tech Tutorials and AI Notes by Dinesh Nair</title>
+        <title>Semantic Search Documentation Assistant - Tech Tutorials and AI Notes by Dinesh Nair</title>
       
     
     
@@ -115,7 +117,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Semantic Search App
+              Semantic Search Documentation Assistant
             
           </span>
         </div>
@@ -1428,7 +1430,7 @@
           
   
   <span class="md-ellipsis">
-    Semantic Search App
+    Semantic Search Documentation Assistant
     
   </span>
   
@@ -1440,7 +1442,7 @@
         
   
   <span class="md-ellipsis">
-    Semantic Search App
+    Semantic Search Documentation Assistant
     
   </span>
   
@@ -1502,6 +1504,28 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../notes2/RAG_guide_demo.html" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RAG-Based Documentation Assistant
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1617,29 +1641,39 @@ Unlike traditional keyword search, this application relies on semantic search. T
 </ul>
 <h2 id="user-interaction">User Interaction</h2>
 <p>Here's me running the second script to launch the UI:</p>
-<p><img alt="VS Code terminal command to launch the Streamlit UI" src="streamlitgem1.png" /></p>
+<p><img alt="VS Code terminal command to launch the Streamlit UI" class="screenshot-border" src="streamlitgem1.png" /></p>
+<hr class="fancy-divider">
+
 <p>This is our application with a search result:</p>
-<p><img alt="UI with a how do I begin installation question and answer" src="streamlitgem2.png" /></p>
+<p><img alt="UI with a how do I begin installation question and answer" class="screenshot-border" src="streamlitgem2.png" /></p>
 <p>We asked <em>How do I begin installation?</em> instead of <em>How do I set up the system</em>, and it still pulled the Getting Started section. This proves the application understands meaning, not just exact words.</p>
+<hr class="fancy-divider">
+
 <p>Here's another example:</p>
-<p><img alt="UI with an enhancing video feed question and answer" src="streamlitgem3.png" /></p>
+<p><img alt="UI with an enhancing video feed question and answer" class="screenshot-border" src="streamlitgem3.png" /></p>
 <p>That result is a demonstration of <strong>semantic search in action</strong>. Even though our query didn't mention Day/Night Mode directly, it recognized that enhancing video clarity in low-light environments relates to adjusting camera settings for visibility.</p>
+<hr class="fancy-divider">
+
 <p>Let's try another one:</p>
-<p><img alt="UI with a how to check past alerts question and answer" src="streamlitgem4.png" /></p>
+<p><img alt="UI with a how to check past alerts question and answer" class="screenshot-border" src="streamlitgem4.png" /></p>
 <p>Here, even if the exact phrase <em>past alerts</em> wasn't explicitly written in the guide, the application understood the meaning and pulled the relevant chunk.</p>
+<hr class="fancy-divider">
+
 <p>Another one:</p>
-<p><img alt="UI with a how to go to original settings question and answer" src="streamlitgem5.png" /></p>
+<p><img alt="UI with a how to go to original settings question and answer" class="screenshot-border" src="streamlitgem5.png" /></p>
 <p>The query <em>How can I bring everything back to its original settings?</em> doesn't use direct phrases from the guide such as <em>System Reset</em>, <em>restore default configuration</em>, or <em>reset security preferences</em>. Yet, the application correctly displays the System Reset section, which precisely addresses restoring the system to its original settings.</p>
+<hr class="fancy-divider">
+
 <p>We'll now set the relevant results to be returned to 3 and ask a broader question. This will retrieve multiple relevant results. Since the results page is long and its dynamic interface prevents a single scrolling screenshot, I've divided the output into multiple screenshots for clarity.</p>
 <p>Screenshot 1:
 Shows the top portion of the page, including the user question.</p>
-<p><img alt="Top portion of the page for not getting the alerts question" src="streamlitgem6a.png" /></p>
+<p><img alt="Top portion of the page for not getting the alerts question" class="screenshot-border" src="streamlitgem6a.png" /></p>
 <p>Screenshot 2:
 Displays the middle section, with the first matching chunk.</p>
-<p><img alt="Middle portion of the page for not getting the alerts question" src="streamlitgem6b.png" /></p>
+<p><img alt="Middle portion of the page for not getting the alerts question" class="screenshot-border" src="streamlitgem6b.png" /></p>
 <p>Screenshot 3:
 Captures the remaining results.</p>
-<p><img alt="End portion of the page for not getting the alerts question" src="streamlitgem6c.png" /></p>
+<p><img alt="End portion of the page for not getting the alerts question" class="screenshot-border" src="streamlitgem6c.png" /></p>
 <ul>
 <li>
 <p>Chunk 1: <em>Automated Alarms &amp; Emergency Alerts</em> directly addresses how alerts are managed and customized, which is the most relevant for users unsure about receiving alerts.</p>
@@ -1652,6 +1686,8 @@ Captures the remaining results.</p>
 </li>
 </ul>
 <p>This demonstrates that the application is retrieving the most contextually relevant chunks, not just matching keywords, and is displaying all sections a user might need to troubleshoot or understand alert issues.</p>
+<hr class="fancy-divider">
+
 <p>Final one. When we ask, <em>Where can I see past incidents and adjust my notification preferences?</em>, the application returns:</p>
 <ul>
 <li>
@@ -1663,13 +1699,14 @@ Captures the remaining results.</p>
 </ul>
 <p>Screenshot 1:
 Shows the top portion of the results, including the user question and the first matching chunk.</p>
-<p><img alt="Top portion of the page for question about past incidents and notification preferences" src="streamlitgem7a.png" /></p>
+<p><img alt="Top portion of the page for question about past incidents and notification preferences" class="screenshot-border" src="streamlitgem7a.png" /></p>
 <p>Screenshot 2:
 Displays the remaining result.</p>
-<p><img alt="End portion of the page for question about past incidents and notification preferences" src="streamlitgem7b.png" /></p>
-<p>This shows that it's correctly understanding the intent behind a multi-part, natural language question and displaying the most relevant chunks. This demonstrates that the semantic search retrieves contextually appropriate information, not just keyword matches, which is exactly the goal of using embeddings.</p>
+<p><img alt="End portion of the page for question about past incidents and notification preferences" class="screenshot-border" src="streamlitgem7b.png" /></p>
+<p>This shows that it's correctly understanding the intent behind a multi-part, natural language question and displaying the most relevant chunks.</p>
 <h2 id="conclusion">Conclusion</h2>
-<p>The search is not perfect, but it works effectively when we ask relevant questions from the guide. It performs the <strong>retrieval</strong> step using <strong>embeddings</strong> and <strong>ChromaDB</strong>, but does not perform the <strong>augmented generation</strong> step with an <strong>LLM</strong>. In a future post, I plan to integrate an LLM to create a true RAG (Retrieval-Augmented Generation) system, which will improve synthesis of multiple chunks and provide more natural language responses.</p>
+<p>The search is not perfect, but it works effectively when we ask relevant questions from the guide. It performs the <strong>retrieval</strong> step using <strong>embeddings</strong> and <strong>ChromaDB</strong>, but does not perform the <strong>augmented generation</strong> step with an <strong>LLM</strong>. </p>
+<p>The <a href="../notes2/RAG_guide_demo.html" target="_blank">next post</a> outlines how I integrated an LLM to create a true RAG (Retrieval-Augmented Generation) system, which will improve synthesis of multiple chunks and provide more natural language responses.</p>
 
 
 

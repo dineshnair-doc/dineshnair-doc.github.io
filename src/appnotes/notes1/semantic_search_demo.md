@@ -27,48 +27,58 @@ I created two Python scripts:
 
 Here's me running the second script to launch the UI:
 
-![VS Code terminal command to launch the Streamlit UI](streamlitgem1.png)
+![VS Code terminal command to launch the Streamlit UI](streamlitgem1.png){.screenshot-border}
+
+<hr class="fancy-divider">
 
 This is our application with a search result:
 
-![UI with a how do I begin installation question and answer](streamlitgem2.png)
+![UI with a how do I begin installation question and answer](streamlitgem2.png){.screenshot-border}
 
 We asked *How do I begin installation?* instead of *How do I set up the system*, and it still pulled the Getting Started section. This proves the application understands meaning, not just exact words.
 
+<hr class="fancy-divider">
+
 Here's another example:
 
-![UI with an enhancing video feed question and answer](streamlitgem3.png)
+![UI with an enhancing video feed question and answer](streamlitgem3.png){.screenshot-border}
 
 That result is a demonstration of **semantic search in action**. Even though our query didn't mention Day/Night Mode directly, it recognized that enhancing video clarity in low-light environments relates to adjusting camera settings for visibility.
 
+<hr class="fancy-divider">
+
 Let's try another one:
 
-![UI with a how to check past alerts question and answer](streamlitgem4.png)
+![UI with a how to check past alerts question and answer](streamlitgem4.png){.screenshot-border}
 
 Here, even if the exact phrase *past alerts* wasn't explicitly written in the guide, the application understood the meaning and pulled the relevant chunk.
 
+<hr class="fancy-divider">
+
 Another one:
 
-![UI with a how to go to original settings question and answer](streamlitgem5.png)
+![UI with a how to go to original settings question and answer](streamlitgem5.png){.screenshot-border}
 
 The query *How can I bring everything back to its original settings?* doesn't use direct phrases from the guide such as *System Reset*, *restore default configuration*, or *reset security preferences*. Yet, the application correctly displays the System Reset section, which precisely addresses restoring the system to its original settings.
+
+<hr class="fancy-divider">
 
 We'll now set the relevant results to be returned to 3 and ask a broader question. This will retrieve multiple relevant results. Since the results page is long and its dynamic interface prevents a single scrolling screenshot, I've divided the output into multiple screenshots for clarity.
 
 Screenshot 1:
 Shows the top portion of the page, including the user question.
 
-![Top portion of the page for not getting the alerts question](streamlitgem6a.png)
+![Top portion of the page for not getting the alerts question](streamlitgem6a.png){.screenshot-border}
 
 Screenshot 2:
 Displays the middle section, with the first matching chunk.
 
-![Middle portion of the page for not getting the alerts question](streamlitgem6b.png)
+![Middle portion of the page for not getting the alerts question](streamlitgem6b.png){.screenshot-border}
 
 Screenshot 3:
 Captures the remaining results.
 
-![End portion of the page for not getting the alerts question](streamlitgem6c.png)
+![End portion of the page for not getting the alerts question](streamlitgem6c.png){.screenshot-border}
 
 - Chunk 1: *Automated Alarms & Emergency Alerts* directly addresses how alerts are managed and customized, which is the most relevant for users unsure about receiving alerts.
 
@@ -77,6 +87,8 @@ Captures the remaining results.
 - Chunk 3: *Motion Detection Settings* while less directly related, it's relevant because motion detection settings can influence whether alerts are triggered in the first place (for example, if sensitivity is low, fewer alerts will be generated).
 
 This demonstrates that the application is retrieving the most contextually relevant chunks, not just matching keywords, and is displaying all sections a user might need to troubleshoot or understand alert issues.
+
+<hr class="fancy-divider">
 
 Final one. When we ask, *Where can I see past incidents and adjust my notification preferences?*, the application returns:
 
@@ -87,14 +99,16 @@ Final one. When we ask, *Where can I see past incidents and adjust my notificati
 Screenshot 1:
 Shows the top portion of the results, including the user question and the first matching chunk.
 
-![Top portion of the page for question about past incidents and notification preferences](streamlitgem7a.png)
+![Top portion of the page for question about past incidents and notification preferences](streamlitgem7a.png){.screenshot-border}
 
 Screenshot 2:
 Displays the remaining result.
 
-![End portion of the page for question about past incidents and notification preferences](streamlitgem7b.png)
+![End portion of the page for question about past incidents and notification preferences](streamlitgem7b.png){.screenshot-border}
 
-This shows that it's correctly understanding the intent behind a multi-part, natural language question and displaying the most relevant chunks. This demonstrates that the semantic search retrieves contextually appropriate information, not just keyword matches, which is exactly the goal of using embeddings.
+This shows that it's correctly understanding the intent behind a multi-part, natural language question and displaying the most relevant chunks.
 
 ## Conclusion
-The search is not perfect, but it works effectively when we ask relevant questions from the guide. It performs the **retrieval** step using **embeddings** and **ChromaDB**, but does not perform the **augmented generation** step with an **LLM**. In a future post, I plan to integrate an LLM to create a true RAG (Retrieval-Augmented Generation) system, which will improve synthesis of multiple chunks and provide more natural language responses.
+The search is not perfect, but it works effectively when we ask relevant questions from the guide. It performs the **retrieval** step using **embeddings** and **ChromaDB**, but does not perform the **augmented generation** step with an **LLM**. 
+
+The [next post](../notes2/RAG_guide_demo.md){target="_blank"} outlines how I integrated an LLM to create a true RAG (Retrieval-Augmented Generation) system, which will improve synthesis of multiple chunks and provide more natural language responses.

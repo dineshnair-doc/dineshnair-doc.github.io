@@ -64,7 +64,8 @@ nav:
           - Introductory Flask AI App: mytechdocs/doc26/Flask_Connect_GeminiAI.md
           - AI-Driven User Guide Chatbot: mytechdocs/doc27/Gemini_GuideBot.md
   - AI Notes:
-      - Semantic Search App: appnotes/notes1/semantic_search_demo.md
+      - Semantic Search Documentation Assistant: appnotes/notes1/semantic_search_demo.md
+      - RAG-Based Documentation Assistant: appnotes/notes2/RAG_guide_demo.md
 
 site_dir: docs
 docs_dir: src

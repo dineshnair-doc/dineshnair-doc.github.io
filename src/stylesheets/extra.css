@@ -12,3 +12,17 @@
   font-size: 1em;
   vertical-align: middle;
 }
+
+.screenshot-border {
+    border: 2px solid #888;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.fancy-divider {
+  border: none;
+  border-top: 3px double #1976d2; /* Blue double line */
+  margin: 2em 0;
+  height: 0;
+  width: 100%;
+}
