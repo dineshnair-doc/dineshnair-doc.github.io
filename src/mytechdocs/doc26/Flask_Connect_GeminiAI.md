@@ -1,3 +1,7 @@
+---
+description: Get started with creating a Flask app that connects to Google's Gemini AI and retrieves concise answers using prompt engineering.
+---
+
 # Creating a Flask Application That Uses Gemini AI
 This document demonstrates how to build a Flask web application that connects with Google's Gemini AI. It shows how to use prompt engineering to deliver concise, two-sentence answers to users, and outlines the workflow for integrating with Gemini AI.
 

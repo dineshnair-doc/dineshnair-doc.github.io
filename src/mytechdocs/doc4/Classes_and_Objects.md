@@ -1,3 +1,7 @@
+---
+description: Learn about classes and objects in Python through hands-on code examples, covering inheritance, polymorphism, and more
+---
+
 # Classes and Objects in Python
 
 This document will help you understand Python classes, objects, inheritance, and polymorphism.

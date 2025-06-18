@@ -1,3 +1,7 @@
+---
+description: Learn PostgreSQL joins with practical examples covering inner join, left join, right join, and full outer join.
+---
+
 # PostgreSQL Joins Explained with Practical Examples
 This document explores the world of PostgreSQL joins, covering inner, left, right, and full outer joins through practical examples. We'll start by setting up sample tables in the Windows environment and inserting data into them, and then we'll walk through each type of join with an example and explanation.
 

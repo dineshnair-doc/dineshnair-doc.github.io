@@ -1,3 +1,7 @@
+---
+description: Learn FastAPI with a practical example of creating a REST API for employee reviews and auto-generating Swagger documentation.
+---
+
 # Building a REST API with FastAPI, PostgreSQL, and Swagger Documentation
 Using FastAPI, we'll create a basic API for employee performance review. This API will be tied to a PostgreSQL database, ensuring the data storage and retrieval. Later on, we'll use Swagger documentation for interacting with the API. FastAPI automatically generates the Swagger documentation for our API, making it easy to test and visualize our endpoints.
 

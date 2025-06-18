@@ -1,3 +1,7 @@
+---
+description: Learn about Python's core data structures covering lists, dictionaries, tuples, and sets with practical examples.
+---
+
 # Lists, Dictionaries, Tuples, and Sets in Python
 In this document, we'll explore fundamental data structures in Python: lists, dictionaries, tuples, and sets. 
 

@@ -1,3 +1,7 @@
+---
+description: Learn how to use Markdown hands-on in VS Code on Windows with examples of headings, lists, links, tables, images, and more.
+---
+
 # Using Markdown
 Markdown is a language to format and structure documents. Its syntax is minimal and easy to use.
 
