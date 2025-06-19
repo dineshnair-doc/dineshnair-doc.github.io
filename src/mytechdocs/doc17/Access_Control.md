@@ -1,3 +1,7 @@
+---
+description: Learn how to create a row-level security policy in PostgreSQL using a real-world access control scenario.
+---
+
 # Implementing Access Control with Row-Level Security in PostgreSQL
 Consider this scenario: Managers, Alice and Swati, can only see the skills of their direct reports. For example, Alice can see the skills of employees who report to her and cannot see the skills of employees who report to Swati. To implement this scenario, we'll create the users (Alice and Swati), grant privileges to both, and implement the row-level security so that each manager can only see the skills of their direct reports.
 

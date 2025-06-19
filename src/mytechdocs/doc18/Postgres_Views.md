@@ -1,5 +1,9 @@
+---
+description: Learn how PostgreSQL views offer benefits such as abstracting query complexity through a real-world scenario.
+---
+
 # Understanding the Benefits of PostgreSQL Views
-Views are virtual tables that you create by querying data from one or more tables. They don't physically store the data. Let's create two tables and then use a view to retrieve the data, showing the benefits of views.
+Views are virtual tables that you create by querying data from one or more tables. They don't physically store the data. In this tutorial, we'll create two tables and use a view to retrieve data, highlighting key benefits such as abstracting complex joins and restricting access to specific information.
 
 ---
 

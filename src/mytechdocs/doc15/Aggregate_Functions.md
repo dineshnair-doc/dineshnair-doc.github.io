@@ -1,3 +1,7 @@
+---
+description: Learn how PostgreSQL aggregate functions summarize and analyze data, with practical examples to guide you.
+---
+
 # Using Aggregate Functions in PostgreSQL
 This write-up covers five key aggregate functions: COUNT, SUM, MAX, MIN, and AVG. These functions are powerful tools for summarizing and analyzing your data. We'll walk through practical examples to illustrate how each function works.
 

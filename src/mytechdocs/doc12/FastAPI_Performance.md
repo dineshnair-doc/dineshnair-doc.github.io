@@ -1,4 +1,8 @@
-# FastAPI Performance: Comparing Sync and Async Endpoints
+---
+description: Learn how asynchronous programming in FastAPI improves performance by comparing sync and async endpoints hands-on.
+---
+
+# Evaluating FastAPI Performance with Sync and Async Endpoints
 FastAPI is a Python-based framework designed to build APIs. We'll install FastAPI and explore the benefits of asynchronous programming, which allows tasks to be handled concurrently, leading to more efficient response times. By creating both synchronous and asynchronous endpoints, we'll test and compare their performance.
 
 ---

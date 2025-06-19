@@ -1,5 +1,9 @@
-# Vale for Beginners: Creating Your First Style Check
-Vale helps you enforce style guide rules in documentation, ensuring consistency and clarity in writing. To install Vale, visit Vale's official website - [vale.sh](https://vale.sh/){target="_blank"} - and follow the setup instructions.
+---
+description: Kick off your Vale journey by building a rule that nudges writers to focus on user tasks over UI labels.
+---
+
+# Creating Your First Vale Rule for Documentation
+Vale helps enforce writing style in documentation, ensuring clarity and consistency. In this tutorial, you'll create your first custom rule: one that encourages writers to shift from UI-heavy phrasing to user-focused instructions.
 
 ---
 

@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Hands-on, example-driven tutorials in Python, REST APIs, and more by Dinesh Nair. Also includes his AI Notes.">
+        <meta name="description" content="Learn how indexing in PostgreSQL boosts query speed through a practical performance demo.">
       
       
         <meta name="author" content="Dinesh Nair">
@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#faster-query-in-action-indexing-a-postgresql-table" class="md-skip">
+        <a href="#speeding-up-queries-with-postgresql-b-tree-indexing" class="md-skip">
           Skip to content
         </a>
       
@@ -1636,8 +1636,8 @@
 
 
 
-<h1 id="faster-query-in-action-indexing-a-postgresql-table">Faster Query in Action: Indexing a PostgreSQL Table</h1>
-<p>An index in PostgreSQL can significantly improve query performance by making data retrieval faster. Think of an index like the index of a nonfiction book. If you want to find information about a flower named <em>Blue orchid</em>, you'd flip to the index at the end of the book, look for <em>Blue orchid</em>, and find the page numbers where it's discussed. Similarly, in a database, an index helps PostgreSQL quickly locate the rows associated with the data you're searching for, instead of scanning the entire table.</p>
+<h1 id="speeding-up-queries-with-postgresql-b-tree-indexing">Speeding Up Queries with PostgreSQL B-tree Indexing</h1>
+<p>A B-tree index in PostgreSQL can significantly improve query performance by making data retrieval faster. Think of this index like the index of a nonfiction book. If you want to find information about a flower named <em>Blue orchid</em>, you'd flip to the index at the end of the book, look for <em>Blue orchid</em>, and find the page numbers where it's discussed. Similarly, in a database, a B-tree index helps PostgreSQL quickly locate the rows associated with the data you're searching for, instead of scanning the entire table.</p>
 <p>In this walkthrough, we'll focus on the default B-tree index to demonstrate how it improves query performance, step by step.</p>
 <hr />
 <h2 id="create-a-table">Create a Table</h2>
@@ -1712,6 +1712,9 @@ SELECT * FROM Customers WHERE Email = 'email700000@example.com';
 
 
 
+
+  
+  
 
 
 

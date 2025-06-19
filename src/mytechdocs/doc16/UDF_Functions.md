@@ -1,3 +1,7 @@
+---
+description: Learn to create user-defined functions in PostgreSQL using PL/pgSQL through three practical examples.
+---
+
 # Defining Functions using PostgreSQL's Procedural Language
 A function in PostgreSQL is a named block of code that accepts arguments, performs operations, and returns a result. User-defined functions (UDFs) enable you to perform specific tasks within PostgreSQL. Let's see how to create these functions using PostgreSQL's Procedural Language (*PL/pgSQL*).
 

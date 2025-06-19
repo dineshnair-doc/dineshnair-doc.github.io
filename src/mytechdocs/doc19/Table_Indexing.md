@@ -1,5 +1,9 @@
-# Faster Query in Action: Indexing a PostgreSQL Table
-An index in PostgreSQL can significantly improve query performance by making data retrieval faster. Think of an index like the index of a nonfiction book. If you want to find information about a flower named *Blue orchid*, you'd flip to the index at the end of the book, look for *Blue orchid*, and find the page numbers where it's discussed. Similarly, in a database, an index helps PostgreSQL quickly locate the rows associated with the data you're searching for, instead of scanning the entire table.
+---
+description: Learn how indexing in PostgreSQL boosts query speed through a practical performance demo.
+---
+
+# Speeding Up Queries with PostgreSQL B-tree Indexing
+A B-tree index in PostgreSQL can significantly improve query performance by making data retrieval faster. Think of this index like the index of a nonfiction book. If you want to find information about a flower named *Blue orchid*, you'd flip to the index at the end of the book, look for *Blue orchid*, and find the page numbers where it's discussed. Similarly, in a database, a B-tree index helps PostgreSQL quickly locate the rows associated with the data you're searching for, instead of scanning the entire table.
 
 In this walkthrough, we'll focus on the default B-tree index to demonstrate how it improves query performance, step by step.
 

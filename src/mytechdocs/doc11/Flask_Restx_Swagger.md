@@ -1,3 +1,7 @@
+---
+description: Learn Flask-RESTx by building a contact management API, with auto-generated Swagger docs.
+---
+
 # Building a REST API with Flask-RESTx and Swagger Documentation
 Using this document, we'll create a simple REST API to manage contacts. The API will include fields for name, email, and a subscription indicator to track whether a contact has subscribed to our newsletter. We'll use Flask-RESTx, which can automatically generate Swagger documentation for this API. The documentation will make it easier for developers to understand and interact with the API endpoints.
 
