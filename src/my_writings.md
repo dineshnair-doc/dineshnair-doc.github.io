@@ -1,5 +1,5 @@
-# A Collection of My Technical Writing
-This page highlights my technical writing across various technologies, including Flask, REST API, PostgreSQL, and more.
+# Creating Clarity Through Learning Content
+Explore how I simplify technical topics like Flask, REST APIs, and PostgreSQL into engaging, user-friendly materials that empower learners.
 
 **✨ Featured**
 

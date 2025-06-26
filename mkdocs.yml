@@ -1,6 +1,6 @@
-site_name: Tech Tutorials and AI Notes by Dinesh Nair
+site_name: Tech Tutorials by Dinesh Nair
 site_url: https://dineshnair-doc.github.io/
-site_description: Hands-on, example-driven tutorials in Python, REST APIs, and more by Dinesh Nair. Also includes his AI Notes.
+site_description: Hands-on, example-driven tutorials in Python, REST APIs, and more by Dinesh Nair.
 site_author: Dinesh Nair
 use_directory_urls: false
 
@@ -63,9 +63,6 @@ nav:
       - AI:
           - Introductory Flask AI App: mytechdocs/doc26/Flask_Connect_GeminiAI.md
           - AI-Driven User Guide Chatbot: mytechdocs/doc27/Gemini_GuideBot.md
-  - AI Notes:
-      - Semantic Search Documentation Assistant: appnotes/notes1/semantic_search_demo.md
-      - RAG-Based Documentation Assistant: appnotes/notes2/RAG_guide_demo.md
 
 site_dir: docs
 docs_dir: src
