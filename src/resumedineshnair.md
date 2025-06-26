@@ -9,7 +9,7 @@
 
 I empower learners by creating clear, example-driven learning resources that simplify complex technical topics. My hands-on approach combines practicality, visual explanations, and real-world scenarios to help beginners and professionals build confidence with technologies. I specialize in designing content that makes technical concepts understandable and actionable.
 
-Looking for a remote work opportunity in India or an in-office role in Hyderabad, India. Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/dineshn1/){target="_blank"} or reach out to me through email at [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com).
+Looking for a remote work opportunity in India or an in-office role in Hyderabad, India. Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/dineshcontent){target="_blank"} or reach out to me through email at [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com).
 
 ---
 
@@ -25,7 +25,7 @@ Looking for a remote work opportunity in India or an in-office role in Hyderabad
 ## Experience
 
 ### **Learning Content Designer**
-*dineshnair-doc.github.io   | Oct 2024 - Present*
+*[dineshnair-doc.github.io](https://dineshnair-doc.github.io){target="_blank"}   | Oct 2024 - Present*
 
 - Develop step-by-step tutorials and learning modules on Python, Postman, Flask, REST APIs, and more.
 - Focus on visual aids and beginner-friendly content to support self-paced learning.
