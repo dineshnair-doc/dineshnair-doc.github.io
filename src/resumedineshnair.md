@@ -27,9 +27,9 @@ Looking for a remote work opportunity in India or an in-office role in Hyderabad
 ### **Learning Content Designer**
 *[dineshnair-doc.github.io](https://dineshnair-doc.github.io){target="_blank"}   | Oct 2024 - Present*
 
-- Develop step-by-step tutorials and learning modules on Python, Postman, Flask, REST APIs, and more.
-- Focus on visual aids and beginner-friendly content to support self-paced learning.
-- Actively learning and sharing practical, hands-on insights into technologies with others.
+- Developing step-by-step tutorials and learning modules on Python, Postman, Flask, REST APIs, and more.
+- Focusing on visual aids and beginner-friendly content to support self-paced learning.
+- Sharing practical, hands-on insights into technologies with my audience.
 
 ### **Principal Technical Writer**  
 *Oracle, India   | Jan 2004 - Oct 2024*
@@ -46,3 +46,10 @@ Looking for a remote work opportunity in India or an in-office role in Hyderabad
 *Delhi University*
 
 ---
+
+## Certification
+
+**Instructional Design Foundations and Applications**  
+*University of Illinois*  
+Issued: Jun 2025  
+Credential ID: [https://www.coursera.org/account/accomplishments/verify/2DDLURVXGI96](https://www.coursera.org/account/accomplishments/verify/2DDLURVXGI96){target="_blank"} 
