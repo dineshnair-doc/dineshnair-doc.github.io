@@ -1,6 +1,5 @@
 # Resume of Dinesh Nair
 
-- **LinkedIn:** [https://www.linkedin.com/in/dineshcontent](https://www.linkedin.com/in/dineshcontent){target="_blank"}
 - **Email:** [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com)
 
 ---
