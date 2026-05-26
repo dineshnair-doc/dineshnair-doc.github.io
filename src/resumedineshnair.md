@@ -8,7 +8,7 @@
 
 I empower learners by creating clear, example-driven learning resources that simplify complex technical topics. My hands-on approach combines practicality, visual explanations, and real-world scenarios to help beginners and professionals build confidence with technologies. I specialize in designing content that makes technical concepts understandable and actionable.
 
-Looking for a remote work opportunity in India or an in-office role in Hyderabad, India. Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/dineshcontent){target="_blank"} or reach out to me through email at [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com).
+Looking for a remote work opportunity in India or an in-office role in Hyderabad, India. Feel free to reach out to me through email at [techwriterdinesh@protonmail.com](mailto:techwriterdinesh@protonmail.com).
 
 ---
 
