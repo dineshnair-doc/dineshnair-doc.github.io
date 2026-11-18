@@ -21,7 +21,7 @@ markdown_extensions:
   - admonition
   - pymdownx.details
 
-copyright: Copyright &copy; 2024-2025 Dinesh Nair
+copyright: Copyright &copy; 2024-2026 Dinesh Nair
 
 nav:
   - Home: index.md
