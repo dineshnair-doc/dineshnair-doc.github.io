@@ -1,5 +1,5 @@
 # Welcome!
 
-I'm Dinesh, a learning content designer who likes creating clear, useful content that drives user action and understanding.
+I'm Dinesh, a technical writer who enjoys transforming complex technical information into clear and actionable content.
 
 ▶️ [See my tutorials](mytechdocs/index.md)
