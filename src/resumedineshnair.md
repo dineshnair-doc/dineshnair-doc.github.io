@@ -8,7 +8,7 @@
 
 I create clear, example-driven documentation that simplifies complex technical topics. My hands-on approach combines practical experience, visual explanations, and real-world scenarios to help users understand and confidently use technology solutions.
 
-Open to remote opportunities across India and in-office roles in Hyderabad, India. Contact: [dineshnair75@protonmail.com](mailto:dineshnair75@protonmail.com).
+Open to remote opportunities across India and in-office roles in Hyderabad, India. Please email me if you'd like to discuss an opportunity.
 
 ---
 
